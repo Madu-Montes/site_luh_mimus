@@ -1,15 +1,7 @@
 body{
-    background-color: aquamarine;
-}
-
-header{
-    background-color: burlywood;
-    width: 100%;
-}
-
-.container-fluid{
     padding: 0%;
 }
+
 .imgemail  {
     padding-left: 14%;
     gap: 0.4rem;
