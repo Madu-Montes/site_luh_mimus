@@ -22,7 +22,14 @@ body{
 }
 
 .btn-outline-success:hover{
-    
     color: orange;
+}
 
+.form-control{
+    border-radius: 20px;
+     border: #FFE2CB solid 1px;
+     color: #000;
+     position: relative;
+     width: 100%;
+     font-size: 14px;
 }
