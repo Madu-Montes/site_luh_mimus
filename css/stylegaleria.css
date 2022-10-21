@@ -1,0 +1,82 @@
+.photo-gallery .intro {
+width: 50%;
+margin: 0 auto 0px;
+margin-top: 3%;
+padding: 2px;
+display: block;
+}
+
+.photo-gallery nav {
+display: flex;
+height: 30%;
+width: 100%;
+align-items: center;
+margin-left: -160px;
+padding: 50px;
+transition: 1.5s;
+}
+
+.photo-gallery nav ul li a {
+display: inline-block;
+color: #3F2014;
+background-color: #FACBA4;
+padding: 0.5em 0.9em;
+margin-right: 0.5em;
+font-size: 16px;
+font-weight: bold;
+border-radius: 20px;
+transition: all 0.3s ease;
+}
+
+.photo-gallery nav ul li a:hover {
+background-color: #FACBA4;
+color: black;
+}
+
+.photo-gallery {
+color: #000000;
+background-color: #fff;
+}
+
+.photo-gallery h2 {
+font-weight: bold;
+margin-bottom: 40px;
+padding-top: 40px;
+color: inherit;
+}
+
+.photo-gallery .photos {
+padding-bottom: 20px;
+width: 85%;
+margin-left: 8%;
+
+}
+
+.photo-gallery .item {
+padding-bottom: 30px;
+}
+
+section {
+min-height: 20vh;
+padding-top: 3rem;
+font-size: 30px;
+color: #3F2014;
+font-weight: bold;
+text-align: center;
+align-items: center;
+}
+
+.photo-gallery nav ul {
+
+list-style: none;
+display: flex;
+gap: 2rem;
+height: 2rem;
+width: 100%;
+align-items: center;
+
+}
+
+html {
+scroll-behavior: smooth;
+}
