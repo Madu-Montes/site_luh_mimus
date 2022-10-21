@@ -75,6 +75,7 @@ body {
     font-size: 50px;
   }
 }
+
 /*acho que pode apagar essa parte 40em = 200px tamanho q n existe*/
 
 
@@ -298,6 +299,6 @@ h2 {
   font-weight: bold;
 }
 
-.escolha{
+.escolha {
   margin-bottom: 20px;
 }

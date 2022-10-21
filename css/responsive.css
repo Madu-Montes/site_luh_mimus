@@ -87,6 +87,14 @@
   .header-topo .d-flex .imgemail .email {
     display: none;
   }
+  .header-topo .d-flex .imgemail img {
+    display: none;
+  }
+
+  .header-menu button {
+    position: relative;
+    left: 78%;
+  }
 
   .menu nav h1{
     display: none;
