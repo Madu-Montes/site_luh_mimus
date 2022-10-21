@@ -88,6 +88,10 @@
     display: none;
   }
 
+  .menu nav h1{
+    display: none;
+  }
+
   .titulos-principais img {
     margin-bottom: -40%
   }
