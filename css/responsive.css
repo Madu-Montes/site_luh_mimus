@@ -45,6 +45,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .header-topo .d-flex .imgemail .email{
+    display: none;
+  }
+
   .titulos-principais img {
     margin-bottom: -40%
   }
