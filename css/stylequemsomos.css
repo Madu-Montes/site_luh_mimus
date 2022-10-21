@@ -13,3 +13,8 @@
 .quem-somos .col-md-7{
     border: 1px solid #EED0B3;
 }
+
+.quem-somos .trajetoria h1{
+    justify-items: center;
+    text-align: center;
+}
