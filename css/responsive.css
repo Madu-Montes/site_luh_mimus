@@ -109,6 +109,12 @@
     display: flex;
   }
 
+  .sabores button {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #000000;
+  }
+
   .menu a{
     margin-top: 5%;
   }
@@ -173,6 +179,14 @@
     position: relative;
     left: 78%;
   }
+
+  .sabores button {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -15%;
+    background-color: #000000;
+  }
+  
 
   .menu nav{
     margin-top: 5%;
