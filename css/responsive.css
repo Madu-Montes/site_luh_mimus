@@ -14,6 +14,12 @@
     padding: 0.2em 0.7em;
   }
 
+  .quem-somos .col-md-5 img {
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -36,6 +42,15 @@
     margin-bottom: -1%
   }
 
+  .quem-somos .col-md-5 img {
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  .quem-somos .col-md-7 h2{
+    font-size: 40px;
+}
+
   .col-md-7 img {
     margin-bottom: -1%
   }
@@ -47,30 +62,42 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .menu img{
+  .card-wrapper {
+    display: flex;
+  }
+
+  .menu img {
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+
   .menu h1 {
     color: #000000;
     font-size: 12px;
     display: inline-block;
     margin-left: 2%;
     margin-right: 4%;
-}
+  }
 
   .photo-gallery .menu {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-}
+  }
+
   .menu a {
     width: 40%;
     padding: 0.2em 0.7em;
-}
+  }
+
   .titulos-principais img {
     margin-bottom: -1%
+  }
+
+  .quem-somos .col-md-5 img {
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
 
   .col-md-7 img {
@@ -87,6 +114,7 @@
   .header-topo .d-flex .imgemail .email {
     display: none;
   }
+
   .header-topo .d-flex .imgemail img {
     display: none;
   }
@@ -96,12 +124,20 @@
     left: 78%;
   }
 
-  .menu nav h1{
+  .menu nav h1 {
     display: none;
   }
 
   .titulos-principais img {
     margin-bottom: -40%
+  }
+
+  .card:not(:first-child) {
+    display: none;
+  }
+
+  .quem-somos .col-md-5 img {
+    margin-bottom: 10%;
   }
 
   .col-md-7 img {
