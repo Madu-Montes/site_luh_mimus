@@ -20,6 +20,14 @@
     margin-bottom: 50%;
   }
 
+  .content .image-box {
+    max-width: 60%;
+  }
+
+  .content {
+    padding: 10px 0;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -47,9 +55,19 @@
     margin-top: 50%;
     margin-bottom: 50%;
   }
-  .quem-somos .col-md-7 h2{
+
+  .quem-somos .col-md-7 h2 {
     font-size: 40px;
-}
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .content form {
+    width: 100%;
+    margin-left: 30px;
+  }
 
   .col-md-7 img {
     margin-bottom: -1%
@@ -100,6 +118,15 @@
     margin-bottom: 10%;
   }
 
+  .content .image-box {
+    display: none;
+  }
+
+  .content form {
+    width: 100%;
+    margin-left: 30px;
+  }
+
   .col-md-7 img {
     margin-bottom: -1%
   }
@@ -138,6 +165,15 @@
 
   .quem-somos .col-md-5 img {
     margin-bottom: 10%;
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .content form {
+    width: 100%;
+    margin-left: 5%;
   }
 
   .col-md-7 img {
