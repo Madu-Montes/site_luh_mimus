@@ -212,22 +212,16 @@ input[type="email"]:invalid {
     text-decoration: none;
 }
 
-.novouser-btn {
+.novouser-btn{
     text-align: center;
+    margin-top: 5%;
 }
 
-.novouser-btn button {
-    background-color: rgba(255, 250, 250, 0);
-    font-size: 16px;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    border: none;
+.novouser-btn a{
+    color: black;
 }
 
-.novouser-btn button a {
-    color: #000000;
-    font-weight: lighter;
-}
+
 
 .login h1 {
     text-align: center;
