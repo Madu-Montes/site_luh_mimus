@@ -1,6 +1,16 @@
-@media (min-width: 1343px) and (max-width: 1500px) {}
+@media (min-width: 1343px) and (max-width: 1500px) {
+  .owl-stage-outer {
+    margin-left: 5%;
+    align-items: center;
+}
+}
 
-@media (min-width: 1200px) and (max-width: 1342px) {}
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .owl-stage-outer {
+    margin-left: 2%;
+    align-items: center;
+}
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .photo-gallery .menu {
@@ -13,6 +23,10 @@
     width: 40%;
     padding: 0.2em 0.7em;
   }
+
+  .owl-stage-outer {
+    margin-left: 12%;
+}
 
   .quem-somos .col-md-5 img {
     width: 100%;
@@ -56,6 +70,10 @@
   .titulos-principais img {
     margin-bottom: -1%
   }
+
+  .owl-stage-outer {
+    margin-left: 25%;
+}
 
   .quem-somos .col-md-5 img {
     width: 100%;
@@ -114,6 +132,9 @@
   .titulos-principais img {
     margin-bottom: -1%
   }
+  .owl-stage-outer {
+    margin-left: 18%;
+}
 
   .quem-somos .col-md-5 img {
     margin-top: 5%;
@@ -172,6 +193,15 @@
     margin-bottom: -40%
   }
 
+  .owl-stage-outer {
+    margin-left: 10%;
+    align-items: center;
+}
+
+.single_course {
+    width: 80%;
+}
+
   .card:not(:first-child) {
     display: none;
   }
@@ -196,6 +226,14 @@
   .featurette-heading {
     margin-top: 7rem;
   }
+
+  .container_form {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
   .footer h3 {
     padding-top: 20px;
