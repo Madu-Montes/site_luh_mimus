@@ -216,7 +216,12 @@
     width: 80%;
 }
 
-  .card:not(:first-child) {
+  .card-wrapper .card:not(:first-child) {
+    display: none;
+  }
+
+ 
+  .maisvendidos {
     display: none;
   }
 
@@ -263,3 +268,4 @@
   }
 
 }
+
