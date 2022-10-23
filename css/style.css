@@ -191,28 +191,20 @@ body {
 }
 
 .maisvendidos .card, .card-img-top{
-
-  border-radius: 8%;
-  
-
-  
+  border-radius: 8%; 
 }
 
 .maisvendidostitulo{
   margin-left: 15%;
 }
 
-
-
 .maisvendidos{
   display: flex;
   justify-content: center;
   text-align: center;
-  
 }
 
 .maisvendidos .card{
-
   margin: 0.5em;
 }
 
