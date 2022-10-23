@@ -9,6 +9,53 @@ body {
 /* MENU
 -------------------------------------------------- */
 
+.snip1143 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1143 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 0.6em;
+  margin-top: -8px;
+
+  position: relative !important;
+
+}
+
+.snip1143 a {
+  
+  color: rgba(36, 34, 34, 0.5);
+  position: relative;
+  display: inline-block;
+  
+  margin: 0;
+  text-decoration: none;
+  line-height: 1px;
+
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.snip1143 li::before {
+  content: '';
+  position: absolute;
+  height: 2.5px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: #E2AF7C; 
+  transition: all .5s ease;
+}
+
+.snip1143 li:hover:before {
+      width: 100%;
+}
+
+
+
 
 
 /* Carousel base class */
@@ -331,7 +378,17 @@ body {
   width: 100px;
 }
 
+.voltartopo a{
+ font-size: 16px;
+ margin-right: 20px;
+ text-align: center;
+ 
+}
 
+.voltartopo a:hover{
+
+  color: #E2AF7C;
+}
 
 /*footer -copyright*/
 
