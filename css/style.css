@@ -13,6 +13,8 @@ body {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+  margin-bottom: ;
+
 }
 
 .snip1143 li {
@@ -35,17 +37,18 @@ body {
   text-decoration: none;
   line-height: 1px;
 
-  line-height: 40px;
+  line-height: 20px;
   font-size: 16px;
 }
 
 .snip1143 li::before {
   content: '';
   position: absolute;
-  height: 2.5px;
+  height: 3px;
   width: 0px;
   left: 0;
-  bottom: 10px;
+  top: 0.5px;
+  
   background: #E2AF7C; 
   transition: all .5s ease;
 }

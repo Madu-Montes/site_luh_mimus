@@ -193,6 +193,11 @@
     border-radius: 50%;
   }
 
+  .snip1143 li:hover:before {
+    width: 10%;
+}
+
+
   .menu img {
     margin-left: auto;
     margin-right: auto;
