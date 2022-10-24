@@ -64,7 +64,9 @@ body {
 
 
 
-
+.lead{
+  margin-top: px !important;
+}
 
 /* Carousel base class */
 .carousel {
@@ -206,10 +208,13 @@ body {
   /* Space out the Bootstrap <hr> more */
 }
 
+
+
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+  margin-top: 5rem;
 }
 
 /* rtl:end:remove */
@@ -287,7 +292,6 @@ body {
 }
 
 .maisvendidos{
-  display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 5%;

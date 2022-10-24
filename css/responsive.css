@@ -3,12 +3,21 @@
     margin-left: 11%;
     align-items: center;
 }
+.maisvendidos{
+  display: flex;
+
+}
 }
 
 @media (min-width: 1200px) and (max-width: 1342px) {
   .owl-stage-outer {
     margin-left: 2%;
     align-items: center;
+}
+
+.maisvendidos{
+  display: flex;
+
 }
 }
 
@@ -17,6 +26,11 @@
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .maisvendidos{
+    display: flex;
+  
   }
 
   .menu a {
@@ -50,6 +64,12 @@
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .maisvendidos{
+    display: flex;
+  
+  }
+
 
   .menu a {
     height: 40px;
@@ -106,6 +126,10 @@
     margin-left: 10%;
     margin-right: 10%;
     background-color: #000000;
+  }
+
+  .maisvendidos{
+   margin-left: 95px;
   }
 
   .menu nav{
@@ -168,6 +192,10 @@
     display: none;
   }
 
+  .maisvendidos{
+    margin-left: 30px;
+   }
+
   .header-topo .d-flex .imgemail img {
     display: none;
   }
@@ -223,10 +251,7 @@
   }
 
  
-  .maisvendidos {
-    display: none;
-  }
-
+ 
   .quem-somos .col-md-5 img {
     margin-bottom: 10%;
   }
