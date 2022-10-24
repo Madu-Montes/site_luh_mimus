@@ -6,13 +6,22 @@
 .mb-3 {
     color: #3F2014;
     font-weight: bold;
+    font-size: 30px;
+}
+
+.course_content h4 a{
     font-size: 28px;
 }
 
 .title {
     margin-top: 5%;
     text-align: center;
+}
 
+.course_content .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cardapio {
