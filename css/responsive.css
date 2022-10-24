@@ -63,13 +63,6 @@
     margin: 6% 1% 6% 1%;
   }
 
-  .titulos-principais h2 {
-    margin-bottom: 5%;
-  }
-
-  .titulos-principais img {
-    margin-bottom: -1%
-  }
 
   .owl-stage-outer {
     margin-left: 25%;
@@ -115,19 +108,26 @@
     background-color: #000000;
   }
 
-  .menu a{
+  .menu nav{
     margin-top: 5%;
+    width: 100%;
   }
 
-  .menu img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  .menu a{
+    height: 20%;
+    margin: 5px 5px 2px 2px;
   }
 
+  .menu img{
+    width: 25px;
+    margin: 5px 40px 12px;
+  }
+
+  
   .menu h1 {
     display: none;
   }
+
 
   .photo-gallery .menu {
     width: 80%;
@@ -135,9 +135,6 @@
     margin-right: 10%;
   }
 
-  .titulos-principais img {
-    margin-bottom: -1%
-  }
   .owl-stage-outer {
     margin-left: 18%;
 }
@@ -190,27 +187,27 @@
 
   .menu nav{
     margin-top: 5%;
-    border-radius: 50%;
+    width: 100%;
+  }
+
+  .menu a{
+    height: 20%;
+    margin: 5px 5px 2px 2px;
+    border-radius: 40%;
+  }
+
+  .menu img{
+    margin: 5px 13px 12px;
+  }
+
+  
+  .menu h1 {
+    display: none;
   }
 
   .snip1143 li:hover:before {
     width: 10%;
 }
-
-
-  .menu img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .menu h1 {
-    display: none;
-  }
-
-  .titulos-principais img {
-    margin-bottom: -40%
-  }
 
   .owl-stage-outer {
     margin-left: 10%;

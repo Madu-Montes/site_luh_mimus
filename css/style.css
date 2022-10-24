@@ -3,6 +3,14 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.header-topo .imgemail{
+ margin-left: 10%;
+}
+
+.header-topo .icones{
+  margin-right: 1%;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -46,7 +54,6 @@ body {
   width: 0px;
   left: 0;
   top: 0.5px;
-  
   background: #E2AF7C; 
   transition: all .5s ease;
 }
@@ -257,7 +264,6 @@ body {
 }
 
 .btnfav{
-
   width: 15%;
  border-radius: 70%;
  margin-left:80%;
@@ -284,6 +290,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .maisvendidos .card{
@@ -444,17 +451,6 @@ h2 {
   margin-bottom: -14%
 }
 
-.titulos-principais h2 {
-  margin-bottom: 5%;
-}
-
-.titulos-principais img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -1%
-}
-
 .destaques .col-lg-4 {
   background-color: #FACBA4;
 }
@@ -496,12 +492,4 @@ h2 {
   -webkit-overflow-scrolling: touch;
 }
 
-.titulos-principais h2 {
-  font-size: 50px;
-  color: #502a1a;
-  font-weight: bold;
-}
 
-.escolha {
-  margin-bottom: 20px;
-}

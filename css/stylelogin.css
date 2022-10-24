@@ -196,27 +196,28 @@ input[type="email"]:invalid {
 
 }
 
-.password-btn button {
+.content .password-btn button {
     background-color: rgba(255, 250, 250, 0);
-    font-size: 14px;
     margin-top: 2%;
     margin-bottom: 5%;
     border: none;
 }
 
-.password-btn button a {
+.content .password-btn button a {
     color: #000000ce;
     font-weight: lighter;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.novouser-btn{
+.content .novouser-btn{
     text-align: center;
     margin-top: 5%;
 }
 
 .novouser-btn a{
     color: black;
+    font-size: 15px;
 }
 
 

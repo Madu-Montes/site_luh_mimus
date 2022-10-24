@@ -50,6 +50,11 @@ section {
     text-align: center;
 }
 
+.photo-gallery .photos img{
+    border-radius: 15px;
+    height: 100%;
+}
+
 .photo-gallery {
     color: #000000;
     background-color: #fff;
