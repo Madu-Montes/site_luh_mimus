@@ -213,7 +213,6 @@
     background-color: #000000;
   }
   
-
   .menu nav{
     margin-top: 5%;
     width: 100%;
@@ -280,6 +279,11 @@
     margin-bottom: 5%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.recuperar form {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
   .footer h3 {
