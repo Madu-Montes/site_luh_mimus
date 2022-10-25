@@ -308,7 +308,8 @@ body {
 }
 
 .featurette-divider {
-  margin-top: 250PX;
+  margin-top: 100PX;
+  margin-bottom: 20px;
 }
 
 
@@ -447,6 +448,8 @@ h2 {
 .bd-placeholder-img {
   background-image: url(../images/ilustra1.svg);
 }
+
+
 
 .col-md-7 img {
   display: block;

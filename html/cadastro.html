@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/stylecadastro.css">
+    <link rel="stylesheet" href="../js/modals.js">
     <link rel="stylesheet" href="../css/responsive.css">
+
 
 
 </head>
@@ -163,10 +165,41 @@
                             <label>Senha</label>
                             <input type="hidden" name="_captcha" value="false">
                         </div>
-                        
-                        <div class="cadastro-btn">
+
+                        <!--<div class="cadastro-btn">
                             <button type="button" class="btn btn-primary">Cadastrar</button>
+                        </div>-->
+
+                       <!--  Modal trigger button  -->
+                       <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                         Salvar
+                       </button>
+                       
+                       <!-- Modal Body-->
+                       <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">Bem vindo(a)</h5>
+                                        </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        Cadastro realizado com sucesso!
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
                         </div>
+                       </div>
+                       
+                       
+                       
+                       
+                       
+
+
                         <hr>
                         <h1>ou aqui fica a api da google e facebook</h1>
                     </form>

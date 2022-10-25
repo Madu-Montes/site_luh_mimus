@@ -16,6 +16,7 @@
     border: 2px solid;
     border-color: #E2AF7C;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
 }
 
 .container_form .content {
