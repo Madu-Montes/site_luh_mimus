@@ -84,6 +84,9 @@
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    
+    background-color: darkseagreen;
+    height: 80%;
 }
 
 .single_course .course_head {
@@ -91,7 +94,7 @@
     overflow: hidden;
 }
 
-.salgados .single_course .course_head img {
+.single_course .course_head img {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
