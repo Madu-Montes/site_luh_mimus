@@ -68,6 +68,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .header-topo .d-flex .imgemail .email {
+    display: none;
+  }
+
+  .header-topo .d-flex .imgemail img {
+    display: none;
+  }
+
   .photo-gallery .menu {
     width: 90%;
     margin-left: 5%;
@@ -121,6 +129,14 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .header-topo .d-flex .imgemail .email {
+    display: none;
+  }
+
+  .header-topo .d-flex .imgemail img {
+    display: none;
+  }
+
   .card-wrapper {
     display: flex;
   }
@@ -193,13 +209,13 @@
     display: none;
   }
 
-  .maisvendidos{
-    margin-left: 30px;
-   }
-
   .header-topo .d-flex .imgemail img {
     display: none;
   }
+
+  .maisvendidos{
+    margin-left: 30px;
+   }
 
   .header-menu button {
     position: relative;
@@ -250,8 +266,6 @@
     display: none;
   }
 
- 
- 
   .quem-somos .col-md-5 img {
     margin-bottom: 10%;
   }
