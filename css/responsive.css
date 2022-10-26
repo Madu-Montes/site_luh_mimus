@@ -300,6 +300,10 @@
   margin-right: 10%;
 }
 
+.cadastro .modal-footer button a{
+  font-size: 20px;
+}
+
   .footer h3 {
     padding-top: 20px;
     font-size: 16px;
