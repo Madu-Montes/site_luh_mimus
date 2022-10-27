@@ -135,10 +135,29 @@
                     <form action="#" method="POST">
                         <div class="topic">Perfil</div>
 
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Foto</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
                         <div class="input-box">
-                            <input type="text" name="nome" required maxlength="256">
+                            <input type="text" name="nome" required maxlength="100">
                             <span></span>
                             <label>Nome completo</label>
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" name="cpf" required maxlength="14">
+                            <span></span>
+                            <label>CPF/CNPJ</label>
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+
+                        <div class="input-box">
+                            <input type="date" name="nascimento">
+                            <span></span>
+                            <label>Data de nascimento</label>
                             <input type="hidden" name="_captcha" value="false">
                         </div>
 
@@ -150,47 +169,53 @@
                         </div>
 
                         <div class="input-box">
-                            <input type="text" name="celular" placeholder="(ddd) 00000-0000" required maxlength="256">
-                            <span></span>
-                            <label>Celular</label>
-                            <input type="hidden" name="_captcha" value="false">
-                        </div>
-
-                        <div class="input-box">
                             <input type="password" name="senha" required maxlength="256">
                             <span></span>
                             <label>Senha</label>
                             <input type="hidden" name="_captcha" value="false">
                         </div>
 
-                        <!--<div class="cadastro-btn">
-                            <button type="button" class="btn btn-primary">Cadastrar</button>
-                        </div>-->
+                        <div class="form-row">
+                            <div class="col-7">
+                                <input type="text" class="form-control" placeholder="Endereço">
+                                <label>Endereço</label>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" placeholder="Número">
+                                <label>Número</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Ajuda">
+                                <label>Ajuda</label>
+                            </div>
+                        </div>
 
-                       <!--  Modal trigger button  -->
-                       <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-                         Salvar
-                       </button>
-                       
-                       <!-- Modal Body-->
-                       <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+                        
+                        <!--  Modal trigger button  -->
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modalId">
+                            Salvar
+                        </button>
+                        <!-- Modal Body-->
+                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
                                     <div class="modal-header">
-                                            <h5 class="modal-title" id="modalTitleId">Bem vindo(a)</h5>
-                                        </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        Cadastro realizado com sucesso!
+                                        <h5 class="modal-title" id="modalTitleId">Bem vindo(a)</h5>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button><a href="./perfil.html">Perfil</a></button>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            Cadastro realizado com sucesso!
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button><a href="./perfil.html">Perfil</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
-                       <hr>
+                        <hr>
                         <h1>ou aqui fica a api da google e facebook</h1>
                     </form>
                 </div>
@@ -272,4 +297,5 @@
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

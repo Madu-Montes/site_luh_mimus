@@ -199,8 +199,13 @@ input[type="email"]:invalid {
 
 }
 
-.cadastro .modal-footer button{
+.cadastro .modal-footer button {
     border-radius: 10px;
+}
+
+.cadastro .modal-footer button a{
+    color: #fff;
+    font-size: 24px;
 }
 
 .cadastro .modal-footer button a:hover{
@@ -210,3 +215,8 @@ input[type="email"]:invalid {
 .cadastro form button:hover{
     background-color: #636c72;
 }
+
+.form-row{
+    display: flex;
+}
+
