@@ -229,6 +229,10 @@
     background-color: #000000;
   }
   
+  .carousel-item active img{
+    background-image: url(../images/bolobrigadeiro.jpg);
+  }
+
   .menu nav{
     margin-top: 5%;
     width: 100%;
