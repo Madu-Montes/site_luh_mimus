@@ -248,13 +248,19 @@
     margin: 2% 30% 6%;
   }
 
-  
   .menu h1 {
     display: none;
   }
 
   .snip1143 li:hover:before {
     width: 10%;
+}
+
+.login form {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
 
   .owl-stage-outer {

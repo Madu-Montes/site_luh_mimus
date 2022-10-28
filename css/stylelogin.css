@@ -4,12 +4,11 @@
 }
 
 .container_form .content{
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
 }
 
 .login form {
-    width: 90%;
+    width: 100%;
     padding: 5% 3% 5% 3%;
     background: white;
     border-radius: 6px;
