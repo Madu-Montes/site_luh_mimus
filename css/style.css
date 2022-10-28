@@ -18,22 +18,22 @@ body {
   font-size: 14px;
 }
 
-.header-topo .imgemail{
+.header-topo .imgemail {
   margin-left: 10%;
   padding-left: 14%;
   gap: 0.4rem;
- }
+}
 
- .imgemail span {
+.imgemail span {
   font-size: 16px;
 }
- 
- .header-topo .icones{
-   margin-right: 1%;
-   padding-right: 4%;
- }
 
- .btn-outline-success:hover {
+.header-topo .icones {
+  margin-right: 1%;
+  padding-right: 4%;
+}
+
+.btn-outline-success:hover {
   color: #E2AF7C;
   background-color: white;
   border-color: #E2AF7C;
@@ -71,12 +71,12 @@ body {
   width: 0px;
   left: 0;
   top: 0.5px;
-  background: #FCCAD5; 
+  background: #FCCAD5;
   transition: all .5s ease;
 }
 
 .snip1143 li:hover:before {
-      width: 100%;
+  width: 100%;
 }
 
 /*Carrossel banners */
@@ -117,6 +117,8 @@ body {
 }
 
 /*Carrossel sabores */
+
+
 
 .card-wrapper {
   display: flex;
@@ -193,63 +195,69 @@ body {
 
 /* favoritos e carrinho */
 
-.sacola h2, a{
+.sacola h2,
+a {
   font-size: 36px;
   text-decoration: none;
   color: #5a5a5a;
 }
 
-.sacola h2:hover{
+.sacola h2:hover {
   color: #E2AF7C;
 }
 
-.sacola-icon{
+.sacola-icon {
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.comprar h2{
+.comprar h2 {
   margin-top: 1%;
 }
 
 
 /* Mais vendidos*/
 
+h2{
+  font-size: 40px;
+}
+
 .featurette-divider {
   margin: 5rem 0;
 }
 
-.btnfav{
+.btnfav {
   width: 14%;
   height: 9%;
- border-radius: 70%;
- margin-left:83%;
- background-color: #FCD8CA;
- border-color: #FCD8CA;
- margin-bottom: -16px;
+  border-radius: 70%;
+  margin-left: 83%;
+  background-color: #FCD8CA;
+  border-color: #FCD8CA;
+  margin-bottom: -16px;
 }
 
-.btnfav:hover{
+.btnfav:hover {
   background-color: #000;
   border-color: #000;
 }
 
-.maisvendidos .card, .card-img-top{
-  border-radius: 8%; 
+.maisvendidos .card,
+.card-img-top {
+  border-radius: 8%;
 }
 
-.maisvendidostitulo{
+.maisvendidostitulo {
   margin-left: 15%;
 }
 
-.maisvendidos{
+.maisvendidos {
   justify-content: center;
   text-align: center;
   margin-bottom: 5%;
 }
 
-.maisvendidos .card{
+.maisvendidos .card {
   margin: 0.5em;
 }
 
@@ -265,15 +273,15 @@ body {
 
 /*footer e copyright*/
 
-.voltartopo a{
+.voltartopo a {
   font-size: 16px;
   margin-right: 20px;
   text-align: center;
- }
- 
- .voltartopo a:hover{
-   color: #E2AF7C;
- }
+}
+
+.voltartopo a:hover {
+  color: #E2AF7C;
+}
 
 #logorodape {
   width: 200px;
@@ -368,8 +376,3 @@ h2 {
   vertical-align: -.125em;
   fill: currentColor;
 }
-
-
-
-
-
