@@ -167,7 +167,9 @@
 }
 
 .content .input-box input[type="text"]:valid,
-input[type="email"]:valid {
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="date"]:valid {
     border-color: rgb(129, 194, 129);
 }
 
@@ -184,7 +186,9 @@ input[type="email"]:valid {
 }
 
 .content .input-box input[type="text"]:invalid,
-input[type="email"]:invalid {
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="date"]:invalid {
     border-color: rgb(196, 13, 13);
 
 }

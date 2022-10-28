@@ -9,6 +9,7 @@ body {
 
 /* MENU
 -------------------------------------------------- */
+
 .form-control {
   border-radius: 20px;
   border: #FFE2CB solid 1px;
@@ -100,7 +101,7 @@ body {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #7e7d7d;
+  background-color: #000;
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
@@ -220,7 +221,8 @@ a {
 /* Mais vendidos*/
 
 h2{
-  font-size: 40px;
+  font-size: 35px;
+  color: #3F2014;
 }
 
 .featurette-divider {

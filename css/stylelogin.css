@@ -164,7 +164,8 @@
 }
 
 .content .input-box input[type="text"]:valid,
-input[type="email"]:valid {
+input[type="email"]:valid,
+input[type="password"]:valid {
     border-color: rgb(129, 194, 129);
 }
 
@@ -181,7 +182,8 @@ input[type="email"]:valid {
 }
 
 .content .input-box input[type="text"]:invalid,
-input[type="email"]:invalid {
+input[type="email"]:invalid,
+input[type="password"]:invalid {
     border-color: rgb(196, 13, 13);
 
 }
@@ -193,7 +195,6 @@ input[type="email"]:invalid {
 
 .content .input-box input:invalid~label {
     color: rgb(196, 13, 13);
-
 }
 
 .content .password-btn button {
@@ -219,8 +220,6 @@ input[type="email"]:invalid {
     color: black;
     font-size: 15px;
 }
-
-
 
 .login h1 {
     text-align: center;
