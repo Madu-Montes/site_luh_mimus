@@ -11,7 +11,7 @@
   background: white;
   border-radius: 6px;
   border: 2px solid;
-  border-color: #E2AF7C;
+  border-color: #F99AAF;
   margin: 0 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   height: 500px;
@@ -138,7 +138,7 @@
 
 .content .input-box input[type="submit"] {
   color: #fff;
-  background: #E2AF7C;
+  background: #F99AAF;
   width: 100%;
   padding-left: 0;
   align-items: center;

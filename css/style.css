@@ -12,7 +12,7 @@ body {
 
 .form-control {
   border-radius: 20px;
-  border: #FFE2CB solid 1px;
+  border: #FACBA4 solid 1.5px;
   color: #000;
   position: relative;
   width: 100%;
@@ -27,6 +27,7 @@ body {
 
 .imgemail span {
   font-size: 16px;
+  margin-top: 2px;
 }
 
 .header-topo .icones {
@@ -35,9 +36,9 @@ body {
 }
 
 .btn-outline-success:hover {
-  color: #E2AF7C;
+  color: #FACBA4;
   background-color: white;
-  border-color: #E2AF7C;
+  border-color: #FACBA4;
 }
 
 .snip1143 * {
@@ -118,8 +119,6 @@ body {
 }
 
 /*Carrossel sabores */
-
-
 
 .card-wrapper {
   display: flex;
@@ -204,7 +203,7 @@ a {
 }
 
 .sacola h2:hover {
-  color: #E2AF7C;
+  color: #FCCAD5;
 }
 
 .sacola-icon {
@@ -222,7 +221,7 @@ a {
 
 h2{
   font-size: 35px;
-  color: #3F2014;
+  color: black;
 }
 
 .featurette-divider {

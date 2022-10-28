@@ -14,7 +14,7 @@
     background: white;
     border-radius: 6px;
     border: 2px solid;
-    border-color: #E2AF7C;
+    border-color: #FCCAD5;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     flex-wrap: wrap;
 }
@@ -42,7 +42,7 @@
 }
 
 .cadastro button {
-    background-color: #E2AF7C;
+    background-color: #F07882;
     border: none;
     width: 50%;
     margin-left: auto;
@@ -71,7 +71,7 @@
 }
 
 .content .input-box input:focus {
-    border-color: #E2AF7C !important;
+    border-color: #FCCAD5 !important;
     background-color: #fff;
 }
 
@@ -174,10 +174,6 @@ input[type="number"]:valid {
     border-color: rgb(129, 194, 129);
 }
 
-.content .message-box textarea:valid {
-    border-color: rgb(129, 194, 129);
-}
-
 .content .input-box input:valid~label {
     top: 0;
     left: 12px;
@@ -191,11 +187,6 @@ input[type="email"]:invalid,
 input[type="password"]:invalid,
 input[type="date"]:invalid,
 input[type="number"]:invalid {
-    border-color: rgb(196, 13, 13);
-
-}
-
-.content .message-box textarea:invalid {
     border-color: rgb(196, 13, 13);
 
 }
@@ -219,7 +210,7 @@ input[type="number"]:invalid {
 }
 
 .cadastro form button:hover {
-    background-color: #636c72;
+    background-color: black;
 }
 
 .form-row {
