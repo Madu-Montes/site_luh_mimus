@@ -263,6 +263,10 @@
 
 }
 
+.form-group input{
+  font-size: 10px;
+}
+
   .owl-stage-outer {
     margin-left: 10%;
     align-items: center;
