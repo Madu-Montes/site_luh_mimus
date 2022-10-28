@@ -4,7 +4,7 @@
 }
 
 .mb-3 {
-    color: #3F2014;
+    color: black;
     font-weight: bold;
     font-size: 30px;
 }
@@ -30,7 +30,7 @@
     margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #ECE6DE;
+    background-color: #ffeef8;
 }
 
 .cardapio .owl-item {
@@ -85,7 +85,7 @@
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     
-    background-color: darkseagreen;
+    background-color: #FCCAD5;
     height: 80%;
 }
 
@@ -113,7 +113,7 @@
     width: 65px;
     text-align: center;
     border-radius: 50px;
-    background: #E2AF7C;
+    background:  #E4ACB8 ;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -200,9 +200,9 @@
 
 .single_course:hover .price {
     background: black;
-    color: #E2AF7C;
+    color: #E4ACB8;
 }
 
 .single_course:hover h4 a {
-    color: #E2AF7C;
+    color:  #E4ACB8;
 }
