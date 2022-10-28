@@ -3,19 +3,41 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.header-topo .imgemail{
- margin-left: 10%;
+.container-fluid {
+  padding: 0%;
 }
-
-.header-topo .icones{
-  margin-right: 1%;
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
 
 /* MENU
 -------------------------------------------------- */
+.form-control {
+  border-radius: 20px;
+  border: #FFE2CB solid 1px;
+  color: #000;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+}
+
+.header-topo .imgemail{
+  margin-left: 10%;
+  padding-left: 14%;
+  gap: 0.4rem;
+ }
+
+ .imgemail span {
+  font-size: 16px;
+}
+ 
+ .header-topo .icones{
+   margin-right: 1%;
+   padding-right: 4%;
+ }
+
+ .btn-outline-success:hover {
+  color: #E2AF7C;
+  background-color: white;
+  border-color: #E2AF7C;
+}
 
 .snip1143 * {
   box-sizing: border-box;
@@ -28,21 +50,16 @@ body {
   list-style: outside none none;
   margin: 0 0.6em;
   margin-top: -8px;
-
   position: relative !important;
-
 }
 
 .snip1143 a {
-  
   color: rgba(36, 34, 34, 0.5);
   position: relative;
   display: inline-block;
-  
   margin: 0;
   text-decoration: none;
   line-height: 1px;
-
   line-height: 20px;
   font-size: 16px;
 }
@@ -54,7 +71,7 @@ body {
   width: 0px;
   left: 0;
   top: 0.5px;
-  background: #E2AF7C; 
+  background: #FCCAD5; 
   transition: all .5s ease;
 }
 
@@ -62,60 +79,44 @@ body {
       width: 100%;
 }
 
+/*Carrossel banners */
 
-
-.lead{
-  margin-top: px !important;
-}
-
-/* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
 
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-/* rtl:end:ignore */
-
-/* sabores */
 .carousel-inner {
   padding: 1em;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
+  background-color: #7e7d7d;
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/*Carrossel sabores */
 
 .card-wrapper {
   display: flex;
@@ -139,13 +140,6 @@ body {
   transition: 0.5s;
 }
 
-
-
-.card {
-  margin: 0.5em;
-  width: calc(100%/3);
-}
-
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
@@ -157,7 +151,6 @@ body {
   font-size: 24px;
   color: gray;
   font-weight: bold;
-
 }
 
 .card-wrapper a:hover {
@@ -181,79 +174,9 @@ body {
   margin-right: 10%;
 }
 
-/* Featurettes
-------------------------- */
-
-.sacola h2, a{
-  font-size: 36px;
-  text-decoration: none;
-  color: #5a5a5a;
-}
-
-.sacola h2:hover{
-  color: #E2AF7C;
-}
-
-.sacola-icon{
-
-  align-items: center;
-  text-align: center;
-  margin-bottom: 30px;
-  
-}
-
-
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
-}
-
-
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
   margin-top: 5rem;
-}
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-/*acho que pode apagar essa parte 40em = 200px tamanho q n existe*/
-@media (min-width: 40em) {
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-/*acho que pode apagar essa parte 40em = 200px tamanho q n existe*/
-
-
-.container-fluid {
-  padding: 0%;
-}
-
-.imgemail {
-  padding-left: 14%;
-  gap: 0.4rem;
-}
-
-.imgemail span {
-  font-size: 16px;
-}
-
-.icones {
-  padding-right: 4%;
 }
 
 .btn-outline-success {
@@ -268,20 +191,44 @@ body {
   border-color: gray;
 }
 
+/* favoritos e carrinho */
+
+.sacola h2, a{
+  font-size: 36px;
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+.sacola h2:hover{
+  color: #E2AF7C;
+}
+
+.sacola-icon{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.comprar h2{
+  margin-top: 1%;
+}
+
+
+/* Mais vendidos*/
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
 .btnfav{
   width: 14%;
   height: 9%;
  border-radius: 70%;
  margin-left:83%;
- background-color: #E2AF7C;
- border-color: #E2AF7C;
+ background-color: #FCD8CA;
+ border-color: #FCD8CA;
  margin-bottom: -16px;
- 
-
-  
 }
-
-
 
 .btnfav:hover{
   background-color: #000;
@@ -306,48 +253,9 @@ body {
   margin: 0.5em;
 }
 
-.btn-outline-success:hover {
-  color: #E2AF7C;
-  background-color: white;
-  border-color: #E2AF7C;
-}
-
 .featurette-divider {
   margin-top: 100PX;
   margin-bottom: 20px;
-}
-
-
-.form-control {
-  border-radius: 20px;
-  border: #FFE2CB solid 1px;
-  color: #000;
-  position: relative;
-  width: 100%;
-  font-size: 14px;
-}
-
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
 }
 
 .bi {
@@ -355,22 +263,20 @@ body {
   fill: currentColor;
 }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
+/*footer e copyright*/
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
+.voltartopo a{
+  font-size: 16px;
+  margin-right: 20px;
   text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+ }
+ 
+ .voltartopo a:hover{
+   color: #E2AF7C;
+ }
+
+#logorodape {
+  width: 200px;
 }
 
 .footer {
@@ -395,20 +301,6 @@ body {
 .footer img {
   width: 100px;
 }
-
-.voltartopo a{
- font-size: 16px;
- margin-right: 20px;
- text-align: center;
- 
-}
-
-.voltartopo a:hover{
-
-  color: #E2AF7C;
-}
-
-/*footer -copyright*/
 
 .copyright {
   margin-top: 80px;
@@ -435,9 +327,7 @@ body {
 
 /*footer fim*/
 
-#logorodape {
-  width: 200px;
-}
+
 
 .featurette-divider p,
 h2 {
@@ -460,10 +350,6 @@ h2 {
   margin-bottom: -14%
 }
 
-.destaques .col-lg-4 {
-  background-color: #FACBA4;
-}
-
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, .1);
@@ -483,26 +369,7 @@ h2 {
   fill: currentColor;
 }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
 
-.comprar h2{
-  margin-top: 1%;
-}
 
 
