@@ -3,7 +3,7 @@
     max-width: 1050px;
     width: 70%;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .cadastro form {
@@ -41,7 +41,7 @@
     font-weight: bolder;
 }
 
-.cadastro button{
+.cadastro button {
     background-color: #E2AF7C;
     border: none;
     width: 50%;
@@ -169,7 +169,8 @@
 .content .input-box input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="password"]:valid,
-input[type="date"]:valid {
+input[type="date"]:valid,
+input[type="number"]:valid {
     border-color: rgb(129, 194, 129);
 }
 
@@ -188,7 +189,8 @@ input[type="date"]:valid {
 .content .input-box input[type="text"]:invalid,
 input[type="email"]:invalid,
 input[type="password"]:invalid,
-input[type="date"]:invalid {
+input[type="date"]:invalid,
+input[type="number"]:invalid {
     border-color: rgb(196, 13, 13);
 
 }
@@ -207,20 +209,19 @@ input[type="date"]:invalid {
     border-radius: 10px;
 }
 
-.cadastro .modal-footer button a{
+.cadastro .modal-footer button a {
     color: #fff;
     font-size: 24px;
 }
 
-.cadastro .modal-footer button a:hover{
+.cadastro .modal-footer button a:hover {
     color: #fff;
 }
 
-.cadastro form button:hover{
+.cadastro form button:hover {
     background-color: #636c72;
 }
 
-.form-row{
+.form-row {
     display: flex;
 }
-
