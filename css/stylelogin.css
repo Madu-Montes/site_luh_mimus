@@ -86,7 +86,7 @@
     background: #fff;
 }
 
-.content .input-box input[type="submit"] {
+.content .input-box a {
     color: #fff;
     background: #F07882;
     width: 100%;
@@ -97,6 +97,7 @@
     cursor: pointer;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .content .input-box input[type="reset"] {
