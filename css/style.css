@@ -118,6 +118,11 @@ body {
   user-select: none;
 }
 
+
+.sabores .card a{
+  background-color: cadetblue;
+}
+
 /*Carrossel sabores */
 
 .card-wrapper {
