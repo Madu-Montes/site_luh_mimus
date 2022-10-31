@@ -84,7 +84,6 @@
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    
     background-color: #FCCAD5;
     height: 80%;
 }
@@ -205,4 +204,23 @@
 
 .single_course:hover h4 a {
     color:  #E4ACB8;
+}
+
+.course_content .btns-cardapio{
+    width: 100%;
+}
+
+.course_content .btns-cardapio a{
+    text-align: center;
+    width: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.course_content .btns-cardapio button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
