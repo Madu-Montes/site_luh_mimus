@@ -210,18 +210,13 @@
     width: 100%;
 }
 
+
 .course_content .btns-cardapio a{
-    text-align: center;
-    width: 8%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
+    width: 50%;
 }
 
-.course_content .btns-cardapio button{
+.course_content .btns-cardapio a{
     display: block;
-    
     margin-right: 60%;
 }
 
