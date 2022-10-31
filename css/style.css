@@ -12,7 +12,7 @@ body {
 
 .form-control {
   border-radius: 20px;
-  border: #FACBA4 solid 1.5px;
+  border:  #FCCAD5 solid 1.8px;
   color: #000;
   position: relative;
   width: 100%;
@@ -35,10 +35,10 @@ body {
   padding-right: 4%;
 }
 
-.btn-outline-success:hover {
-  color: #FACBA4;
-  background-color: white;
-  border-color: #FACBA4;
+.btn-outline:hover {
+  color: white;
+  background-color:  #FCCAD5;
+  border-color: #FCCAD5;
 }
 
 .snip1143 * {
@@ -119,9 +119,7 @@ body {
 }
 
 
-.sabores .card a{
-  background-color: cadetblue;
-}
+
 
 /*Carrossel sabores */
 
@@ -156,7 +154,7 @@ body {
   background-color: white;
   border: none;
   font-size: 24px;
-  color: gray;
+  color:black;
   font-weight: bold;
 }
 
@@ -164,15 +162,15 @@ body {
   background-color: white;
   border: none;
   font-size: 24px;
-  color: #E2AF7C;
+  color:  #E4ACB8;
 }
 
 .sabores #carouselExampleControls {
-  background-color: #ECE6DE;
+  background-color;
 }
 
 .sabores #carouselExampleControls a {
-  background-color: #ECE6DE;
+  background-color: white;
 }
 
 .sabores button {
@@ -186,17 +184,20 @@ body {
   margin-top: 5rem;
 }
 
-.btn-outline-success {
+.btn-outline {
   border-radius: 80%;
   color: black;
   border-color: black;
 }
 
-.btn-outline-success {
+.btn-outline {
   border-radius: 80%;
   color: gray;
   border-color: gray;
 }
+
+
+
 
 /* favoritos e carrinho */
 
@@ -238,8 +239,8 @@ h2{
   height: 9%;
   border-radius: 70%;
   margin-left: 83%;
-  background-color: #FCD8CA;
-  border-color: #FCD8CA;
+  background-color:  #E4ACB8;
+  border-color:  #E4ACB8;
   margin-bottom: -16px;
 }
 
@@ -253,6 +254,9 @@ h2{
   border-radius: 8%;
 }
 
+.bi-envelope-fill{
+  color:  #FCCAD5;
+}
 .maisvendidostitulo {
   margin-left: 15%;
 }
@@ -295,7 +299,7 @@ h2{
 
 .footer {
   list-style-type: none;
-  background-color: #ECE6DE;
+  background-color: #f5d7df;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
@@ -319,7 +323,7 @@ h2{
 .copyright {
   margin-top: 80px;
   padding-bottom: 20px;
-  background-color: #ECE6DE;
+  background-color: #f5d7df ;
 
 }
 
