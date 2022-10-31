@@ -2,20 +2,20 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastre-se | Confeitaria Luh Mimu's</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastre-se | Confeitaria Luh Mimu's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/stylecadastro.css">
-  <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylecadastro.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
@@ -26,9 +26,11 @@
                 <div class="container-fluid justify-content-between">
                     <div class="d-flex">
                         <a class="navbar-brand me-2 mb-1 d-flex align-items-center imgemail" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg>
                             <span class="email">luhmimuss@outlook.com</span>
                         </a>
                     </div>
@@ -136,23 +138,9 @@
                         <div class="topic">Cadastrar-se</div>
 
                         <div class="input-box">
-                            <input type="text" name="nome" required maxlength="256">
-                            <span></span>
-                            <label>Nome completo</label>
-                            <input type="hidden" name="_captcha" value="false">
-                        </div>
-
-                        <div class="input-box">
                             <input type="email" name="email" required maxlength="256">
                             <span></span>
                             <label>Email</label>
-                            <input type="hidden" name="_captcha" value="false">
-                        </div>
-
-                        <div class="input-box">
-                            <input type="text" name="celular" placeholder="(ddd) 00000-0000" required maxlength="256">
-                            <span></span>
-                            <label>Celular</label>
                             <input type="hidden" name="_captcha" value="false">
                         </div>
 
@@ -162,37 +150,44 @@
                             <label>Senha</label>
                             <input type="hidden" name="_captcha" value="false">
                         </div>
-                       <!--  Modal trigger button  -->
-                       <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-                         Salvar
-                       </button>
-                       
-                       <!-- Modal Body-->
-                       <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+
+                        <div class="input-box">
+                            <input type="password" name="senha" required maxlength="256">
+                            <span></span>
+                            <label>Confirme a senha</label>
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+                        <!--  Modal trigger button  -->
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modalId">
+                            Salvar
+                        </button>
+
+                        <!-- Modal Body-->
+                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
                                     <div class="modal-header">
-                                            <h5 class="modal-title" id="modalTitleId">Bem vindo(a)</h5>
-                                        </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        Cadastro realizado com sucesso! Conclua o seu perfil para realizar compras
+                                        <h5 class="modal-title" id="modalTitleId">Bem vindo(a)</h5>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button><a href="./perfil.html">Perfil</a></button>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            Cadastro realizado com sucesso!<br>Conclua o seu perfil para realizar compras ;)
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button><a href="./perfil.html">Perfil</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
-                       <hr>
+                        <hr>
                         <h1>ou aqui fica a api da google e facebook</h1>
                     </form>
                 </div>
             </div>
         </div>
-
-
 
         <!--start footer-->
         <footer>
@@ -267,4 +262,5 @@
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
