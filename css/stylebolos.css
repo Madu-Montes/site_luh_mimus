@@ -221,6 +221,11 @@
 
 .course_content .btns-cardapio button{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin-right: 60%;
+}
+
+.btn_fav .bi-heart{
+    margin-left:55%;
+    margin-top: -12%;
 }
