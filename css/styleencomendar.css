@@ -1,0 +1,60 @@
+.encomendar{
+    width: 100%;
+}
+
+.encomendar fieldset{
+    width: 60%;
+    margin-left: 10%;
+    padding: 5px 5px 5px 5px;
+    background-color: cornflowerblue;
+}
+
+.container_form .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    background-color: crimson;
+}
+
+.encomendar .topic{
+    color: black;
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+form h1{
+    color: #F07882;
+    font-size: 30px;
+}
+
+.image-box {
+    max-width: 55%;
+}
+
+.image-box img {
+    width: 70%;
+    background-color: blueviolet;
+    margin-left: 23%;
+}
+
+.content .message-box {
+    min-height: 100px;
+    position: relative;
+  }
+  
+  .content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    resize: none;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .content .message-box textarea:focus {
+    border-color: #F07882 !important;
+  }
+ 
