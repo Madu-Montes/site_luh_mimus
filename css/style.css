@@ -12,11 +12,23 @@ body {
 
 .form-control {
   border-radius: 20px;
-  border:  #FCCAD5 solid 1.8px;
+  border:  rgba(0, 0, 0, 0.37) solid 1.8px;
   color: #000;
   position: relative;
   width: 100%;
   font-size: 14px;
+}
+
+.btn-outline {
+  color: #000;
+  background-color:  #FCCAD5;
+  border-color: #FCCAD5;
+}
+
+.btn-outline:hover {
+  color: white;
+  background-color:  #FCCAD5;
+  border-color: #FCCAD5;
 }
 
 .header-topo .imgemail {
@@ -35,10 +47,11 @@ body {
   padding-right: 4%;
 }
 
-.btn-outline:hover {
+.header-topo .icones a:hover {
   color: white;
   background-color:  #FCCAD5;
   border-color: #FCCAD5;
+  border-radius: 20px;
 }
 
 .snip1143 * {
