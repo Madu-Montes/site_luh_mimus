@@ -132,15 +132,15 @@
       </div>
     </div>
     <!--end header-->
-            <div class="container_form">
+             <div class="container_form">
                 <div class="content">
                     <div class="image-box">
                         <img src="../images/contato.png" alt="">
                     </div>
-                    <form action="https://formsubmit.co/freitasgabrielly638@gmail.com" method="POST">
+                    <form action="../php/contato.php" method="POST" name="form">
                         <div class="topic">FALE CONOSCO!</div>
                         <div class="input-box">
-                            <input type="text" name="name" required minlength="2">
+                            <input type="text" name="nome" required minlength="2">
                             <span></span>
                             <label>Nome completo</label>
                         </div>
@@ -152,7 +152,7 @@
                             <input type="hidden" name="_captcha" value="false">
                         </div>
                         <div class="message-box">
-                            <textarea class="form-control" rows="10" placeholder="Sua mensagem" name="message" required
+                            <textarea class="form-control" rows="10" placeholder="Sua mensagem" name="mensagem" required
                                 minlength="2"></textarea>
                             <span></span>
                         </div>
