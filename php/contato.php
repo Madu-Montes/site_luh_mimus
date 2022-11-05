@@ -1,5 +1,7 @@
 <?php
+
   //Variáveis
+  
   $nome = $_POST['nome'];
   $email = $_POST['email'];
   $mensagem = $_POST['mensagem'];
@@ -14,11 +16,12 @@
       <p><b>Mensagem: </b>$mensagem</p>
       <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
     </html>
-  ";
+    ";
   
   //Emails para quem será enviado o formulário
-  //$destino = "tccdsluhmimu.2022@gmail.com";
-  $destino = "yasmin.boaventura2004@gmail.com";
+
+  //$destino = "yasmin.boaventura2004@gmail.com"; 
+  $destino = "tccdsluhmimu.2022@gmail.com";
   $assunto = "Contato pelo Site Luh Mimu's";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
@@ -29,5 +32,5 @@
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
   
-  //echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+  echo "<meta http-equiv='refresh' content='5;URL=../html/contato.html'>";
 ?>
