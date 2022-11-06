@@ -230,6 +230,12 @@ a {
 }
 
 
+.col-md-5 a{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+
 /* Mais vendidos*/
 
 h2{
@@ -349,10 +355,6 @@ h2{
 .copyright a:hover {
   color: #FACBA4;
 }
-
-/*footer fim*/
-
-
 
 .featurette-divider p,
 h2 {

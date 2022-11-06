@@ -238,11 +238,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .header-topo .d-flex .imgemail .email {
+  .header-topo .d-flex svg{
     display: none;
   }
 
-  .header-topo .d-flex .imgemail img {
+  .header-topo .d-flex span{
     display: none;
   }
 
@@ -287,6 +287,12 @@
 
   .snip1143 li:hover:before {
     width: 10%;
+  }
+
+  .maisvendidos .card{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .login form {
