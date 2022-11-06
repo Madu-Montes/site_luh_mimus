@@ -9,6 +9,22 @@
   }
 }
 
+.banners .slide1 .carousel-item {
+  background-image: url(../images/slide1.png);
+  
+}
+
+.banners .slide2 .carousel-item {
+  background-image: url(../images/slide2.png);
+  
+}
+
+.banners .slide3 .carousel-item {
+  background-image: url(../images/slide3.png);
+  
+}
+
+
 @media (min-width: 1343px) and (max-width: 1399px) {
   .owl-stage-outer {
     margin-left: 5%;
@@ -238,11 +254,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .header-topo .d-flex svg{
+  .header-topo .d-flex .imgemail .email {
     display: none;
   }
 
-  .header-topo .d-flex span{
+  .header-topo .d-flex .imgemail img {
     display: none;
   }
 
@@ -262,7 +278,7 @@
     background-color: #000000;
   }
 
-  .carousel-item active img {
+  .banners .carousel-item {
     background-image: url(../images/bolobrigadeiro.jpg);
   }
 
@@ -287,12 +303,6 @@
 
   .snip1143 li:hover:before {
     width: 10%;
-  }
-
-  .maisvendidos .card{
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .login form {
