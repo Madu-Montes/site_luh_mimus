@@ -1,5 +1,5 @@
 <?php
-include'protect.php';
+
 
 if(!isset($_SESSION)) {
     session_start();
@@ -7,4 +7,4 @@ if(!isset($_SESSION)) {
 
 session_destroy();
 
-header("Location: ../html/encomendar.html");
+header("Location: ../index.html");

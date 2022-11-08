@@ -1,6 +1,8 @@
 <?php
 include'conn_banco.php';
 
+
+
 if (isset($_POST['email']) || isset($_POST['senha'])){
     
     if(strlen($_POST['email']) == 0){
@@ -10,29 +12,32 @@ if (isset($_POST['email']) || isset($_POST['senha'])){
         echo"Prencha o campo senha";
 
     }else{
+        
+        $login = $_POST['email'];
+        $senha = $_POST['senha'];
 
-        $email = $sql->real_scape_string($_POST['email']);
-        $senha = $sql->real_scape_string($_POST['senh']);
+        $sql_logar = $sql->query("SELECT * FROM User_Cdst_Site WHERE email_UserCdstSite = '$login' AND senha_UserCdstSite = '$senha'");
+        
 
-        $sql_logar = "SELECT * FROM User_Cdst_Site WHERE email_UserCdstSite = '$email' AND senha_UserCdstSite = '$senha'";
-        $sql_query = $sql->query($sql_logar) or die("Falha na execução do código SQL: " . $sql->error);
+        $qtd = $sql_logar->num_rows;
 
-        $qtd = $sql_query->num_rows;
+        if($qtd == 1){
+        
+            $usuario = $sql_logar->fetch_assoc();
 
-        $if($qtd == 1){
-            $usuario = $sql_query->fetch_assoc();
 
             if(!isset($_SESSION)){
                 session_start();
             }
 
-            $_SESSION['id_UserCdstSite'] = $usuario['id_UserCdstSite'];
-            $_SESSION['nome_UserCdstSite'] = $usuario['nome_UserCdstSite'];
+            
+            $_SESSION['email'] = $email;
+            $_SESSION['login'] = $senha;
 
-            header(Location: painel.php);
+            header("Location: painel.php");
 
         }else {
-            echo"Falha ao logar! Email pu senha incorretos!";
+            echo"Falha ao logar! Email ou senha incorretos!";
         }
 
     }
