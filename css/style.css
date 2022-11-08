@@ -108,8 +108,13 @@ body {
   height: 32rem;
 }
 
-.carousel-inner {
+.sabores .carousel-inner {
   padding: 1em;
+}
+
+.sabores img:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
 }
 
 .carousel-control-prev,
@@ -230,6 +235,17 @@ a {
 }
 
 
+.col-md-5 a{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.container_form a{
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+
 /* Mais vendidos*/
 
 h2{
@@ -297,7 +313,7 @@ h2{
 }
 
 .voltartopo a:hover {
-  color: #E2AF7C;
+  color:  #E4ACB8;;
 }
 
 #logorodape {
@@ -347,12 +363,8 @@ h2{
 }
 
 .copyright a:hover {
-  color: #FACBA4;
+  color:  #E4ACB8;;
 }
-
-/*footer fim*/
-
-
 
 .featurette-divider p,
 h2 {

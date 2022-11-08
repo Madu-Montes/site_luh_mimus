@@ -9,6 +9,22 @@
   }
 }
 
+.banners .slide1 .carousel-item {
+  background-image: url(../images/slide1.png);
+  
+}
+
+.banners .slide2 .carousel-item {
+  background-image: url(../images/slide2.png);
+  
+}
+
+.banners .slide3 .carousel-item {
+  background-image: url(../images/slide3.png);
+  
+}
+
+
 @media (min-width: 1343px) and (max-width: 1399px) {
   .owl-stage-outer {
     margin-left: 5%;
@@ -262,7 +278,7 @@
     background-color: #000000;
   }
 
-  .carousel-item active img {
+  .banners .carousel-item {
     background-image: url(../images/bolobrigadeiro.jpg);
   }
 
