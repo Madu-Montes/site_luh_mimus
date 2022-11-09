@@ -19,6 +19,10 @@ body {
   font-size: 14px;
 }
 
+.dropdown-item:active{
+
+  background-color: #FCCAD5;
+}
 .header-topo .dropdown-item{
 
 font-size: 15px;
