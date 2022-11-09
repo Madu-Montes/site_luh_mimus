@@ -9,7 +9,18 @@ body {
 
 /* MENU
 -------------------------------------------------- */
-
+#logo{
+  margin-left: 10%;
+  width:15%;
+} 
+.navbar-nav li{
+  float: left;
+  margin-left: -5%;
+  padding: 10px;
+  }
+  .d-flex{
+    margin-left: 6%;
+  }
 .form-control {
   border-radius: 20px;
   border:  rgba(0, 0, 0, 0.37) solid 1.8px;
@@ -19,14 +30,6 @@ body {
   font-size: 14px;
 }
 
-.dropdown-item:active{
-
-  background-color: #FCCAD5;
-}
-.header-topo .dropdown-item{
-
-font-size: 15px;
-}
 .btn-outline {
   color: #000;
   border-color: #FCCAD5;
