@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login | Confeitaria Luh Mimu's</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+  <script src="../js/main.js"></script>
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
@@ -165,7 +170,7 @@
                             <input class="btn btn-primary" type="submit" value="Entrar">
                         </div>
                         <hr>
-                        <h1>ou aqui fica a api da google e facebook</h1>
+                        <div id="buttonDiv"></div> 
                         <div class="novouser-btn">
                             <a href="cadastro.html">Não tem uma conta?<b> Cadastre-se</b></a>
                         </div>
