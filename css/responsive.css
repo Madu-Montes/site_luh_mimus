@@ -1,4 +1,8 @@
 @media (min-width: 1400px) and (max-width: 2000px) {
+  #logo {
+    margin-left: 0%;
+  }
+
   .owl-stage-outer {
     margin-left: 11%;
     align-items: center;
@@ -11,17 +15,17 @@
 
 .banners .slide1 .carousel-item {
   background-image: url(../images/slide1.png);
-  
+
 }
 
 .banners .slide2 .carousel-item {
   background-image: url(../images/slide2.png);
-  
+
 }
 
 .banners .slide3 .carousel-item {
   background-image: url(../images/slide3.png);
-  
+
 }
 
 
@@ -330,7 +334,7 @@
     width: 70%;
   }
 
-  .single_course .course_content{
+  .single_course .course_content {
     height: 350px;
   }
 
