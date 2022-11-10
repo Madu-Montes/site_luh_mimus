@@ -9,11 +9,6 @@ body {
 
 /* MENU
 -------------------------------------------------- */
-#logo{
-  margin-left: 10%;
-  width: 150px;
-} 
-
 .navbar-nav li{
   float: left;
   margin-left: -5%;
