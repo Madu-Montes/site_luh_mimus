@@ -1,3 +1,23 @@
+label#upimg{
+    background-color: #F07882;
+    color: #fff;
+    font: 400;
+    font-size: 20px;
+    border: solid 0px;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#finEncon{
+    color: white;
+    font-size: 25px;
+    background-color: #F07882;
+    font-weight: 500;
+    padding: 10px;
+    border: black solid 0px;
+    border-radius: 20px;
+}
 .encomendar{
     width: 100%;
 }
@@ -6,7 +26,7 @@
     width: 60%;
     margin-left: 10%;
     padding: 5px 5px 5px 5px;
-    background-color: cornflowerblue;
+    background-color: #fff;
 }
 
 .container_form .content{
@@ -15,7 +35,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 20px;
-    background-color: crimson;
+    background-color: #fff;
 }
 
 .encomendar .topic{
@@ -27,6 +47,7 @@
 form h1{
     color: #F07882;
     font-size: 30px;
+    margin-bottom: px;
 }
 
 .image-box {
@@ -35,7 +56,7 @@ form h1{
 
 .image-box img {
     width: 70%;
-    background-color: blueviolet;
+    background-color: #fff;
     margin-left: 23%;
 }
 
