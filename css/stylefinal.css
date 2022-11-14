@@ -59,6 +59,7 @@ button{
     margin: 0;
     font-size: 25px;
 }
+
 div#fundoPreto{
     position: fixed;
     height: 100%;
@@ -72,20 +73,37 @@ div#fundoPreto{
 
 div#formaPagamento{
     border-radius: 20px;
-    width: 30%;
+    width: 25%;
     background-color: white;
     border: solid black 2px;
     position: fixed;
     top: 35%;
     left: 35%;
     text-align: center;
+    display: none;
 
 }
 div#formaPagamento h1{
     font-size: 30px;
     color: black;
 }
-.formas
+.formas{
+    width: 80%;
+    height: 38px;
+    border: solid #949494 1px;
+    border-radius: 7px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.formas p {
+    color: black;
+    font-weight: 700;
+    font-size: 17.5px;
+    margin-top: 7px;
+    display: inline-block;
+}
 .addCartao{
     font-size: 25px;
     padding: 5px;
@@ -99,4 +117,21 @@ div#formaPagamento h1{
     color: white;
     background-color: #E6B07A;
     border-radius: 8px;
+}
+
+#troco{
+    border-radius: 20px;
+    width: 25%;
+    background-color: white;
+    border: solid black 2px;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    display: none;
+}
+
+#troco h1{
+    font-size: 25px;
+    color: black;
 }
