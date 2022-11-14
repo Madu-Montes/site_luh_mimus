@@ -173,12 +173,16 @@
             <hr>
             <p class="finalLado">Subtotal</p> <p class="finalLado" style="float: right;">Valor do Subtotal</p>
             <br>
+            <div id="valorTroco" style="display: none;">
+                <p class="finalLado">troco</p> <p class="finalLado" style="float: right;" id="trocoTotal">Valor do troco</p>
+                <br>
+            </div>
             <div id="entregaValor"><p class="finalLado">Entrega</p> <p class="finalLado" style="float: right;">Valor da entrega</p>
             <br>
                  </div>
             <p class="finalLado"><strong>Total</strong></p> <p class="finalLado" style="float: right;"><strong>Valor do Total</strong></p>
             <hr>
-            <p class="finalLado">Forma de Entrega</p> <button class="finalLado" style="float: right;">Escolher</button>
+            <p class="finalLado">Forma de Entrega</p> <button class="finalLado" style="float: right;" onclick="pagamento()" id="escolher">Escolher</button>
             <br>
             <p class="finalLado">CPF/CNPJ na nota</p> <input class="finalLado" type="checkbox" style="float: right; margin-right: 5px;">
              <br>
@@ -186,8 +190,29 @@
             <a href="acomPedido.html" id="finalLink">Finalizar Pedido</a>
                 </div>
         </div>
-        <div id="fundoPreto">
+        <div id="fundoPreto" onclick="fecha()">
             
+        </div>
+        <div id="formaPagamento">
+            <h1>Pagamento</h1>
+            <br>
+            <div class="formas" onclick="cartao()">
+                <p>Cartão</p>
+            </div>
+            <div class="formas" onclick="dinheiro()">
+                <p>Dinheiro</p>
+            </div>
+            <a href="adcionarCartao.html" class="addCartao">Adicionar Cartão</a>
+            <br>
+            <br>
+        </div>
+        <div id="troco">
+            <h1>Digite Valor em Mãos</h1>
+            <br>
+            <input type="number" placeholder="R$ 200,00" id="valorEmMao">
+            <br><br>
+            <input type="button" value="Confirmar" onclick="troco()">
+            <br><br>
         </div>
         <footer>
             <div class="footer">
