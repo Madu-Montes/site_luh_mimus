@@ -32,8 +32,9 @@ valor_anuncios FLOAT NOT NULL,
 desc_anuncios VARCHAR(1000) NOT NULL,
 img_anuncios VARCHAR(50) NOT NULL,
 data_encomenda DATE NOT NULL,
-PRIMARY KEY (id_anuncios)
-FOREIGN KEY (id_categorias) REFERENCES categorias(id_categorias));
+PRIMARY KEY (id_anuncios),
+FOREIGN KEY (id_categorias) REFERENCES categorias(id_categorias) ON DELETE CASCADE ON UPDATE CASCADE
+);
 
 
 CREATE TABLE encomenda(
