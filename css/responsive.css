@@ -11,17 +11,17 @@
 
 .banners .slide1 .carousel-item {
   background-image: url(../images/slide1.png);
-  
+
 }
 
 .banners .slide2 .carousel-item {
   background-image: url(../images/slide2.png);
-  
+
 }
 
 .banners .slide3 .carousel-item {
   background-image: url(../images/slide3.png);
-  
+
 }
 
 
@@ -93,10 +93,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .header-topo .d-flex .imgemail .email {
+  .d-flex a svg{
     display: none;
   }
-
+  .d-flex a span{
+    display: none;
+  }
+  
   .header-topo .d-flex .imgemail img {
     display: none;
   }
@@ -170,11 +173,10 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .header-topo .d-flex .imgemail .email {
+  .d-flex a svg{
     display: none;
   }
-
-  .header-topo .d-flex .imgemail img {
+  .d-flex a span{
     display: none;
   }
 
@@ -254,11 +256,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .header-topo .d-flex .imgemail .email {
+  .d-flex a svg{
     display: none;
   }
-
-  .header-topo .d-flex .imgemail img {
+  .d-flex a span{
     display: none;
   }
 
@@ -330,7 +331,7 @@
     width: 70%;
   }
 
-  .single_course .course_content{
+  .single_course .course_content {
     height: 350px;
   }
 

@@ -9,21 +9,19 @@ body {
 
 /* MENU
 -------------------------------------------------- */
-#logo{
-  margin-left: 10%;
-  width:15%;
-} 
-.navbar-nav li{
+.navbar-nav li {
   float: left;
   margin-left: -5%;
   padding: 10px;
-  }
-  .d-flex{
-    margin-left: 6%;
-  }
+}
+
+.d-flex {
+  margin-right: 4%;
+}
+
 .form-control {
   border-radius: 20px;
-  border:  rgba(0, 0, 0, 0.37) solid 1.8px;
+  border: rgba(0, 0, 0, 0.37) solid 1.8px;
   color: #000;
   position: relative;
   width: 100%;
@@ -37,7 +35,7 @@ body {
 
 .btn-outline:hover {
   color: white;
-  background-color:  #FCCAD5;
+  background-color: #FCCAD5;
   border-color: #FCCAD5;
 }
 
@@ -59,7 +57,7 @@ body {
 
 .header-topo .icones a:hover {
   color: white;
-  background-color:  #FCCAD5;
+  background-color: #FCCAD5;
   border-color: #FCCAD5;
   border-radius: 20px;
 }
@@ -123,7 +121,7 @@ body {
   padding: 1em;
 }
 
-.sabores img:hover{
+.sabores img:hover {
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
 }
@@ -181,7 +179,7 @@ body {
   background-color: white;
   border: none;
   font-size: 24px;
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
@@ -189,7 +187,7 @@ body {
   background-color: white;
   border: none;
   font-size: 24px;
-  color:  #E4ACB8;
+  color: #E4ACB8;
 }
 
 .sabores #carouselExampleControls a {
@@ -246,12 +244,12 @@ a {
 }
 
 
-.col-md-5 a{
+.col-md-5 a {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.452);
 }
 
-.container_form a{
+.container_form a {
   font-size: 8px;
   color: rgba(0, 0, 0, 0.452);
 }
@@ -259,7 +257,7 @@ a {
 
 /* Mais vendidos*/
 
-h2{
+h2 {
   font-size: 35px;
   color: black;
 }
@@ -273,8 +271,8 @@ h2{
   height: 9%;
   border-radius: 70%;
   margin-left: 83%;
-  background-color:  #E4ACB8;
-  border-color:  #E4ACB8;
+  background-color: #E4ACB8;
+  border-color: #E4ACB8;
   margin-bottom: -16px;
 }
 
@@ -288,9 +286,10 @@ h2{
   border-radius: 8%;
 }
 
-.bi-envelope-fill{
-  color:  #FCCAD5;
+.bi-envelope-fill {
+  color: #FCCAD5;
 }
+
 .maisvendidostitulo {
   margin-left: 15%;
 }
@@ -324,7 +323,8 @@ h2{
 }
 
 .voltartopo a:hover {
-  color:  #E4ACB8;;
+  color: #E4ACB8;
+  ;
 }
 
 #logorodape {
@@ -357,7 +357,7 @@ h2{
 .copyright {
   margin-top: 80px;
   padding-bottom: 20px;
-  background-color: #f5d7df ;
+  background-color: #f5d7df;
 
 }
 
@@ -374,7 +374,8 @@ h2{
 }
 
 .copyright a:hover {
-  color:  #E4ACB8;;
+  color: #E4ACB8;
+  ;
 }
 
 .featurette-divider p,
