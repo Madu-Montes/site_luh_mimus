@@ -32,8 +32,9 @@ valor_anuncios FLOAT NOT NULL,
 desc_anuncios VARCHAR(1000) NOT NULL,
 img_anuncios VARCHAR(50) NOT NULL,
 data_encomenda DATE NOT NULL,
-PRIMARY KEY (id_anuncios)
-FOREIGN KEY (id_categorias) REFERENCES categorias(id_categorias));
+PRIMARY KEY (id_anuncios),
+FOREIGN KEY (id_categorias) REFERENCES categorias(id_categorias) ON DELETE CASCADE ON UPDATE CASCADE
+);
 
 
 CREATE TABLE encomenda(
@@ -46,6 +47,30 @@ data_encomenda DATE NOT NULL,
 PRIMARY KEY (id_encomenda));
 
 
+CREATE TABLE Perfil_cdst(
+cdst_perf_id BIGINT AUTO_INCREMENT, 
+id_UserCdstSite SMALLINT,
+cdst_perf_nome VARCHAR(50) NOT NULL,
+cdst_perf_cpf CHAR(14) NOT NULL,
+cdst_perf_dtn DATE NOT NULL,
+cdst_perf_rua VARCHAR(50) NOT NULL,
+cdst_perf_numero VARCHAR(20) NOT NULL,
+cdst_perf_bairro INT NOT NULL,
+cdst_perf_complemeto VARCHAR(50) NOT NULL,
+cdst_perf_celular BIGINT NOT NULL,
+cdst_perf_avatar VARCHAR(50) NOT NULL,
+PRIMARY KEY (cdst_perf_id),
+FOREIGN KEY (id_UserCdstSite) REFERENCES User_Cdst_Site(id_UserCdstSite) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE User_Cdst_Software(
+cdst_sftw_id SMALLINT AUTO_INCREMENT, 
+cdst_sftw_email VARCHAR(50) NOT NULL,
+cdst_sftw_senha VARCHAR(50) NOT NULL,
+cdst_sftw_nome VARCHAR(50) NOT NULL,
+cdst_sftw_user VARCHAR(50) NOT NULL,
+cdst_sftw_cargo VARCHAR(50) NOT NULL,
+PRIMARY KEY (cdst_sftw_id ));
 
 
 

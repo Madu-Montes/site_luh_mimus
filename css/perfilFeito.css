@@ -1,0 +1,95 @@
+.perfil{
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    border: solid #131313 1px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.perfil img{
+    width: 100%;
+    height: 100%;
+}
+
+.menuPerfil{
+    display: flex;
+    justify-content: center;
+}
+
+.menuPerfil a{
+    margin: 50px;
+    text-align: center;
+    color: #131313;
+}
+
+.menuPerfil a:hover{
+    margin: 50px;
+    text-align: center;
+    color: #131313;
+}
+
+.menuPerfil img{
+    width: 200px;
+    height: 200px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menuPerfil a{
+        margin: 40px;
+        text-align: center;
+        color: #131313;
+    }
+
+    .menuPerfil a:hover{
+        margin: 40px;
+        text-align: center;
+        color: #131313;
+    }
+
+    
+
+    .menuPerfil img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .perfil{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: solid #131313 1px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+  
+    .menuPerfil{
+      display: flex;
+     flex-wrap:wrap;
+  }
+
+  .menuPerfil a{
+    margin: 30px;
+    text-align: center;
+    color: #131313;
+}
+
+.menuPerfil a:hover{
+    margin: 30px;
+    text-align: center;
+    color: #131313;
+}
+
+  .menuPerfil img{
+    width: 125px;
+    height: 125px;
+}
+}
