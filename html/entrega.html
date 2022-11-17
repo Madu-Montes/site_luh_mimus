@@ -138,15 +138,62 @@
             <button class="headerButton" id="retirada"><a class="link-header" href="retirada.html">Retirada</a></button>
         </header>
         <div class="finalEntrega">
-            
             <br>
-            <img src="../images/icons/local.png" width="50px" height="50px" class="finalLado"> 
-            <p class="finalLado" id="localizacao">Nome da localização</p>
-            <p class="finalLado" id="alterar" style="float: right; margin-right: 30px; margin-top:7px;">Alterar</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+            <p class="finalLado" id="localizacao">*localização add no cadastro*</p>
+           <!-- Button trigger modal -->
+           <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+             Alterar
+           </button>
+           
+           <!-- Modal -->
+           <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">Alterar Localização</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="mb-3">
+                              <label for="" class="form-label">Rua</label>
+                              <input type="text" class="form-control" placeholder="Rua.: Limoeiro">
+                              <label for="" class="form-label">Número</label>
+                              <input type="number" class="form-control">
+                              <label for="" class="form-label">CEP</label>
+                              <input type="number" class="form-control">
+                              <label for="" class="form-label">Complemento</label>
+                              <input type="text" class="form-control" placeholder="Rua sem saída">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Alterar</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           
+           <script>
+            var modalId = document.getElementById('modalId');
+           
+            modalId.addEventListener('show.bs.modal', function (event) {
+                  // Button that triggered the modal
+                  let button = event.relatedTarget;
+                  // Extract info from data-bs-* attributes
+                  let recipient = button.getAttribute('data-bs-whatever');
+           
+                // Use above variables to manipulate the DOM
+            });
+           </script>
+           
             
             <br><br>
 
-            <input type="date">
+            <h6>*Data da encomenda*</h6>
             
             <br><br>
             
