@@ -1,4 +1,7 @@
 <?php
+
+     //Salvar cadastro com validação 
+
      include'conn_banco.php';
      
      $cpf = $_POST['cpf'];
@@ -9,6 +12,7 @@
      $celular = $_POST['celular'];
      
      $testar = $sql->query("SELECT * FROM User_Cdst_Site WHERE cpf_UserCdstSite = '$cpf'");
+     
      $check = mysqli_num_rows($testar);
  
      if ($check == 1){
