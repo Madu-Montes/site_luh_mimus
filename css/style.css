@@ -55,6 +55,10 @@ body {
   padding-right: 4%;
 }
 
+.breadcrumb-item{
+  font-size: 14px;
+}
+
 .header-topo .icones a:hover {
   color: white;
   background-color: #FCCAD5;
@@ -222,15 +226,9 @@ body {
 
 /* favoritos e carrinho */
 
-.sacola h2,
-a {
-  font-size: 36px;
+.ms-3 a{
   text-decoration: none;
-  color: #5a5a5a;
-}
-
-.sacola h2:hover {
-  color: #FCCAD5;
+  color: #000;
 }
 
 .sacola-icon {
