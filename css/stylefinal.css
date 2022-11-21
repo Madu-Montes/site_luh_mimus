@@ -19,7 +19,7 @@
     background-color: white;
 }
 
-
+a{text-decoration: none;}
 
 .finalEntrega{
     width: 80%;
@@ -162,7 +162,7 @@ div#formaPagamento h1{
 
 #troco{
     border-radius: 20px;
-    width: 25%;
+    width: 400px;
     background-color: white;
     border: solid black 2px;
     position: fixed;
@@ -175,4 +175,40 @@ div#formaPagamento h1{
 #troco h1{
     font-size: 25px;
     color: black;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    p.finalLado{
+        font-size: 18px;
+    }
+    div#formaPagamento{
+        width: 300px;
+        left: 10%;
+        top: 25%;
+    }
+    #troco{
+        left: 10%;
+        width: 300px;
+    }
+}
+
+@media (min-width: 260px) and (max-width: 320px) {
+    p{
+        font-size: 17px;
+    }
+    p.finalLado{
+        font-size: 14px;
+    }
+    div#formaPagamento{
+        width: 250px;
+        left: 5%;
+        top: 25%;
+    }
+    #troco{
+        left: 5%;
+        width: 250px;
+    }
+    #troco h1{
+        font-size: 20px;
+        color: black;
+    }
 }
