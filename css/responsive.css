@@ -93,13 +93,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .d-flex a svg{
+  .d-flex a svg {
     display: none;
   }
-  .d-flex a span{
+
+  .d-flex a span {
     display: none;
   }
-  
+
   .header-topo .d-flex .imgemail img {
     display: none;
   }
@@ -173,10 +174,11 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .d-flex a svg{
+  .d-flex a svg {
     display: none;
   }
-  .d-flex a span{
+
+  .d-flex a span {
     display: none;
   }
 
@@ -256,10 +258,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .d-flex a svg{
+  .d-flex a svg {
     display: none;
   }
-  .d-flex a span{
+
+  .d-flex a span {
     display: none;
   }
 
@@ -278,6 +281,24 @@
     margin-top: -15%;
     background-color: #000000;
   }
+
+  /* aqui vc coloca as imagens reduzidas*/
+  .banners .slide1 .carousel-item {
+    background-image: url(https://images.rappi.com.br/restaurants_logo/logoquati-1588870903036.jpg);
+
+  }
+
+  .banners .slide2 .carousel-item {
+    background-image: url(https://www.shutterstock.com/image-vector/coati-vector-icon-on-white-260nw-1540663016.jpg);
+
+  }
+
+  .banners .slide3 .carousel-item {
+    background-image: url(https://www.i2clipart.com/cliparts/0/2/a/0/12822502a0a5c7b0fc0931e2af651b972c0d9d.png);
+
+  }
+
+  /*aqui acaba*/
 
   .banners .carousel-item {
     background-image: url(../images/bolobrigadeiro.jpg);
