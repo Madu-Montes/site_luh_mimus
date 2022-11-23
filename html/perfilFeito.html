@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/perfilFeito.css">
@@ -20,148 +22,204 @@
 
 <body>
     <div class="container-fluid">
-        <!--start header-->
-        <div class="header-topo">
-            <nav class="navbar navbar-expand-lg navbar-light  back">
-                <div class="container-fluid justify-content-between">
-                    <div class="d-flex">
-                        <a class="navbar-brand me-2 mb-1 d-flex align-items-center imgemail" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                            </svg>
-                            <span class="email">luhmimuss@outlook.com</span>
-                        </a>
-                    </div>
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item me-3 me-lg-1 active">
-                            <a class="nav-link" href="index.html">
-                                <img src="../images/logo.jfif" alt="" width="140px">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row icones">
-                        <li class="nav-item me-3 me-lg-1">
-                            <a class="nav-link d-sm-flex align-items-sm-center" href="./login.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                    class="bi bi-person" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-1">
-                            <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                    class="bi bi-bookmark-heart" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
-                                    <path
-                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-1">
-                            <a class="nav-link d-sm-flex align-items-sm-center" href="./carrinhovazio.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                    class="bi bi-basket3" viewBox="0 0 16 16">
-                                    <path
-                                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <hr>
-        </div>
-        <!--start menu-->
-        <div class="header-menu">
-            <nav class="navbar navbar-expand-sm navbar-light ">
-                <div class="container">
+       
 
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0 snip1143">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="../index.html" aria-current="page"
-                                    data-hover="Home">Home<span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./galeria.html" aria-current="page"
-                                    data-hover="Galeria">Galeria<span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./quemsomos.html" aria-current="page"
-                                    data-hover="Quem somos">Quem
-                                    somos<span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./contato.html" aria-current="page"
-                                    data-hover="Contato">Contato<span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="./produtos.html" id="dropdownId"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    data-hover="Produtos">Produtos</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="./bolos.html" data-hover="Contato">Bolos</a>
-                                    <a class="dropdown-item" href="doces.html" data-hover="Contato">Doces</a>
-                                    <a class="dropdown-item" href=".salgados.html" data-hover="Contato">Salgados</a>
-                                    <a class="dropdown-item" href="./personalizados.html"
-                                        data-hover="Contato">Personalizados</a>
-                                    <a class="dropdown-item" href="./kitfesta.html" data-hover="Contato">Kit Festa</a>
+
+        <section class="py-5 my-5">
+            <div class="container">
+                <h1 class="mb-5">Configurações da Conta</h1>
+                <div class="bg-white shadow rounded-lg d-block d-sm-flex">
+                    <div class="profile-tab-nav border-right">
+                        <div class="p-4">
+                            <div class="img-circle text-center mb-3">
+                                <img src="img/user2.jpg" alt="Image" class="shadow">
+                            </div>
+                            <h4 class="text-center">Nome do Perfil</h4>
+                        </div>
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+                                <i class="fa fa-user text-center mr-1"></i> 
+                                Editar Perfil
+                            </a>
+                            <a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+                                <i class="fa fa-key text-center mr-1"></i> 
+                                Password
+                            </a>
+                            <a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+                                <i class="fa fa-home text-center mr-1"></i> 
+                                Security
+                            </a>
+                            <a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
+                                <i class="fa fa-tv text-center mr-1"></i> 
+                                Application
+                            </a>
+                            <a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+                                <i class="fa fa-bell text-center mr-1"></i> 
+                                Notification
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                            <h3 class="mb-4">Editar Perfil</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Primeiro Nome</label>
+                                          <input type="text" class="form-control" placeholder="Ex: Maria">
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
-                        <form class="d-flex my-2 my-lg-0">
-                            <input class="form-control me-sm-2" type="text" placeholder="O que você procura?">
-                            <button class="btn btn-outline my-2 my-sm-0" type="submit"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg></button>
-                        </form>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Sobrenome</label>
+                                          <input type="text" class="form-control" placeholder=" Ex: Eduarda">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>CPF</label>
+                                          <input type="text" class="form-control" placeholder="000-000-000-00">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Número de Telefone</label>
+                                          <input type="text" class="form-control" placeholder="+00 000000-0000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Endereço</label>
+                                          <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <br>
+                                <button class="btn btn-primary">Atualizar</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                            <h3 class="mb-4">Password Settings</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Old password</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>New password</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Confirm new password</label>
+                                          <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                            <h3 class="mb-4">Security Settings</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Login</label>
+                                          <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Two-factor auth</label>
+                                          <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="recovery">
+                                            <label class="form-check-label" for="recovery">
+                                            Recovery
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+                            <h3 class="mb-4">Application Settings</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="app-check">
+                                            <label class="form-check-label" for="app-check">
+                                            App check
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                                            <label class="form-check-label" for="defaultCheck2">
+                                            Lorem ipsum dolor sit.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+                            <h3 class="mb-4">Notification Settings</h3>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="notification1">
+                                    <label class="form-check-label" for="notification1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium accusamus, neque cupiditate quis
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="notification2" >
+                                    <label class="form-check-label" for="notification2">
+                                        hic nesciunt repellat perferendis voluptatum totam porro eligendi.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="notification3" >
+                                    <label class="form-check-label" for="notification3">
+                                        commodi fugiat molestiae tempora corporis. Sed dignissimos suscipit
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        
-        <div class="perfil">
-            <img src="https://i.pinimg.com/originals/4b/3e/02/4b3e0279e016cc145240de10c8a06fb6.png">
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="menuPerfil">
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/1/1663.png">
-                <br>
-                Editar Perfil
-            </a>
-            <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/4021/4021708.png">
-                <br>
-                Cartões
-            </a>
-            <a href="#">
-                <img src="https://icones.pro/wp-content/uploads/2022/03/historique-icone-de-l-historique-noir.png">
-                <br>
-                Histórico de Pedidos
-            </a>
-            <a href="#">
-                <img src="https://cdn.icon-icons.com/icons2/2518/PNG/512/logout_icon_151219.png">
-                <br>
-                Logoff
-            </a>
-        </div>
-
+            </div>
+        </section>
         
 <!--start footer-->
 <footer>
@@ -243,6 +301,9 @@ integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbs
 crossorigin="anonymous"></script>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/quantidade.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </div>
 </body>
 
