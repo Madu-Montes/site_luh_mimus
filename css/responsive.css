@@ -257,6 +257,27 @@
 
 }
 
+@media (min-width: 340px) and (max-width: 398px){
+
+  .header-topo .icones{
+    margin-bottom: ;
+    margin-left: 180px;
+  }
+
+  .header-topo img{
+
+    margin-bottom: -20px;
+    margin-right: 180px;
+  }
+}
+
+.banners .slide1 .carousel-item {
+  background-image: url(../images/slide1-1.png);
+
+}
+
+
+
 @media (min-width: 320px) and (max-width: 575px) {
   .d-flex a svg {
     display: none;
@@ -284,7 +305,7 @@
 
   /* aqui vc coloca as imagens reduzidas*/
   .banners .slide1 .carousel-item {
-    background-image: url(https://images.rappi.com.br/restaurants_logo/logoquati-1588870903036.jpg);
+    background-image: url(../images/slide1-1.png);
 
   }
 
