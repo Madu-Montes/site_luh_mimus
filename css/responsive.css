@@ -306,12 +306,15 @@
   /* aqui vc coloca as imagens reduzidas*/
   .banners .slide1 .carousel-item {
     background-image: url(../images/slide1-1.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
 
   }
 
   .banners .slide2 .carousel-item {
-    background-image: url(https://www.shutterstock.com/image-vector/coati-vector-icon-on-white-260nw-1540663016.jpg);
-
+    background-image: url(../images/slide2-2.png);
+    background-repeat: no-repeat;
+    background-color:#9499C5;
   }
 
   .banners .slide3 .carousel-item {
