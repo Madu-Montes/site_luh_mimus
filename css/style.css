@@ -39,6 +39,12 @@ body {
   border-color: #FCCAD5;
 }
 
+
+.logo {
+  text-align: center;
+  margin-left: 43%;
+}
+
 .header-topo .imgemail {
   margin-left: 10%;
   padding-left: 14%;
