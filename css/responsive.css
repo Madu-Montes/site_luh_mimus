@@ -91,6 +91,16 @@
 
 
 @media (min-width: 576px) and (max-width: 767px) {
+
+  .logo{
+    margin-left: 10%;
+  }
+
+  .logo img{
+    width: 170px;
+  }
+
+  
   .card-wrapper {
     display: flex;
   }
@@ -166,7 +176,17 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 575px){
+@media (min-width: 381px) and (max-width: 575px){
+  .logo{
+    margin-left: 37%;
+  }
+
+  .icones{
+    margin-left: 38%;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 380px){
 
   .logo{
     margin-left: 30%;
