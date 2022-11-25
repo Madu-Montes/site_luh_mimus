@@ -167,12 +167,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 575px){
-  .d-flex a svg {
-    display: none;
+
+  .logo{
+    margin-left: 30%;
   }
 
-  .d-flex a span {
-    display: none;
+  .icones{
+    margin-left: 30%;
   }
 
   .maisvendidos {
