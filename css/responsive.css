@@ -90,7 +90,17 @@
   
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 415px) and (max-width: 767px) {
+
+  .logo{
+    margin-left: 10%;
+  }
+
+  .logo img{
+    width: 170px;
+  }
+
+  
   .card-wrapper {
     display: flex;
   }
@@ -166,13 +176,24 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 575px){
-  .d-flex a svg {
-    display: none;
+@media (min-width: 381px) and (max-width: 414px){
+  .logo{
+    margin-left: 30%;
   }
 
-  .d-flex a span {
-    display: none;
+  .icones{
+    margin-left: 32%;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 380px){
+
+  .logo{
+    margin-left: 30%;
+  }
+
+  .icones{
+    margin-left: 32%;
   }
 
   .maisvendidos {
