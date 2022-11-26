@@ -230,13 +230,13 @@
 
         <div class="mb-6 pt-4">
             
-            <label class="formbold-form-label-2" for="messageTema">
+            <label class="formbold-form-label-2" for="messageTema" style="font-size: 30px;">
               4º Passo - Tema
             </label>
     
             <div class="formbold-mb-5 formbold-file-input">
-              <input type="file" name="file" id="file" />
-              <label for="file">
+              <input type="file" name="file" id="file"/>
+              <label for="file" class="upload-area">
                 <div>
                   <span class="formbold-drop-file"> Soltar Arquivos Aqui </span>
                   <span class="formbold-or"> ou </span>
@@ -245,13 +245,16 @@
               </label>
             </div>
         </div>
-        
+        <br>
+        <div id="uploaded-files">
+          <img alt=" " src="#" id="blah">
+        </div>
         <br>
         <textarea
           rows="6"
           name="message"
           id="messageTema"
-          class="formbold-form-input" placeholder="Descreva o Tema Para Decorar o Bolo e/ou Mande um Arquivo para Inspiração"
+          class="formbold-form-input" placeholder="Descreva o Tema Para Decorar o Bolo e/ou Mande uma unica imagem para Inspiração"
         ></textarea>
         <br><br>
         <label for="opcOne" class="formbold-form-label">
@@ -382,21 +385,10 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-        function readImage() {
-            if (this.files && this.files[0]) {
-                var file = new FileReader();
-                file.onload = function (e) {
-                    document.getElementById("preview").src = e.target.result;
-                    document.getElementById("preview").style.height = '400px'
-                    document.getElementById("preview").style.width = '600px'
-
-                };
-                file.readAsDataURL(this.files[0]);
-            }
-        }
-        document.getElementById("img-input").addEventListener("change", readImage, false);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+    ></script>
+    <script src="../js/uloadoimg.js">
+       
     </script>
     </div>
 
