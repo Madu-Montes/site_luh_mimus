@@ -40,12 +40,12 @@
     background: #ffffff;
     font-weight: 500;
     font-size: 16px;
-    color: #536387;
+    color: black;
     outline: none;
     resize: none;
   }
   .formbold-form-input:focus {
-    border-color: #6a64f1;
+    border-color: #ffb8c4;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
   }
   .formbold-form-label {
@@ -54,7 +54,7 @@
     font-size: 30px;
     line-height: 24px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .formbold-mb-5 {
@@ -121,16 +121,16 @@
 
   .formbold-btn {
     text-align: center;
-    width: 100%;
+    width: 25%;
     font-size: 16px;
     border-radius: 5px;
     padding: 14px 25px;
     border: none;
     font-weight: 500;
-    background-color: #6a64f1;
+    background-color: #ffb8c4;
     color: white;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .formbold-btn:hover {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
@@ -171,37 +171,6 @@
   color: #ffb8c4;
 }
 
-.formbold-form-input {
-  width: 70%;
-  padding: 12px 24px;
-  border-radius: 6px;
-  border: 1px solid #e0e0e0;
-  background: white;
-  font-weight: 500;
-  font-size: 16px;
-  color: #6b7280;
-  outline: none;
-  resize: none;
-}
-.formbold-form-input:focus {
-  border-color: #6a64f1;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-.formbold-btn {
-  text-align: center;
-  font-size: 16px;
-  border-radius: 6px;
-  padding: 14px 32px;
-  border: none;
-  font-weight: 600;
-  background-color: #6a64f1;
-  color: white;
-  cursor: pointer;
-}
-.formbold-btn:hover {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-}
 
 .formbold--mx-3 {
   margin-left: -12px;
@@ -224,8 +193,8 @@
 .formbold-file-input input {
   opacity: 0;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
 }
 
 .formbold-file-input label {
