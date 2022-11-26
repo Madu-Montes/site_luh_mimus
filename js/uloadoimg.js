@@ -72,3 +72,4 @@ function leUrl(input) {
 $("#file").change(function () { //aqui seto a função no evento de change do campo
     leUrl(this);
 });
+//img pronta
