@@ -25,7 +25,6 @@
 }
 
 
-
 @media (min-width: 1400px) and (max-width: 1919px) {
   .owl-stage-outer {
     margin-left: 10%;
@@ -83,14 +82,41 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px){
+  .maisvendidos {
+    display: flex;
+  }
+
+  .maisvendidos .card {
+    width: 22rem;
+  }
+
+  .escolha img{
+    margin-top: 25%;
+    width: 100%;
+  }
   
+  .escolha a{
+    margin-left: 30%;
+  }
 
 }
 
+@media (min-width: 451px) and (max-width: 767px){
+  .escolha img{
+    margin-left: 10%;
+  }
   
+  .escolha a{
+    margin-left: 30%;
+  }
 
+  .maisvendidos{
+    margin-left: 12%; 
+  }
+  
+}
 
-@media (min-width: 415px) and (max-width: 767px) {
+@media (min-width: 413px) and (max-width: 450px) {
 
   .logo{
     margin-left: 10%;
@@ -100,7 +126,18 @@
     width: 170px;
   }
 
+  .escolha img{
+    margin-left: 10%;
+  }
   
+  .escolha a{
+    margin-left: 30%;
+  }
+
+  .maisvendidos{
+    margin-left: 10%; 
+  }
+
   .card-wrapper {
     display: flex;
   }
@@ -109,10 +146,6 @@
     margin-left: 10%;
     margin-right: 10%;
     background-color: #000000;
-  }
-
-  .maisvendidos {
-    margin-left: 95px;
   }
 
   .menu nav {
@@ -176,7 +209,7 @@
 
 }
 
-@media (min-width: 381px) and (max-width: 414px){
+@media (min-width: 381px) and (max-width: 412px){
   .logo{
     margin-left: 30%;
   }
@@ -184,20 +217,40 @@
   .icones{
     margin-left: 32%;
   }
+  .escolha img{
+    margin-left: 10%;
+  }
+  
+  .escolha a{
+    margin-left: 30%;
+  }
+
+  .maisvendidos{
+    margin-left: 8%;
+  }
+
 }
 
 @media (min-width: 340px) and (max-width: 380px){
 
   .logo{
-    margin-left: 30%;
+    margin-left: 29%;
   }
 
   .icones{
-    margin-left: 32%;
+    margin-left: 31%;
   }
 
-  .maisvendidos {
-    margin-left: 30px;
+  .escolha img{
+    margin-left: 10%;
+  }
+  
+  .escolha a{
+    margin-left: 30%;
+  }
+
+  .maisvendidos{
+    margin-left: 2%;
   }
 
   .header-menu button {
