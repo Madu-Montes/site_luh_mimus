@@ -13,3 +13,4 @@ if(isset($_FILES['file']['name'])){
     }
 }
 echo $result;
+
