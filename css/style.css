@@ -318,6 +318,12 @@ h2 {
   fill: currentColor;
 }
 
+.cancel{
+  text-align: center;
+  background-color: #E4ACB8;
+  border: none;
+}
+
 /*footer e copyright*/
 
 .voltartopo a {

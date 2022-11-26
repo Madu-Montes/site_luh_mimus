@@ -22,11 +22,13 @@
 
 <body>
     <div class="container-fluid">
-       
-
-
         <section class="py-5 my-5">
             <div class="container">
+                <div class="container-fluid botaovolta">
+                    <a href="../index.html" class="font-weight-bold back"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                   </svg></a>
+                 </div>
                 <h1 class="mb-5">Configurações da Conta</h1>
                 <div class="bg-white shadow rounded-lg d-block d-sm-flex">
                     <div class="profile-tab-nav border-right">
@@ -51,11 +53,7 @@
                             </a>
                             <a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
                                 <i class="fa fa-tv text-center mr-1"></i> 
-                                Logoff
-                            </a>
-                            <a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
-                                <i class="fa fa-bell text-center mr-1"></i> 
-                                Notification
+                                Sair
                             </a>
                         </div>
                     </div>
@@ -77,7 +75,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                          <label>CPF</label>
+                                          <label>CPF/CNPJ</label>
                                           <input type="text" class="form-control" placeholder="000-000-000-00">
                                     </div>
                                 </div>
@@ -90,14 +88,73 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Endereço</label>
-                                          <input type="text" class="form-control" placeholder="">
+                                          <input type="text" class="form-control" placeholder="Av. Brasil 30">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Data de Nascimento</label>
+                                          <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Senha Antiga</label>
+                                          <input type="text" class="form-control" placeholder="Digite sua senha antiga">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Senha Nova</label>
+                                          <input type="text" class="form-control" placeholder="Digite sua nova seeha">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          <label>Confirme a senha</label>
+                                          <input type="text" class="form-control" placeholder="Confirme sua nova senha">
+                                    </div>
+                                </div>
+                                
 
                             </div>
                             <div>
                                 <br>
-                                <button class="botao-primario">Atualizar</button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary salvar" data-bs-toggle="modal" data-bs-target="#modalId">
+                                  Salvar
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalTitleId">Parabéns!</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    Dados atualizados com sucesso
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <script>
+                                    var modalId = document.getElementById('modalId');
+                                
+                                    modalId.addEventListener('show.bs.modal', function (event) {
+                                          // Button that triggered the modal
+                                          let button = event.relatedTarget;
+                                          // Extract info from data-bs-* attributes
+                                          let recipient = button.getAttribute('data-bs-whatever');
+                                
+                                        // Use above variables to manipulate the DOM
+                                    });
+                                </script>
+                                
                             </div>
                         </div>
                         <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
@@ -160,30 +217,19 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
-                            <h3 class="mb-4">Application Settings</h3>
+                            <h3 class="mb-4">Sair da tela de edição de perfil?</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="app-check">
-                                            <label class="form-check-label" for="app-check">
-                                            App check
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
-                                            <label class="form-check-label" for="defaultCheck2">
-                                            Lorem ipsum dolor sit.
-                                            </label>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button class="btn btn-primary">Update</button>
-                                <button class="btn btn-light">Cancel</button>
+                                <a class="btn btn-primary btn-lg confirm" href="../index.html" role="button">Sim</a>
+                                <a class="btn btn-primary btn-lg confirm" href="#" role="button">Não</a>
                             </div>
                         </div>
+                        
                         <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
                             <h3 class="mb-4">Notification Settings</h3>
                             <div class="form-group">
