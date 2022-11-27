@@ -19,6 +19,25 @@ body {
   margin-right: 4%;
 }
 
+.hidden{
+opacity: 0;
+filter: blur(4px);
+transform: translateX(-100%);
+transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+
 .form-control {
   border-radius: 20px;
   border: rgba(0, 0, 0, 0.37) solid 1.8px;
@@ -27,6 +46,7 @@ body {
   width: 100%;
   font-size: 14px;
 }
+
 
 .product img {
   filter: grayscale(40%);
