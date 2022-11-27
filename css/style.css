@@ -21,7 +21,7 @@ body {
 
 .hidden{
 opacity: 0;
-filter: blur(4px);
+filter: blur(3px);
 transform: translateX(-100%);
 transition: all 1.5s;
 }
@@ -37,6 +37,16 @@ opacity: 1;
 filter: blur(0);
 transform: translateX(0);
 }
+
+.logo:nth-child(2){
+transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+  transition-delay: 400ms;
+}
+
+
 
 .form-control {
   border-radius: 20px;
