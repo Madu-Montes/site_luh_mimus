@@ -1,16 +1,25 @@
 <?php
-$result='';
-if(isset($_FILES['file']['name'])){
-    foreach ($_FILES['file']['name'] as $key => $file){
 
-        $file_name = '../html/upload/'.$_FILES['file']['name'][$key];
-
-        if(move_uploaded_file($_FILES['file']['tmp_name'][$key], $file_name)){
-           
-            $result.="<div class=\"image\"> <img src=\"${file_name}\" /></div>";
-       
-        }
-    }
+if(isset($_FILES['file'])){
+    
+$arr_file_types = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
+  
+if (!(in_array($_FILES['file']['type'], $arr_file_types))) {
+    echo "false";
+    return;
 }
-echo $result;
+  
+if (!file_exists('uploads')) {
+    mkdir('uploads', 0777);
+}
+  
+$filename = time().'_'.$_FILES['file']['name'];
+  
+move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/'.$filename);
+  
+echo 'uploads/'.$filename;
+die;
 
+}
+
+?>
