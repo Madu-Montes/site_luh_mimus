@@ -231,6 +231,20 @@
 
 }
 
+.banners .slide1 .carousel-item {
+  background-image: url(../images/slide1-1.png);
+  background-repeat: no-repeat;
+  background-color: #000000;
+
+}
+
+.banners .slide2 .carousel-item {
+  background-image: url(../images/slide2-2.png);
+  background-repeat: no-repeat;
+  background-color:#9499C5;
+}
+
+
 @media (min-width: 340px) and (max-width: 380px){
 
   .logo{
