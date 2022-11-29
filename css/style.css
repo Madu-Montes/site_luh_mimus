@@ -23,7 +23,7 @@ body {
 opacity: 0;
 filter: blur(3px);
 transform: translateX(-100%);
-transition: all 2s;
+transition: all 1.5s;
 }
 
 @media(prefers-reduced-motion){
@@ -175,6 +175,23 @@ transition-delay: 200ms;
 }
 
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:active{
+  background-color: white;
+  color: #FCCAD5;
+}
+
+.dropdown-item:hover{
+  background-color: #ffe4ea
+}
+
+.dropdown-menu{
+border: none;
+}
+
 .logo {
   text-align: center;
   margin-left: 43%;
@@ -201,10 +218,9 @@ transition-delay: 200ms;
 }
 
 .header-topo .icones a:hover {
-  color: white;
-  background-color: #FCCAD5;
-  border-color: #FCCAD5;
-  border-radius: 20px;
+  color: #FCCAD5;
+ 
+  
 }
 
 .snip1143 * {
