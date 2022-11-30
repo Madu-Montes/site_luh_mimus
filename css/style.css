@@ -388,14 +388,27 @@ border: none;
   color: #000;
 }
 
-.sacola-icon {
-  align-items: center;
-  text-align: center;
-  margin-bottom: 30px;
+.sacola-icon img {
+  
+  width: 300px;
+  
 }
 
-.comprar h2 {
-  margin-top: 1%;
+.sacola-icon {
+   text-align: center;
+   font-size: 26px;
+   margin-bottom: 150px;
+ 
+}
+
+.bi-arrow-left-circle{
+  margin-left: 8%;
+  margin-top: 20px;
+  color: #000;
+}
+.sacola-icon a{
+  font-size: 16px;
+
 }
 
 
