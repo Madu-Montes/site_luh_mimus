@@ -101,7 +101,11 @@
 
 }
 
-@media (min-width: 451px) and (max-width: 767px){
+@media (min-width: 580px) and (max-width: 767px){
+  .owl-stage-outer {
+    margin-left: 20%;
+  }
+
   .escolha img{
     margin-left: 10%;
   }
@@ -116,7 +120,7 @@
   
 }
 
-@media (min-width: 413px) and (max-width: 450px) {
+@media (min-width: 413px) and (max-width: 579px) {
 
   .logo{
     margin-left: 10%;
@@ -175,7 +179,7 @@
   }
 
   .owl-stage-outer {
-    margin-left: 16%;
+    margin-left: 5%;
   }
 
   .perfil form {
@@ -227,6 +231,12 @@
 
   .maisvendidos{
     margin-left: 8%;
+  }
+
+  .btn_fav .bi-heart {
+    margin-left: 60%;
+    margin-bottom: 65%;
+    margin-top: -30px;
   }
 
 }
@@ -326,7 +336,7 @@
   }
 
   .owl-stage-outer {
-    margin-left: 5%;
+    margin-left: 13%;
     align-items: center;
   }
 
@@ -353,8 +363,7 @@
   .btn_fav .bi-heart {
     margin-left: 80%;
     margin-bottom: 65%;
-    margin-top: -10;
-    background-color: #000000;
+    margin-top: -30px;
   }
 
   .card-wrapper .card:not(:first-child) {
