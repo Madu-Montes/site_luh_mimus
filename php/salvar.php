@@ -26,9 +26,8 @@
          ('$cpf','$nome','$email','$dtn','$celular','$senha')");
 
 
-        echo "<h4><center><font color='white'>Cadastro realizado com sucesso!</font></center></h4>";
         echo "<a href='../HTML/login.html'><center><button type='button'></center><span></span>LOGIN</button></a>";
- 
+        header("Refresh:3; url=login.2html");
      }
  
  ?>
@@ -42,7 +41,7 @@
     <title>Dados Salvos</title>
  </head>
  <body>
-    <h1>Parabéns seus dados foram salvos!!</h1>
+    <h1>Dados salvos com sucesso!!</h1>
  </body>
  </html>
 

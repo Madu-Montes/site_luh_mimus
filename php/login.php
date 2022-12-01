@@ -9,13 +9,13 @@ if (isset($_POST['email']) || isset($_POST['senha'])){
     if(strlen($_POST['email']) == 0){
         echo"Prencha o campo email";
 
-    }else if(strlen($_POST['senha']) == 0){
+    }else if(strlen($_POST['password']) == 0){
         echo"Prencha o campo senha";
 
     }else{
         
         $login = $_POST['email'];
-        $senha = $_POST['senha'];
+        $senha = $_POST['password'];
 
         $sql_logar = $sql->query("SELECT * FROM User_Cdst_Site WHERE email_UserCdstSite = '$login' AND senha_UserCdstSite = '$senha'");
         
