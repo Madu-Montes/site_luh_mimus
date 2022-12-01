@@ -1,23 +1,20 @@
-<?php 
-    include './config.php';
+<?php
+include './configuracao.php';
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylePagseguro.css">
-    <link rel="stylesheet" href="Public/Css/semantic.min.css">
-    <link rel="stylesheet" href="Public/Css/tab.min.css">
-    <title>Finalização de Compra || Luh Mimu's</title>
-</head>
-<body>
-<div class="container" style="width:800px;margin:0 auto;">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagamento || Luh Mimus </title>
+        <link href="css/personalizado.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/tab.min.css">
+    </head>
+    <body>
+    <div class="container" style="width:800px;margin:0 auto;">
     <div class="ui top attached tabular menu">
-      <a class="active item" data-tab="first">Pagar com cartão</a>
-      <a class="item" data-tab="second">Pagamento em débito</a>
+      <a class="active item" data-tab="first"><div class="CartaoCredito">Pagar com cartão</div></a>
+      <a class="item" data-tab="second">Pagamento em pix</a>
       <a class="item" data-tab="third">Pagar com boleto</a>
     </div>
     <div class="ui bottom attached active tab segment" data-tab="first">
@@ -27,6 +24,10 @@
                   <label>Número do cartão</label>
                   <input type="text" id="numCartao" placeholder="número" name="numCartao">
                 </div>
+                <div class="bandeira-cartao">
+
+                </div>
+            
                 <div class="field">
                   <label>Nome no cartão</label>
                   <input type="text" id="nome" placeholder="nome">
@@ -80,9 +81,9 @@
     </div>
     <div class="ui bottom attached tab segment" data-tab="second">
       <div id="mensagem-debito"></div>
-      <h2>Pagar com debito</h2>
-      <p>Clique no botão abaixo para pagar com debito online.</p>
-      <a href="" class="ui green button" id="btn-pagar-debito">Pagar com débito</a>
+      <h2>Pagar com pix</h2>
+      <p>Clique no botão abaixo para pagar com pix.</p>
+      <a href="" class="ui green button" id="btn-pagar-debito">Pagar com pix</a>
     </div>
     <div class="ui bottom attached tab segment" data-tab="third">
     <div id="mensagem-boleto"></div>
@@ -91,26 +92,18 @@
       <a href="" class="ui green button" id="btn-pagar-boleto">Pagar com boleto</a>
     </div>
 </div>
-    <!-- <button onclick="pagamento()">Pagar</button>     -->
-    
-    <span class="endereco" data-endereco="<?php echo URL; ?>"></span>
-
-    <div class="meio-pag"></div>
-
-    <script type= "text/javascript" src="<?php SCRIPT_PAGSEGURO; ?>"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="Public/Js/jquery.js"></script>
-    <script src="Public/Js/tab.js"></script>
+        <button onclick="pagamento()">Pagar</button>
+        <span class="endereco" data-endereco="<?php echo URL; ?>"></span>
+        
+        <div class="meio-pag"></div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo SCRIPT_PAGSEGURO; ?>"></script>
+        <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tab.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
-    <script src="Public/js/tab-site.js"></script>
-    <script src="Public/js/boleto.js"></script>
-    <script src="Public/js/debito.js"></script>
-    <script src="Public/js/languages/pt-br.js"></script>
-    <script src="Public/js/erros_pagseguro.js"></script>
-    <script src="Public/js/fechar_pedido_cartao.js"></script>
-    <script src="Public/js/listar-bandeiras.js"></script>
-    <script src="Public/js/parcelas_cartao.js"></script>
-
-</body>
+    <script src="js/tab-site.js"></script>
+    <script src="js/languages/pt-br.js"></script>
+    </body>
 </html>
