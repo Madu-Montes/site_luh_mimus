@@ -41,6 +41,10 @@
   }
 }
 
+.modal-body img{
+  margin-top: 80px;
+}
+
 @media (min-width: 1200px) and (max-width: 1399px) {
   .owl-stage-outer {
     margin-left: 4%;
