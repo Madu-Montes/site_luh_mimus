@@ -51,6 +51,10 @@
     display: flex;
   }
 
+  .kitfesta .col-md-5 img{
+    margin-top: 15%;
+  }
+
 }
 
 
@@ -88,10 +92,14 @@
     padding: 10px 0;
   }
 
+  .kitfesta .col-md-5 img{
+    margin-top: 25%;
+  }
+
 
 }
 
-@media (min-width: 992px) and (max-width: 1149px){
+@media (min-width: 992px) and (max-width: 1049px){
   .maisvendidos {
     display: flex;
   }
@@ -113,6 +121,10 @@
     margin-left: 13%;
   }
 
+  .kitfesta .col-md-5 img{
+    margin-top: 25%;
+  }
+
 }
 
 @media (min-width: 791px) and (max-width: 991px){
@@ -131,7 +143,19 @@
   .maisvendidos{
     margin-left: 1%; 
       display: flex;
-    
+  }
+
+  .kitfesta .col-md-5 img{
+    width: 100%;
+    margin-top: 40%;
+  }
+
+  .form-control{
+    display: none;
+  }
+
+  .d-flex button{
+    display: none;
   }
   
 }
@@ -203,6 +227,17 @@
     margin-right: 5%;
   }
 
+  .kitfesta{
+    text-align: center;
+  }
+
+  .kitfesta .col-md-5 img{
+    width: 90%;
+    margin-top: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
   .form-row {
     display: block;
     margin-left: auto;
@@ -256,6 +291,16 @@
     margin-left: 60%;
     margin-bottom: 65%;
     margin-top: -30px;
+  }
+
+  .kitfesta{
+    text-align: center;
+  }
+
+  .kitfesta .col-md-5 img{
+    width: 90%;
+    margin-top: 45%;
+    margin-top: 5%;
   }
 
 }
@@ -422,6 +467,16 @@
   .recuperar form {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .kitfesta{
+    text-align: center;
+  }
+
+  .kitfesta .col-md-5 img{
+    width: 90%;
+    margin-top: 45%;
+    margin-top: 5%;
   }
 
   .cadastro .modal-footer button a {
@@ -607,6 +662,15 @@
   .recuperar form {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .kitfesta{
+    text-align: center;
+  }
+
+  .kitfesta .col-md-5 img{
+    width: 90%;
+    margin-top: 5%;
   }
 
   .cadastro .modal-footer button a {
