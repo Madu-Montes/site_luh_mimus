@@ -400,6 +400,9 @@ border: none;
 
 }
 
+.nav-item span{
+margin-left: 10px;
+}
 
 .col-md-5 a {
   font-size: 10px;

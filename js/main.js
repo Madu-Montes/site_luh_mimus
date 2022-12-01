@@ -31,3 +31,5 @@ function handleCredentialResponse(response) {
   
     google.accounts.id.prompt(); // also display the One Tap dialog
   }
+
+  
