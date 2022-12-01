@@ -197,17 +197,6 @@ border: none;
   margin-left: 43%;
 }
 
-.header-topo .imgemail {
-  margin-left: 10%;
-  padding-left: 14%;
-  gap: 0.4rem;
-}
-
-.imgemail span {
-  font-size: 16px;
-  margin-top: 2px;
-}
-
 .header-topo .icones {
   margin-right: 1%;
   padding-right: 4%;
