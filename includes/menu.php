@@ -1,5 +1,5 @@
 <?php
-include 'conn_banco.php';
+include '../php/conn_banco.php';
 ?>
 
 <div class="header-menu">
