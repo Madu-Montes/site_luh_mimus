@@ -159,44 +159,66 @@
                         </div>
                         <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
                             <h3 class="mb-4">Histórico de pedidos</h3>
-                            <div class="row">
-
+                            <div class="card-group">
+                                <div class="card">
+                                    <img class="card-img-top" src="../images/produtos/beijinho.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">*Nome do produto*</h4>
+                                        <p class="card-text">*Preço*</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../images/produtos/beijinho.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">*Nome do produto*</h4>
+                                        <p class="card-text">*Preço*</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../images/produtos/beijinho.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">*Nome do produto*</h4>
+                                        <p class="card-text">*Preço*</p>
+                                    </div>
+                                </div>
                             </div>
                             
-                            <div>
-                                <button>Atualizar</button>
-                            </div>
+                            
+                            
                         </div>
                         <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
-                            <h3 class="mb-4">Security Settings</h3>
-                            <div class="row">
+                            <h3 class="mb-4">Cartões</h3>
+                        <div class="row" id="cartoes">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                          <label>Login</label>
-                                          <input type="text" class="form-control">
-                                    </div>
+
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                          <label>Two-factor auth</label>
-                                          <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="recovery">
-                                            <label class="form-check-label" for="recovery">
-                                            Recovery
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary">Update</button>
-                                <button class="btn btn-light">Cancel</button>
-                            </div>
+                            
+                            
+                                <button class="btn btn-primary salvar" onclick="adicionarCartao()">Adicionar Cartão</button>
+                            
+                        </div>
+                        <div id="dadosNovoCartao">
+                            <h4 style="text-align: center;font-size: 20px;">Insira as informações do seu cartão para cadastra-lo</h4>
+                            <br>
+                            <label for="nCartao">Número do Cartão</label>
+                            <input class="form-control" style="width: 100%;" type="number" id="nCartao">
+                            
+                            <br>
+                            <label for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv">
+                            <br>
+                            <label for="validade">Validade</label>
+                                    <input type="date" class="form-control" id="validade">
+                            <br>
+                            <label for="ntitular">Nome do Titular</label>
+                            <input class="form-control" style="width: 100%;" type="text" id="ntitular">
+                            <br>
+                            <label for="cpf">CPF/CNPJ do Titular</label>
+                            <input class="form-control" style="width: 100%;" type="text" id="cpf">
+                            <br>
+                            <button class="btn btn-primary salvar" onclick="salvarCartao()">Salvar</button>
+                        </div>
+                            
                         </div>
                         <div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
                             <h3 class="mb-4">Sair da tela de edição de perfil?</h3>

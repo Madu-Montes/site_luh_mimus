@@ -5,13 +5,17 @@ include './configuracao.php';
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Pagamento || Luh Mimus </title>
+        <title>Pagamento | Luh Mimus </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link href="css/personalizado.css" rel="stylesheet">
         <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/tab.min.css">
     </head>
     <body>
-    <div class="container" style="width:800px;margin:0 auto;">
+    <div class="container-fluid">
+    <div class="container box">
+    <h1>Pagamento</h1>
     <div class="ui top attached tabular menu">
       <a class="active item" data-tab="first"><div class="CartaoCredito">Pagar com cartão</div></a>
       <a class="item" data-tab="second">Pagamento em pix</a>
@@ -68,7 +72,7 @@ include './configuracao.php';
               Escolha um cartão para ver o número de parcelas com e sem juros
           </div>
           <div class="ui divider"></div>
-          <button class="ui green button" id="btn-fechar-pedido" tabindex="0">Fechar Pedido</button>
+          <a id="" class="btn btn-dark" href="#" role="button">Fechar pedido</a>
        </form>
           <div id="status-fechar-pedido"></div>
           <div class="ui divider"></div>
@@ -83,16 +87,19 @@ include './configuracao.php';
       <div id="mensagem-debito"></div>
       <h2>Pagar com pix</h2>
       <p>Clique no botão abaixo para pagar com pix.</p>
-      <a href="" class="ui green button" id="btn-pagar-debito">Pagar com pix</a>
+      <a id="" class="btn btn-dark" href="#" role="button">Via Pix</a>
     </div>
     <div class="ui bottom attached tab segment" data-tab="third">
     <div id="mensagem-boleto"></div>
       <h2>Pagar com boleto</h2>
       <p>Clique no botão abaixo para pagar com boleto.</p>
-      <a href="" class="ui green button" id="btn-pagar-boleto">Pagar com boleto</a>
+      <a id="" class="btn btn-dark" href="#" role="button">Via Boleto</a>
     </div>
 </div>
+<div class="btn-pag">
+
         <button onclick="pagamento()">Pagar</button>
+        </div>
         <span class="endereco" data-endereco="<?php echo URL; ?>"></span>
         
         <div class="meio-pag"></div>
@@ -105,5 +112,6 @@ include './configuracao.php';
     <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
     <script src="js/tab-site.js"></script>
     <script src="js/languages/pt-br.js"></script>
+    
     </body>
 </html>

@@ -89,3 +89,18 @@ button{
 .confirm:hover{
 	background-color: black;
 }
+
+.card-group {
+	text-align: center;
+}
+
+.card-group .card-img-top{
+	background-color: #FCCAD5;
+}
+
+#dadosNovoCartao{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	display: none;
+}

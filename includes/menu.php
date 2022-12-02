@@ -25,23 +25,15 @@ include 'conn_banco.php';
                         <a class="nav-link active" href="./contato.html" aria-current="page">Contato<span class="visually-hidden">(current)</span></a>
                     </li>
 
-
-
-
-
-
-
-
                     <li class="nav-item dropdown">
-                        <?php while ($categorias = $query_categories->fetch_assoc()) { ?>
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <select name="filtro" id="categorias">
-                                    <option id="options-categorias" <?php if (isset($_GET['filtro']) && $_GET['filtro'] == $categorias['id_categorias']) echo "selected"; ?> value="<?php echo $categorias['id_categorias']; ?>">
-                                        <?php echo $categorias['nome_categorias']; ?></option>
-                                </select>
-                            <?php } ?>
-                            </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="./bolos.html">Bolos</a>
+                            <a class="dropdown-item" href="./doces.html">Doces</a>
+                            <a class="dropdown-item" href="./salgados.html">Salgados</a>
+                            <a class="dropdown-item" href="./personalizados.html">Personalizados</a>
+                            <a class="dropdown-item" href="./kitfesta.html">Kit Festa</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
@@ -53,8 +45,4 @@ include 'conn_banco.php';
             </div>
         </div>
     </nav>
-    <div class="topo-galeria container">
-        <i><img src="../images/bolobanner.png" width="100%"></i>
-        <!--fundo-->
-    </div>
 </div>

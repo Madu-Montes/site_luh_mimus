@@ -32,6 +32,12 @@
   include '../includes/menu.php';
   ?>
 
+  <!-- banner -->
+  <div class="topo-galeria container">
+        <i><img src="../images/bolobanner.png" width="100%"></i>
+        <!--fundo-->
+  </div>
+
   <!--end header-->
   <div class="modal fade" id="productView" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
