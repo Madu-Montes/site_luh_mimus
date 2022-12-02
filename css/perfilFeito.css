@@ -89,3 +89,11 @@ button{
 .confirm:hover{
 	background-color: black;
 }
+
+.card-group {
+	text-align: center;
+}
+
+.card-group .card-img-top{
+	background-color: #FCCAD5;
+}
