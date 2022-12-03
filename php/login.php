@@ -1,6 +1,3 @@
-
-
-
 <?php
 
 include'conn_banco.php';
@@ -40,11 +37,13 @@ if (isset($_POST['email']) || isset($_POST['senha'])){
 
             $_SESSION['id'] = $usuario['id_UserCdstSite'];
             $_SESSION['nome'] = $usuario['nome_UserCdstSite'];
+            $_SESSION['email'] = $usuario['email_UserCdstSite'];
 
             header("Location: iniciologged.php");
 
         }else {
-            echo"Falha ao logar! Email ou senha incorretos!";
+            
+            header("Location: notuser.php");
         }
 
     }
