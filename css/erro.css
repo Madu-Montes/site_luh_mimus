@@ -26,3 +26,15 @@
     font-size: 12px;
     color: rgba(0, 0, 0, 0.603);
 }
+
+.erro h2{
+    font-size: 27px;
+}
+
+.erro .link{
+    font-size: 20px;
+    color: black;
+    background-color: #F07882;
+    border-radius: 15px;
+
+}
