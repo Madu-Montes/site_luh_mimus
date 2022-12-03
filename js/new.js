@@ -55,11 +55,11 @@ function cartNumbers(product){
 }
 
 function setItems(product){
-    console.log("Inside of SetItems");
-console.log("My product is", product);
-product.inCart = 1;
+    let cartItems = localStorage.getItem('productsInCart');
+    console.log("My cartItems are", cartItems);
+    product.inCart = 1;
 
-let cartItems = {
+ cartItems = {
     [product.tag] : product
 } 
 
