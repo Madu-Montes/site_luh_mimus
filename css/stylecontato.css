@@ -1,200 +1,211 @@
-* {
-  margin: 0;
-  padding: 0;
+*, *:before, *:after {
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.container_form {
-  z-index: 12;
-  max-width: 1050px;
+.contact {
+ 
+  font-size: 12px;
+}
+
+ input {
+ 
+  font-weight: 700;
+ 
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+.screen {
+  position: relative;
   background: white;
-  border-radius: 6px;
-  border: 2px solid;
-  border-color: #F99AAF;
-  margin: 0 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  height: 500px;
-  width: 70%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: auto;
+  border-radius: 15px;
+  
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(175, 156, 161, 0.4);
+  z-index: -1;
+}
+
+
+.screen-header-left {
   margin-right: auto;
 }
 
-.container_form .content {
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+
+
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: black;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: black;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.pl-3{
+  font-size: 15px;
+  
+}
+
+.app-form-button {
+  background: black;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  width: 130px;
+}
+
+.app-form-button:hover {
+  background-color: #FCCAD5;
+  border-color: #FCCAD5;
+  color: black;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 25px 20px;
-}
-
-.image-box {
-  max-width: 55%;
-}
-
-.image-box img {
-  width: 100%;
-}
-
-.content .topic {
-  font-size: 22px;
-  font-weight: 500;
-  color: black;
-  font-weight: bolder;
-}
-
-.content form {
-  width: 60%;
-  margin-right: 30px;
-}
-
-.content .input-box {
-  height: 50px;
-  width: 100%;
-  margin: 16px 0;
-  position: relative;
-}
-
-.content .input-box input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  font-size: 16px;
-  outline: none;
-  padding-left: 16px;
-  background: #fff1f0;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-
-}
-
-.content .input-box input:focus {
-  border-color: #E2AF7C !important;
-  background-color: #fff;
-}
-
-.content .input-box label {
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  color: #636c72;
-  font-size: 15px;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
-}
-
-.content .input-box input:focus~label {
-  top: 0;
-  left: 12px;
-  display: 14px;
-  color: #E2AF7C !important;
-  background: #fff;
-}
-
-.content .message-box {
-  min-height: 100px;
-  position: relative;
-}
-
-.content .message-box textarea {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  resize: none;
-  background: #fff1f0;
-  border: 2px solid transparent;
-  border-radius: 6px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.content .message-box textarea:focus {
-  border-color: #E2AF7C !important;
-  background-color: #fff;
-}
-
-.content .message-box label {
-  position: absolute;
-  font-size: 16px;
-  color: #636c72;
-  left: 18px;
-  top: 6px;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.content .message-box textarea:focus~label {
-  left: 12px;
-  top: -14px;
-  align-items: center;
-  left: 12px;
-  display: 14px;
-  color: #E2AF7C !important;
-  background: #fff;
-}
-
-.content .input-box input[type="submit"] {
   color: #fff;
-  background: #F99AAF;
-  width: 100%;
-  padding-left: 0;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.content .input-box input[type="reset"] {
-  color: #fff;
-  background: black;
-  width: 100%;
-  padding-left: 0;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
-#message {
-  margin-top: 8px;
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
 }
 
-.content .input-box input[type="text"]:valid,
-input[type="email"]:valid {
-  border-color: rgb(129, 194, 129);
-}
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
 
-.content .message-box textarea:valid {
-  border-color: rgb(129, 194, 129);
-}
-
-.content .input-box input:valid~label {
-  top: 0;
-  left: 12px;
-  display: 14px;
-  color: rgb(129, 194, 129);
-  background: #fff;
-}
-
-.content .input-box input[type="text"]:invalid,
-input[type="email"]:invalid {
-  border-color: rgb(196, 13, 13);
-
-}
-
-.content .message-box textarea:invalid {
-  border-color: rgb(196, 13, 13);
-
-}
-
-.content .input-box input:invalid~label {
-  color: rgb(196, 13, 13);
-
+  .screen-body-item {
+    padding: 0;
+  }
 }
