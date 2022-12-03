@@ -96,6 +96,17 @@
     padding: 10px 0;
   }
 
+.menu img{
+    margin: 2% -8% 2% 0%;
+}
+
+.menu h1 {
+    color: #000000;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0% 3% 5% 0%;
+}
+
   .kitfesta .col-md-5 img{
     margin-top: 25%;
   }
@@ -125,6 +136,10 @@
     margin-left: 13%;
   }
 
+.menu h1 {
+    display: none;
+}
+
   .kitfesta .col-md-5 img{
     margin-top: 25%;
   }
@@ -148,6 +163,10 @@
     margin-left: 1%; 
       display: flex;
   }
+
+  .menu h1 {
+    display: none;
+}
 
   .kitfesta .col-md-5 img{
     width: 100%;
@@ -296,6 +315,10 @@
     margin-bottom: 65%;
     margin-top: -30px;
   }
+
+  .menu h1 {
+    display: none;
+}
 
   .kitfesta{
     text-align: center;
