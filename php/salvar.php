@@ -20,7 +20,7 @@
         // echo "<h4><center><font color='white'>CPF $cpf já está cadastrado.</font></center></h4>";
         // echo "<a href='../HTML/login.html'><button type='button'><span></span>TENTE NOVAMENTE</button></a>";
         include 'errocpf.php';
-        header("Refresh:3; url=cadastro2.php");
+        header("Refresh:6; url=cadastro2.php");
 
 
      }else{
@@ -30,7 +30,8 @@
 
 
         // echo "<a href='../HTML/login.html'><center><button type='button'></center><span></span>LOGIN</button></a>";
-        header("Refresh:3; url=../html/login2.html");
+        include 'cadastrosucesso.php';
+        header("Refresh:6; url=../html/login2.html");
      }
  
  ?>
