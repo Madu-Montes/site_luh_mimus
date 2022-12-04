@@ -41,17 +41,33 @@ if(!isset($_SESSION)){
               <img src="../images/logo.jfif" alt="" width="140px">
             </a>
           </ul>
+          
           <ul class="navbar-nav flex-row icones">
-            
+          <h6> Bem vindo(a) <?php echo $_SESSION['nome'];?>! <h6>
+            <br>
+            <br>
             <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link d-sm-flex align-items-sm-center" href="./html/login2.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                </svg>
+            <li class="nav-item dropdown">
+              
+                <a class="nav-link dropdown-toggle" href="../html/perfilFeito.html" id="dropdownId"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  data-hover="Produtos"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg> </a> 
+                        
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="../php/perfilFeito.php" data-hover="Contato">Meu perfil</a>
+                  <a class="dropdown-item" href="#" data-hover="Contato">Minhas encomendas</a>
+                  <a class="dropdown-item" href="./html/salgados.html" data-hover="Contato">Favoritos </a>
+                  <hr>
+                  <a class="dropdown-item" href="./html/personalizados.html" data-hover="Contato">Sair</a>
+                 
+                </div>
                 
-              </a>
+              </li>
+           
             </li>
             <li class="nav-item me-3 me-lg-1">
               <a class="nav-link d-sm-flex align-items-sm-center" href="./html/favoritovazio.html">
@@ -71,6 +87,5 @@ if(!isset($_SESSION)){
         </div>
       </nav>
       <hr>
-    </div>
     </div>
     </html>

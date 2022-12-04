@@ -22,53 +22,18 @@ if(!isset($_SESSION)){
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <script defer src="./js/app.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script defer src="../js/app.js"></script>
 </head>
 
 <body>
   <div class="container-fluid">
     <!--start header-->
-    <div class="header-topo">
-      <nav class="navbar navbar-expand-lg navbar-light back">
-        <div class="container-fluid justify-content-between">
-          <ul class="navbar-nav flex-row logo">
-            <a class="nav-link" href="../index.html">
-              <img src="./images/logo.jfif" alt="" width="140px">
-            </a>
-          </ul>
-          <ul class="navbar-nav flex-row icones">
-            
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link d-sm-flex align-items-sm-center" href="./html/login2.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                </svg>
-                
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link d-sm-flex align-items-sm-center" href="./html/favoritovazio.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link d-sm-flex align-items-sm-center" href="./html/carrinhovazio.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <hr>
-    </div>
+    
+
+    <?php  include '../includes/headerlogged.php';?>
+
     <!--start menu-->
     <div class="header-menu">
       <nav class="navbar navbar-expand-sm navbar-light ">
@@ -125,7 +90,6 @@ if(!isset($_SESSION)){
   </div>
   <!--end header-->
 
-  Bem vindo, <?php echo $_SESSION['nome'];?>
 
   <!--start banners-->
   <div class="container">
@@ -186,22 +150,22 @@ if(!isset($_SESSION)){
           <div class="carousel-item active">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <a href="./html/salgados.html">
-                  <img src="./images/Frame 6.png" class="card-img-top" alt="..."> </a>
+                <a href="../html/salgados.html">
+                  <img src="../images/Frame 6.png" class="card-img-top" alt="..."> </a>
                 <div class="card-body">
-                  <a href="./html/salgados.html" class="btn btn-primary">SALGADOS</a>
+                  <a href="../html/salgados.html" class="btn btn-primary">SALGADOS</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <a href="./html/bolos.html"><img src="./images/Frame 5.png" class="card-img-top" alt="..."></a>
+                <a href="../html/bolos.html"><img src="../images/Frame 5.png" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                  <a href="./html/bolos.html" class="btn btn-primary">BOLOS</a>
+                  <a href="../html/bolos.html" class="btn btn-primary">BOLOS</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <a href="./html/doces.html"><img src="./images/Frame 7.png" class="card-img-top" alt="..."></a>
+                <a href="../html/doces.html"><img src="../images/Frame 7.png" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                  <a href="./html/doces.html" class="btn btn-primary">DOCES</a>
+                  <a href="../html/doces.html" class="btn btn-primary">DOCES</a>
                 </div>
               </div>
             </div>
@@ -209,16 +173,16 @@ if(!isset($_SESSION)){
           <div class="carousel-item">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <a href="./html/personalizados.html">
-                  <img src="./images/Frame 8.png" class="card-img-top" alt="..."></a>
+                <a href="../html/personalizados.html">
+                  <img src="../images/Frame 8.png" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                  <a href="./html/personalizados.html" class="btn btn-primary">PERSONALIZADOS</a>
+                  <a href="../html/personalizados.html" class="btn btn-primary">PERSONALIZADOS</a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <a href="./html/kitfesta.html"><img src="./images/Frame 9.png" class="card-img-top" alt="..."></a>
+                <a href="../html/kitfesta.html"><img src="../images/Frame 9.png" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                  <a href="./html/kitfesta.html" class="btn btn-primary">KIT FESTA</a>
+                  <a href="../html/kitfesta.html" class="btn btn-primary">KIT FESTA</a>
                 </div>
               </div>
 
@@ -247,7 +211,7 @@ if(!isset($_SESSION)){
           <div class="carousel-item active">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <img src="./images/Frame 6.png" class="card-img-top" alt="...">
+                <img src="../images/Frame 6.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <a href="./html/salgados.html" class="btn btn-primary">SALGADOS</a>
                 </div>
@@ -257,9 +221,9 @@ if(!isset($_SESSION)){
           <div class="carousel-item">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <img src="./images/Frame 5.png" class="card-img-top" alt="...">
+                <img src="../images/Frame 5.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a href="./html/personalizados.html" class="btn btn-primary">BOLOS</a>
+                  <a href="../html/personalizados.html" class="btn btn-primary">BOLOS</a>
                 </div>
               </div>
             </div>
@@ -267,9 +231,9 @@ if(!isset($_SESSION)){
           <div class="carousel-item">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <img src="./images/Frame 7.png" class="card-img-top" alt="...">
+                <img src="../images/Frame 7.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a href="./html/personalizados.html" class="btn btn-primary">DOCES</a>
+                  <a href="../html/personalizados.html" class="btn btn-primary">DOCES</a>
                 </div>
               </div>
             </div>
@@ -277,9 +241,9 @@ if(!isset($_SESSION)){
           <div class="carousel-item">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <img src="./images/Frame 8.png" class="card-img-top" alt="...">
+                <img src="../images/Frame 8.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a href="./html/personalizados.html" class="btn btn-primary">PERSONALIZADOS</a>
+                  <a href="../html/personalizados.html" class="btn btn-primary">PERSONALIZADOS</a>
                 </div>
               </div>
             </div>
@@ -287,9 +251,9 @@ if(!isset($_SESSION)){
           <div class="carousel-item">
             <div class="card-wrapper">
               <div class="card" style="width: 18rem;">
-                <img src="./images/Frame 9.png" class="card-img-top" alt="...">
+                <img src="../images/Frame 9.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a href="./html/kitfesta.html" class="btn btn-primary">KIT FESTA</a>
+                  <a href="../html/kitfesta.html" class="btn btn-primary">KIT FESTA</a>
                 </div>
               </div>
             </div>
@@ -327,7 +291,7 @@ if(!isset($_SESSION)){
       </div>
 
       <div class="col-md-5 escolha">
-        <img src="./images/escolha.svg" width="80%">
+        <img src="../images/escolha.svg" width="80%">
         <br>
         <a href="https://storyset.com/event">Event illustrations by Storyset</a>
       </div>
@@ -347,7 +311,7 @@ if(!isset($_SESSION)){
       <div class="maisvendidos">
         <div class="card logo hidden" style="width: 18rem;">
 
-          <img src="./images/top1.jpeg" class="card-img-top" alt="...">
+          <img src="../images/top1.jpeg" class="card-img-top" alt="...">
           <a href="#" class="btn btn-primary btnfav"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
               fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
               <path
@@ -362,7 +326,7 @@ if(!isset($_SESSION)){
         </div>
         <div class="card logo hidden" style="width: 18rem;">
 
-          <img src="./images/top2.jfif" class="card-img-top" alt="...">
+          <img src="../images/top2.jfif" class="card-img-top" alt="...">
           <a href="#" class="btn btn-primary btnfav"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
               fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
               <path
@@ -377,7 +341,7 @@ if(!isset($_SESSION)){
         </div>
         <div class="card logo hidden" style="width: 18rem;">
 
-          <img src="./images/top3.jfif" class="card-img-top" alt="...">
+          <img src="../images/top3.jfif" class="card-img-top" alt="...">
           <a href="#" class="btn btn-primary btnfav"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
               fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
               <path
@@ -399,7 +363,7 @@ if(!isset($_SESSION)){
         <div class="row">
           <div class="col-md-3">
             <div class="inror_box">
-              <img src="./images/logorodade.png" alt="logo da confeitaria Luh Mimu's" id="logorodape">
+              <img src="../images/logorodade.png" alt="logo da confeitaria Luh Mimu's" id="logorodape">
             </div>
           </div>
           <div class="col-md-3">
