@@ -16,9 +16,9 @@ let products=[
 
 },
 {
-    name:'Yellow T-Shirt',
-    tag:'Yellowtshirt',
-    price:10,
+    name:'Dois Amores',
+    tag:'doisamores',
+    price:95,
     inCart:0
 
 },
@@ -123,30 +123,30 @@ if(cartItems && productContainer ){
     <img src="../images/produtos/${item.tag}.png">
     <span>${item.name}</span>
     </div>
-    <div class="price">${item.price}</div>
-    <div class="quantity"> 
+    <div class="price">R$ ${item.price},00</div>
+    <div class="quanti"> 
     <ion-icon name="chevron-back-circle-outline"></ion-icon>
     <span>${item.inCart}</span>
     <ion-icon name="arrow-forward-circle-outline"></ion-icon>
     </div>
     <div class"total"> 
-    R$ ${item.inCart *item.price},00</div>
+    R$ ${item.inCart *item.price},00</div> 
    
     `;
 
    });
 
-   productContainer.innerHTML +=`
-   <div class "basketTotalContainer">
-   <h4 class = "baskeyTotal"> 
-   Total</h4>
-   <h4 class = "basketTotal"> 
-   R$ ${cartCost},00 </h4>`
+  
+
+   
+
 
 }
+
 }
+
 
 
 
 onLoadCartNumbers();
-displayCart();
+displayCart();//

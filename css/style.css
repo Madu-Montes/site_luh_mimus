@@ -32,6 +32,8 @@ transition: all 1.5s;
   }
 }
 
+
+
 .show{
 opacity: 1;
 filter: blur(0);
@@ -47,7 +49,9 @@ transition-delay: 200ms;
 }
 
 
-
+.products img{
+  width: 130px;
+}
 .form-control {
   border-radius: 20px;
   border: rgba(0, 0, 0, 0.37) solid 1.8px;
