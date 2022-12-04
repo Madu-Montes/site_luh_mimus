@@ -56,9 +56,6 @@
   background: white;
 }
 
-
-
-
 .screen-body {
   display: flex;
 }
@@ -134,7 +131,6 @@
 
 .pl-3{
   font-size: 15px;
-  
 }
 
 .app-form-button {
