@@ -103,8 +103,8 @@
               </li>
             </ul>
             <form class="d-flex my-2 my-lg-0">
-              <input class="form-control me-sm-2" type="text" placeholder="O que você procura?">
-              <button class="btn btn-outline my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              <input class="form-control me-sm-2" type="search" value="" id="search" onchange="openPage()" placeholder="O que você procura?">
+              <button class="btn btn-outline my-2 my-sm-0" type="submit" onclick="openPage()"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -454,11 +454,52 @@
 
   </div>
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </div>
+
+<script>
+  function openPage(){
+    var answer = document.getElementById("search").value;
+   let a1 = /bolos/i
+   let b1 = /bolo encomenda/i
+    if (a1.test(answer)  || b1.test(answer)){
+        window.open("./html/bolos.html ");
+        }
+
+   let a2 = /doces/i
+   let b2 = /doce encomenda/i
+    if (a2.test(answer)  || b2.test(answer)){
+        window.open("./html/doces.html ");
+        }
+
+   let a3 = /salgados/i
+   let b3 = /encomenda salgados/i
+    if (a3.test(answer)  || b3.test(answer)){
+        window.open("./html/salgados.html ");
+        }
+
+  let a4 = /kit festa/i
+  let b4 = /kit aniversario/i
+    if (a4.test(answer)  || b4.test(answer)){
+        window.open("./html/kitfesta.html ");
+        }
+
+  let a6 = /quem somos/i
+  let b6 = /sobre/i
+    if (a6.test(answer)  || b6.test(answer)){
+        window.open("./html/quemsomos.html ");
+        }
+
+
+
+  }
+
+</script>
 
 </body>
 
