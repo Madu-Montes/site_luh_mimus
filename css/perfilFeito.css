@@ -104,3 +104,11 @@ button{
 	padding: 10px;
 	display: none;
 }
+
+
+input[type='file'] {
+	width: 127px;
+    height: 127px;
+    background: url(../images/usuario.png);
+    overflow: hidden;
+}
