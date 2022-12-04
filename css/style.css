@@ -48,10 +48,32 @@ transition-delay: 200ms;
   transition-delay: 400ms;
 }
 
+.product {
+  
+  margin-top: 10%;
+  text-align: center;
+}
 
 .products img{
-  width: 130px;
+ align-items: center;
+
 }
+
+.products{
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(175, 156, 161, 0.4);
+  z-index: -1;
+  margin-bottom: 30px;
+}
+
+.price{
+ text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
 .form-control {
   border-radius: 20px;
   border: rgba(0, 0, 0, 0.37) solid 1.8px;
@@ -464,6 +486,10 @@ h2 {
   margin-bottom: 5%;
 }
 
+.product-inside{
+  align-items: center;
+}
+
 .maisvendidos .card {
   margin: 0.5em;
 }
@@ -480,8 +506,9 @@ h2 {
 
 .cancel{
   text-align: center;
-  background-color: #E4ACB8;
+  background-color: rgb(25, 24, 26);
   border: none;
+  color: white !important;
 }
 
 /*footer e copyright*/
