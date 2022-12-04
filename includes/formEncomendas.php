@@ -1,4 +1,5 @@
-<form class="forms-tot" method="POST" action="../php/encomendar.php " enctype="multipart/form-data">
+
+<form class="forms-tot" method="POST" enctype="multipart/form-data" id="addevent">
         
         <label for="qusOne" class="formbold-form-label">Peso:</label>
         <input type="number" name="peso" id="qtd_encomendas">
@@ -32,7 +33,16 @@
               <label for="file">Procurar Arquivo</label>
               <input type="file" name="referencia" id="file" hidden accesskey="i">
               </div>
-        
+        <br>
+        <div class="mb-6 pt-4">
+            <label class="formbold-form-label-2" style="font-size: 30px; color: #ffb8c4;">
+                Selecione uma data:
+            </label>
+            <br>
 
-        <button type="submit" class="formbold-btn add-cart">Prosseguir</button>
+            <iframe src="../includes/calendario/calendario.php" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="total"></iframe>
+
+        <button type="submit" class="formbold-btn add-cart" id="CadEvent">Prosseguir</button>
     </form>
+    
+    
