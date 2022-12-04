@@ -11,11 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+  <script src="../includes/calendario/js/personalizado.js"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/styleencomendar.css">
   <link rel="stylesheet" href="../css/responsive.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <style>iframe{width: 100%; height: 700px; background-color: transparent; position: relative;}</style>
 </head>
 
 <body>
@@ -38,16 +40,13 @@
 
     <br><br>
 
-    <!--start footer-->
-    <?php
+  
+  </div>
+  </div>
+  <!--start footer-->
+  <?php
     include '../includes/footer.php';
     ?>
-
-
-
-  </div>
-  </div>
-
 </body>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="../js/main2.js"></script>

@@ -36,7 +36,15 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="card2 card border-0 px-4 py-5">
-                        
+                        <div class="row mb-4 px-3">
+                            <h6 class="mb-0 mr-4 mt-2">Cadastrar-se com</h6>
+                            <div class="googleapis text-center mr-3"><div class="fa fa-google"></div></div>
+                        </div>
+                        <div class="row px-3 mb-4">
+                            <div class="line"></div>
+                            <small class="or text-center">ou</small>
+                            <div class="line"></div>
+                        </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Nome</h6></label>
                             <input class="mb-4" type="text" name="nome" placeholder="Digite seu nome completo" required maxlength="256">
