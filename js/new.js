@@ -2,16 +2,16 @@
 let carts=document.querySelectorAll('.add-cart');
 let products=[
 {
-    name:'Gray T-Shirt',
-    tag:'Graytshirt',
-    price:15,
+    name:'Brigadeiro',
+    tag:'brigadeiro',
+    price:95,
     inCart:0
 
 },
 {
-    name:'Blue T-Shirt',
-    tag:'Bluetshirt',
-    price:20,
+    name:'Beijinho',
+    tag:'beijinho',
+    price:95,
     inCart:0
 
 },
@@ -33,6 +33,7 @@ let products=[
 for(let i=0;i<carts.length;i++){
     carts[i].addEventListener('click',()=>{
         cartNumbers(products[i]);
+        totalCost(products[i])
     });
 
 }
@@ -56,14 +57,47 @@ function cartNumbers(product){
 
 function setItems(product){
     let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
     console.log("My cartItems are", cartItems);
+
+    if(cartItems != null){
+        if  (cartItems[product.tag] == undefined){
+cartItems = { 
+    ...cartItems,
+    [product.tag]: product
+}
+        }
+    
+        cartItems[product.tag].inCart += 1;
+
+    }
+    
+else {
     product.inCart = 1;
 
  cartItems = {
-    [product.tag] : product
-} 
+    [product.tag] : product}
+
+}
 
 localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
+function totalCost(product){
+    //console.log("The product price is" , product.price);
+    let cartCost = localStorage.getItem('totalCost');
+   
+    console.log("My cartCost is" , cartCost);
+    if (cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price)
+
+    } else{
+        localStorage.setItem("totalCost" , product.price);
+    }
+
+  
+
 }
 
 function onLoadCartNumbers(){
@@ -72,4 +106,47 @@ function onLoadCartNumbers(){
         document.querySelector('.nav-item span').textContent=productNumbers;
     }
 }
+
+function displayCart(){
+let cartItems = localStorage.getItem("productsInCart");
+cartItems = JSON.parse(cartItems);
+
+let productContainer = document.querySelector(".products");
+console.log(cartItems);
+let cartCost = localStorage.getItem('totalCost');
+if(cartItems && productContainer ){
+   productContainer.innerHTML = '';
+   Object.values(cartItems).map(item =>{
+    productContainer.innerHTML += `
+    <div class="product">
+    <ion-icon name="close"></ion-icon>
+    <img src="../images/produtos/${item.tag}.png">
+    <span>${item.name}</span>
+    </div>
+    <div class="price">${item.price}</div>
+    <div class="quantity"> 
+    <ion-icon name="chevron-back-circle-outline"></ion-icon>
+    <span>${item.inCart}</span>
+    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+    </div>
+    <div class"total"> 
+    R$ ${item.inCart *item.price},00</div>
+   
+    `;
+
+   });
+
+   productContainer.innerHTML +=`
+   <div class "basketTotalContainer">
+   <h4 class = "baskeyTotal"> 
+   Total</h4>
+   <h4 class = "basketTotal"> 
+   R$ ${cartCost},00 </h4>`
+
+}
+}
+
+
+
 onLoadCartNumbers();
+displayCart();
