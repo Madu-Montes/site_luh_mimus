@@ -48,7 +48,8 @@
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Celular</h6></label>
-                            <input class="mb-4" type="tel" name="celular" placeholder="(DDD) 99999-99999" required maxlength="256">
+                            <input class="mb-4" type="text" name="telefone" id="telefone" placeholder="(DDD)99999-99999" required requiredonfocus="javascript: retirarFormataca(this);" onblur="javascript: formatarCampo(this);"
+                                maxlength="14">
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Data de nascimento</h6></label>
@@ -56,7 +57,7 @@
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">CPF</h6></label>
-                            <input class="mb-4" type="text" name="cpf" placeholder="Digite seu CPF" required maxlength="256">
+                            <input class="mb-4" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" requiredonfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="14">
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Senha</h6></label>
@@ -71,11 +72,12 @@
                         <div class="row mb-3 px-3">
                             <button type="submit" class="btn btn-blue text-center" style="background-color: #FCCAD5; color: black; display: block; margin-left: auto; margin-right: auto;">Cadastrar</button>
                         </div>
-                        
+                        <script src="../js/mascaras.js"></script>
                     </div>
                 </div>
             
             </div>
+
            
             <div class="bg-blue py-4">
                 <div class="row px-3">
