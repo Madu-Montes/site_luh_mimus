@@ -44,7 +44,7 @@ if(!isset($_SESSION)){
           
           <ul class="navbar-nav flex-row icones">
            
-          <p " style="margin-top:20px;">Bem vindo(a) <?php echo $_SESSION['nome'];?><p>
+          <p " style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp>Bem vindo(a) <?php echo $_SESSION['nome'];?><p>
             <br>
             <br>
             <li class="nav-item me-3 me-lg-1">
