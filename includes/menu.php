@@ -28,11 +28,11 @@ include '../php/conn_banco.php';
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="./bolos.html">Bolos</a>
-                            <a class="dropdown-item" href="./doces.html">Doces</a>
-                            <a class="dropdown-item" href="./salgados.html">Salgados</a>
-                            <a class="dropdown-item" href="./personalizados.html">Personalizados</a>
-                            <a class="dropdown-item" href="./kitfesta.html">Kit Festa</a>
+                            <a class="dropdown-item" href="../html/bolos.html">Bolos</a>
+                            <a class="dropdown-item" href="../php/doceslogged.php">Doces</a>
+                            <a class="dropdown-item" href="../html/salgados.html">Salgados</a>
+                            <a class="dropdown-item" href="../html/personalizados.html">Personalizados</a>
+                            <a class="dropdown-item" href="../html/">Kit Festa</a>
                         </div>
                     </li>
                 </ul>
