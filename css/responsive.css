@@ -27,18 +27,23 @@
 }
 
 .banners .slide1 .carousel-item {
-  background-image: url(../images/slide1.png);
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .banners .slide2 .carousel-item {
-  background-image: url(../images/slide2.png);
+  background-image: url(../images/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .banners .slide3 .carousel-item {
-  background-image: url(../images/slide3.png);
-
+  background-image: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

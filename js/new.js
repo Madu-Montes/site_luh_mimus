@@ -83,22 +83,22 @@ else {
 localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
-function totalCost(product){
+//function totalCost(product){
     //console.log("The product price is" , product.price);
-    let cartCost = localStorage.getItem('totalCost');
+    //let cartCost = localStorage.getItem('totalCost');
    
-    console.log("My cartCost is" , cartCost);
-    if (cartCost != null){
-        cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price)
+    //console.log("My cartCost is" , cartCost);
+    //if (cartCost != null){
+        //cartCost = parseInt(cartCost);
+        //localStorage.setItem("totalCost", cartCost + product.price)
 
-    } else{
-        localStorage.setItem("totalCost" , product.price);
-    }
+    //} //else{
+        //localStorage.setItem("totalCost" , product.price);
+    //}
 
   
 
-}
+//}
 
 function onLoadCartNumbers(){
     let productNumbers=localStorage.getItem('cartNumbers');
@@ -118,19 +118,16 @@ if(cartItems && productContainer ){
    productContainer.innerHTML = '';
    Object.values(cartItems).map(item =>{
     productContainer.innerHTML += `
+    <div class "product-inside"> 
     <div class="product">
-    <ion-icon name="close"></ion-icon>
+    
     <img src="../images/produtos/${item.tag}.png">
+    <br>
     <span>${item.name}</span>
     </div>
     <div class="price">R$ ${item.price},00</div>
-    <div class="quanti"> 
-    <ion-icon name="chevron-back-circle-outline"></ion-icon>
-    <span>${item.inCart}</span>
-    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
     </div>
-    <div class"total"> 
-    R$ ${item.inCart *item.price},00</div> 
+    
    
     `;
 
