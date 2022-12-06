@@ -7,7 +7,7 @@
      $cpf = $_POST['cpf'];
      $nome = $_POST['nome'];
      $email = $_POST['email'];
-     $dtn = $_POST['datanasc'];
+     $dtn = $_POST['dtn'];
      $senha = $_POST['senha'];
      $celular = $_POST['celular'];
      

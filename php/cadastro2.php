@@ -53,7 +53,7 @@
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Data de nascimento</h6></label>
-                            <input class="mb-4" type="date" name="datanasc" placeholder="" required maxlength="256">
+                            <input class="mb-4" type="date" name="dtn" placeholder="" required maxlength="256">
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">CPF</h6></label>
