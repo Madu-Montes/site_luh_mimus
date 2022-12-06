@@ -2,8 +2,10 @@
 
 include'conn_banco.php';
 
-if(!isset($_SESSION)){
+
+if(!isset($_SESSION['nome'])){
     session_start();
+    
 }
 
 
@@ -34,6 +36,7 @@ if(!isset($_SESSION)){
 </head>
 
 <body>
+<form action="../php/update.php" method="POST">
     <div class="container-fluid">
         <section class="py-5 my-5">
             <div class="container">
@@ -85,44 +88,45 @@ if(!isset($_SESSION)){
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Primeiro Nome</label>
-                                        <input type="text" class="form-control" placeholder="Ex: Maria">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" placeholder="Ex: Maria" value= <?php echo $_SESSION['nome'];?>>
+                                       
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Sobrenome</label>
-                                        <input type="text" class="form-control" placeholder=" Ex: Eduarda">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" placeholder=" Ex: Eduarda" value= <?php echo $_SESSION['email'];?> >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>CPF/CNPJ</label>
-                                        <input type="text" class="form-control" placeholder="000-000-000-00">
+                                        <input type="text" class="form-control"  name="cpf" id="cpf" placeholder="Digite seu CPF" requiredonfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="14" value= <?php echo $_SESSION['cpf'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Número de Telefone</label>
-                                        <input type="text" class="form-control" placeholder="(ddd) 00000-0000">
+                                        <input type="text" class="form-control" placeholder="(ddd) 00000-0000" value= <?php echo $_SESSION['celular'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Endereço</label>
-                                        <input type="text" class="form-control" placeholder="Av. Brasil 30">
+                                        <input type="text" class="form-control" placeholder="Insira seu endereço">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Data de Nascimento</label>
-                                        <input type="date" class="form-control">
+                                        <input type="date" class="form-control" value= <?php echo $_SESSION['dtn'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Senha Antiga</label>
-                                        <input type="text" class="form-control" placeholder="Digite sua senha antiga">
+                                        <input type="text" class="form-control" placeholder="Digite sua senha antiga" value= <?php echo $_SESSION['senha'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -131,6 +135,7 @@ if(!isset($_SESSION)){
                                         <input type="text" class="form-control" placeholder="Digite sua nova seeha">
                                     </div>
                                 </div>
+                                <script src="../js/mascaras.js"></script>
 
 
                             </div>
@@ -342,6 +347,7 @@ if(!isset($_SESSION)){
         }
     </script>
     </div>
+    </form>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 <form class="form-tot" method="POST" enctype="multipart/form-data" id="addevent">
 
-<form action="../php/salvar.php" method="POST">
+<form action="../php/encomendar.php" method="POST">
     <div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
         <div class="card card0 border-0">
             <div class="row d-flex">
@@ -33,7 +33,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 1KG
@@ -46,7 +46,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 2KG
@@ -59,7 +59,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 3KG
@@ -72,7 +72,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 4Kg
@@ -105,7 +105,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusTwo"
+                  name="massa"
                   id="qusTwo"/>
                 Baunilha
                 <span class="formbold-radio-checkmark"></span>
