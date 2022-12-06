@@ -68,7 +68,6 @@
 
 <?php
 include 'conn_banco.php';
-include 'formEncomendas.php';
 
 $peso = $_POST['peso'];
 $massa = $_POST['massa'];
