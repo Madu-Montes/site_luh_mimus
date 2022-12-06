@@ -17,20 +17,18 @@
   <link rel="stylesheet" href="../css/responsive.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-  <style>iframe{width: 100%; height: 700px; background-color: transparent; position: relative;}</style>
+  <link rel="stylesheet" href="../css/login2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
   <div class="container-fluid">
-    <!--start header-->
-    <?php
-    include '../includes/header.php';
-    ?>
 
-    <!--start menu-->
-    <?php
-    include '../includes/menu.php';
-    ?>
+
 
     <br><br>
     <!--start menu-->
@@ -43,10 +41,6 @@
   
   </div>
   </div>
-  <!--start footer-->
-  <?php
-    include '../includes/footer.php';
-    ?>
 </body>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="../js/main2.js"></script>
