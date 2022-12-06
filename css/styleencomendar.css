@@ -1,13 +1,13 @@
 .scroll-escondido {
   width: 99%; /* menos 5px (scroll width) do que a largura do iframe (Chrome) */
-  height: 600px;
+  height: 1000px;
   overflow: hidden; /* importante para cortar o cumprimento do elemento */
 }
 #paraLado{
   padding-left: 1.5rem!important;
 }
 #frame-spec{
-  height: 600px;
+  height: 1000px;
   width: 100%;
 }
 #alinhamento-centro{
