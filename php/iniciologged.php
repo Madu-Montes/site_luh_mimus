@@ -13,7 +13,8 @@ if(!isset($_SESSION)){
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Confeitaria Luh Mimu's</title>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <title>Galeria | Confeitaria Luh Mimu's</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
@@ -22,8 +23,9 @@ if(!isset($_SESSION)){
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylegaleria.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <script defer src="../js/app.js"></script>
 </head>
 
@@ -47,31 +49,30 @@ if(!isset($_SESSION)){
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0 snip1143">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html" aria-current="page" data-hover="Home">Home<span
+                <a class="nav-link active" href="iniciologged.php" aria-current="page">Home<span
                     class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./html/galeria.html" aria-current="page"
-                  data-hover="Galeria">Galeria<span class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="galerialogged.php" aria-current="page">Galeria<span
+                    class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./html/quemsomos.html" aria-current="page" data-hover="Quem somos">Quem
-                  somos<span class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="quemsomoslogged.php" aria-current="page">Quem somos<span
+                    class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./html/contato.html" aria-current="page"
-                  data-hover="Contato">Contato<span class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="contatologged.php" aria-current="page">Contato<span
+                    class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./html/produtos.html" id="dropdownId"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                  data-hover="Produtos">Produtos</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Produtos</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="./html/bolos.html" data-hover="Contato">Bolos</a>
-                  <a class="dropdown-item" href=".html/doces.html" data-hover="Contato">Doces</a>
-                  <a class="dropdown-item" href="./html/salgados.html" data-hover="Contato">Salgados</a>
-                  <a class="dropdown-item" href="./html/personalizados.html" data-hover="Contato">Personalizados</a>
-                  <a class="dropdown-item" href="./html/kitfesta.html" data-hover="Contato">Kit Festa</a>
+                  <a class="dropdown-item" href="boloslogged.php">Bolos</a>
+                  <a class="dropdown-item" href="doceslogged.php">Doces</a>
+                  <a class="dropdown-item" href="salgadoslogged.php">Salgados</a>
+                  <a class="dropdown-item" href="personalizadoslogged.php">Personalizados</a>
+                  <a class="dropdown-item" href="kitfestalogged.php">Kit Festa</a>
                 </div>
               </li>
             </ul>
