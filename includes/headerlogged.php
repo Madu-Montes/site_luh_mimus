@@ -60,10 +60,10 @@ if(!isset($_SESSION)){
                         
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="../php/perfilFeito.php" data-hover="Contato">Meu perfil</a>
-                  <a class="dropdown-item" href="#" data-hover="Contato">Minhas encomendas</a>
-                  <a class="dropdown-item" href="./html/salgados.html" data-hover="Contato">Favoritos </a>
+                  <a class="dropdown-item" href="../php/perfilFeito.php" data-hover="Contato">Minhas encomendas</a>
+                  <a class="dropdown-item" href="./php/favoritoslogged.php" data-hover="Contato">Favoritos </a>
                   <hr>
-                  <a class="dropdown-item" href="index.html" data-hover="Contato">Sair</a>
+                  <a class="dropdown-item" href="../php/logout.php" data-hover="Contato">Sair</a>
                  
                 </div>
                 
