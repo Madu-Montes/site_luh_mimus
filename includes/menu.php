@@ -3,7 +3,6 @@ include '../php/conn_banco.php';
 ?>
 
 <div class="header-menu">
-    <hr>
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
 
@@ -16,13 +15,13 @@ include '../php/conn_banco.php';
                         <a class="nav-link active" href="../index.html" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./galeria.html" aria-current="page">Galeria<span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="../html/galeria.html" aria-current="page">Galeria<span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./quemsomos.html" aria-current="page">Quem somos<span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="../html/quemsomos.html" aria-current="page">Quem somos<span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./contato.html" aria-current="page">Contato<span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="../html/contato.html" aria-current="page">Contato<span class="visually-hidden">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
