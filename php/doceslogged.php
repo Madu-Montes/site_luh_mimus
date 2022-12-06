@@ -7,6 +7,8 @@ if(!isset($_SESSION)){
 
 include 'conn_banco.php';
 
+include 'protect.php';
+
 
 //Selecioa todos os dados da tabela anuncios
 $dados_anuncios = $sql->query("SELECT * FROM anuncios");

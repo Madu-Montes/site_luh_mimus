@@ -2,6 +2,8 @@
 
 include'conn_banco.php';
 
+include 'protect.php';
+
 
 if(!isset($_SESSION['nome'])){
     session_start();
