@@ -106,9 +106,8 @@ button{
 }
 
 
-input[type='file'] {
-	width: 127px;
-    height: 127px;
-    background: url(../images/usuario.png);
-    overflow: hidden;
+input[type='file']{
+
+	display: none;
 }
+

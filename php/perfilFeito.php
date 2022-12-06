@@ -49,12 +49,11 @@ if(!isset($_SESSION)){
                 <div class="bg-white shadow rounded-lg d-block d-sm-flex">
                     <div class="profile-tab-nav border-right">
                         <div class="p-4">
-                            
-                            <div class="upload">
-                            <input  type="file" name="avatar" id="avatar"  accept="image/*" placeholder="">
-                            </div>
-                            
-                            <h4 class="text-center">Nome do Perfil</h4>
+                            <input type="file" id="avatar" name="avatar" accept="image/*">
+                            <script src="perfilfeito.js"></script>
+                            <br>
+                            <br>
+                            <h4 class="text-center"><?php echo $_SESSION['nome'];?></h4>
                         </div>
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
@@ -72,11 +71,6 @@ if(!isset($_SESSION)){
                                 aria-controls="security" aria-selected="false">
                                 <i class="fa fa-home text-center mr-1"></i>
                                 Adicionar Cartões
-                            </a>
-                            <a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab"
-                                aria-controls="application" aria-selected="false">
-                                <i class="fa fa-tv text-center mr-1"></i>
-                                Sair
                             </a>
                         </div>
                     </div>
@@ -131,12 +125,6 @@ if(!isset($_SESSION)){
                                     <div class="form-group">
                                         <label>Senha Nova</label>
                                         <input type="text" class="form-control" placeholder="Digite sua nova seeha">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Confirme a senha</label>
-                                        <input type="text" class="form-control" placeholder="Confirme sua nova senha">
                                     </div>
                                 </div>
 
