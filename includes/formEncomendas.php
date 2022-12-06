@@ -1,7 +1,7 @@
 <h1 style="text-align: center; color: #ffb8c4; margin-bottom:90px;">Encomenda - Passo à Passo</h1>
 
-<form id="forms" method="POST" action="#">
-  <div id="paraLado">
+<form id="forms" method="POST" action="../php/encomendar.php">
+  <div id="paraLado" >
           <br><br>
         <label for="qusOne" class="formbold-form-label">
             1º Passo - Quantidade
@@ -13,7 +13,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 1KG
@@ -26,7 +26,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 2KG
@@ -39,7 +39,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="qusOne"
+                  name="peso"
                   id="qusOne"
                 />
                 3KG
@@ -131,7 +131,7 @@
           rows="6"
           name="message"
           id="messageTema"
-          class="formbold-form-input" placeholder="Descreva o Tema Para Decorar o Bolo e/ou Mande uma unica imagem para Inspiração"
+          class="formbold-form-input" placeholder="Descreva o tema para decorar o bolo e/ou mande uma inspiração"
         ></textarea>
         <br><br>
         <label for="opcOne" class="formbold-form-label">
