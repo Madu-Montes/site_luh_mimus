@@ -8,15 +8,12 @@
             <div class="row d-flex">
                 <div class="col-lg-6">
                     <div class="card1 pb-5">
-                        <div class="row" style="text-align: center;">
-                            <img src="../images/logo da luh.png" class="logo" style="text-align: center;">
-                        </div>
                         <label for="messageReche" class="formbold-form-label" style="text-align: center;">
                         Data para entregar a encomenda
                         </label>
 
                         <div class="scroll-escondido">
-    <iframe src="../includes/calendario/calendario.php" name="janela" id="frame-spec"></iframe>
+                        <iframe src="../includes/calendario/calendario.php" name="janela" id="frame-spec"></iframe>
 </div>
     
             </iframe>
