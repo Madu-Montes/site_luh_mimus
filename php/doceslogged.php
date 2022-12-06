@@ -111,9 +111,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/brigadeiro.png" data-gallery="gallery1"
+                                        href="../images/produtos2/brigadeiro.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/brigadeiro.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/brigadeiro.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -165,9 +165,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/beijinho.png" data-gallery="gallery1"
+                                        href="../images/produtos2/beijinho.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/Beijinho.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/Beijinho.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -219,9 +219,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/doisamores.png" data-gallery="gallery1"
+                                        href="../images/produtos2/doisamores.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/doisamores.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/doisamores.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -272,9 +272,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/bichope.png" data-gallery="gallery1"
+                                        href="../images/produtos2/bichope.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/bichope.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/bichope.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -325,9 +325,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/ninho.png" data-gallery="gallery1"
+                                        href="../images/produtos2/ninho.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/ninho.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/ninho.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -379,9 +379,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/churros.png" data-gallery="gallery1"
+                                        href="../images/produtos2/churros.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/churros.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/churros.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -432,9 +432,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/ferrero.png" data-gallery="gallery1"
+                                        href="../images/produtos2/ferrero.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/ferrero.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/ferrero.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -485,9 +485,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/pacoca.png" data-gallery="gallery1"
+                                        href="../images/produtos2/pacoca.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/pacoca.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/pacoca.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -539,9 +539,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/brigmorango.png" data-gallery="gallery1"
+                                        href="../images/produtos2/brigmorango.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/brigmorango.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/brigmorango.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -593,9 +593,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/uva.png" data-gallery="gallery1"
+                                        href="../images/produtos2/uva.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/uva.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/uva.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"
@@ -647,9 +647,9 @@ $total = mysqli_num_rows($dados_anuncios);
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 p-lg-0"><a
                                         class="glightbox product-view d-block h-100 bg-cover bg-center"
-                                        href="../images/produtos/nozes.png" data-gallery="gallery1"
+                                        href="../images/produtos2/nozes.png" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"> <img
-                                            src="../images/produtos/nozes.png" alt="" width="450px"></a><a
+                                            src="../images/produtos2/nozes.png" alt="" width="450px"></a><a
                                         class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1"
                                         data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
                                         href="img/product-5-alt-2.jpg" data-gallery="gallery1"

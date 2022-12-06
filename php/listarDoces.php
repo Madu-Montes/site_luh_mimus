@@ -13,7 +13,7 @@ $total = mysqli_num_rows($dados_anuncios);
                     <div class="owl-item active" style="width: 330px; ">
                         <div class="single_course">
                             <div class="course_head">
-                                <a href="#productView" data-bs-toggle="modal"> <img class="img-fluid" src="../images/<?php echo $avatar = $linha['img_anuncios'];?>" alt="" /></a>
+                                <a href="#productView" data-bs-toggle="modal"> <img class="img-fluid" src="../<?php echo $avatar = $linha['img_anuncios'];?>" alt="" /></a>
                             </div>
                             <div class="course_content">
                                 <span class="price"><?php echo $valor = $linha['valor_anuncios']; ?></span>
