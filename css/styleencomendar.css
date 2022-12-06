@@ -1,9 +1,15 @@
-.forms-tot{
-    width: 70%;
-    display: inline-block;
-    margin-left: 10%;
+.scroll-escondido {
+  width: 510px; /* menos 5px (scroll width) do que a largura do iframe (Chrome) */
+  height: 600px;
+  overflow: hidden; /* importante para cortar o cumprimento do elemento */
 }
-
+#frame-spec{
+  width: 515px;
+  height: 600px;
+}
+#forcarBaixo{
+  margin-bottom: 0rem;
+}
 /*passos*/
 .formbold-main-wrapper {
     display: flex;
@@ -30,7 +36,7 @@
     margin-bottom: 30px;
   }
   .formbold-input-flex > div {
-    width: 50%;
+    width: 100%;
   }
   .formbold-form-input {
     width: 100%;
@@ -43,6 +49,7 @@
     color: black;
     outline: none;
     resize: none;
+    height: 100px;
   }
   .formbold-form-input:focus {
     border-color: #ffb8c4;
@@ -57,13 +64,18 @@
     margin-bottom: 25px;
   }
 
+  .card21 {
+    margin: 0px -4px;
+}
   .formbold-mb-5 {
     margin-bottom: 20px;
   }
   .formbold-radio-flex {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: initial;
+    gap: 20px;
+    justify-content: left;
+    margin-bottom: 20px;
   }
   .formbold-radio-label {
     font-size: 20px;
@@ -121,7 +133,6 @@
 
   .formbold-btn {
     text-align: center;
-    width: 25%;
     font-size: 16px;
     border-radius: 5px;
     padding: 14px 25px;
