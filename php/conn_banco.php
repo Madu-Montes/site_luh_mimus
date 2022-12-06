@@ -2,7 +2,7 @@
     $hostname = "localhost";
     $banco = "luh_mimus";
     $user = "root";
-    $senha = "512";
+    $senha = "";
 
      
     $sql = new mysqli($hostname, $user, $senha, $banco);
