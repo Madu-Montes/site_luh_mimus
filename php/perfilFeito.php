@@ -36,7 +36,7 @@ if(!isset($_SESSION['nome'])){
 </head>
 
 <body>
-<form action="../php/update.php" method="POST">
+<form action="../php/updateuser.php" method="POST">
     <div class="container-fluid">
         <section class="py-5 my-5">
             <div class="container">
@@ -53,7 +53,7 @@ if(!isset($_SESSION['nome'])){
                     <div class="profile-tab-nav border-right">
                         <div class="max-width">
                             <div class="imageContainer">
-                                <img src="../images/user.png" alt="Selecione uma imagem" id="imgavatar">
+                                <img src="../images/user.png" alt="Selecione uma imagem" name="avatar" id="imgavatar">
                                 
                             </div>
                         </div>
@@ -74,11 +74,6 @@ if(!isset($_SESSION['nome'])){
                                 <i class="fa fa-key text-center mr-1"></i>
                                 Histórico de Pedidos
                             </a>
-                            <a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab"
-                                aria-controls="security" aria-selected="false">
-                                <i class="fa fa-home text-center mr-1"></i>
-                                Adicionar Cartões
-                            </a>
                         </div>
                     </div>
                     <div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
@@ -89,14 +84,14 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nome</label>
-                                        <input type="text" class="form-control" placeholder="Ex: Maria" value= <?php echo $_SESSION['nome'];?>>
+                                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Maria" value= <?php echo $_SESSION['nome'];?>>
                                        
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="text" class="form-control" placeholder=" Ex: Eduarda" value= <?php echo $_SESSION['email'];?> >
+                                        <input type="text" class="form-control" name="email" id="email" placeholder=" Ex: Eduarda" value= <?php echo $_SESSION['email'];?> >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -108,19 +103,19 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Número de Telefone</label>
-                                        <input type="text" class="form-control" placeholder="(ddd) 00000-0000" value= <?php echo $_SESSION['celular'];?>>
+                                        <input type="text" class="form-control" name="celular" id="celular" placeholder="(ddd) 00000-0000" value= <?php echo $_SESSION['celular'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Endereço</label>
-                                        <input type="text" class="form-control" placeholder="Insira seu endereço">
+                                        <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Insira seu endereço">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Data de Nascimento</label>
-                                        <input type="date" class="form-control" value= <?php echo $_SESSION['dtn'];?>>
+                                        <input type="date" class="form-control" name="dtn" id="dtn" value= <?php echo $_SESSION['dtn'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -132,7 +127,7 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Senha Nova</label>
-                                        <input type="text" class="form-control" placeholder="Digite sua nova seeha">
+                                        <input type="text" class="form-control" name="senha" id="senha" placeholder="Digite sua nova senha">
                                     </div>
                                 </div>
                                 <script src="../js/mascaras.js"></script>
@@ -142,7 +137,7 @@ if(!isset($_SESSION['nome'])){
                             <div>
                                 <br>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary salvar" data-bs-toggle="modal"
+                                <button type="submit" class="btn btn-primary salvar" data-bs-toggle="modal"
                                     data-bs-target="#modalId">
                                     Salvar
                                 </button>
