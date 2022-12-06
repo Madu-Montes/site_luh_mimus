@@ -63,7 +63,7 @@ if(!isset($_SESSION)){
                   <a class="dropdown-item" href="#" data-hover="Contato">Minhas encomendas</a>
                   <a class="dropdown-item" href="./html/salgados.html" data-hover="Contato">Favoritos </a>
                   <hr>
-                  <a class="dropdown-item" href="./html/personalizados.html" data-hover="Contato">Sair</a>
+                  <a class="dropdown-item" href="index.html" data-hover="Contato">Sair</a>
                  
                 </div>
                 

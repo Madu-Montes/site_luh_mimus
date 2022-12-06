@@ -14,7 +14,7 @@ if(!isset($_SESSION)){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-  <title>Galeria | Confeitaria Luh Mimu's</title>
+  <title>Home | Confeitaria Luh Mimu's</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
@@ -106,13 +106,13 @@ if(!isset($_SESSION)){
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <a href="./html/bolos.html">
+          <a href="boloslogged.php">
             <div class="slide1">
               <div class="carousel-item active banner1">
               </div>
             </div>
           </a>
-          <a href="./html/doces.html">
+          <a href="doceslogged.php">
             <div class="slide2">
               <div class="carousel-item">
               </div>
@@ -122,7 +122,7 @@ if(!isset($_SESSION)){
 
           </div>
         </div>
-        <a href="./html/bolos.html">
+        <a href="boloslogged.php">
           <div class="slide3">
             <div class="carousel-item">
             </div>

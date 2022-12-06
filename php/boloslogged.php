@@ -136,7 +136,7 @@ if(!isset($_SESSION)){
                           </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="encomendar.php" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
