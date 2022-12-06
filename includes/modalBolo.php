@@ -28,7 +28,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -68,7 +68,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -108,7 +108,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -148,7 +148,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -188,7 +188,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -228,7 +228,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -268,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -308,7 +308,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -348,7 +348,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -388,7 +388,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -428,7 +428,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -468,7 +468,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -508,7 +508,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -548,7 +548,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -588,7 +588,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -628,7 +628,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -668,7 +668,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -708,7 +708,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -747,7 +747,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -786,7 +786,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>
@@ -825,7 +825,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
+                  <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="../html/loginpersonalizado.html">Encomendar</a></div>
                 </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
               </div>
             </div>

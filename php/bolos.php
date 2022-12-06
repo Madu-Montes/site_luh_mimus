@@ -70,7 +70,7 @@
                       <span class="price">R$ 50</span>
                       <span class="tag mb-4 d-inline-block">O quilo</span>
                       <h4 class="mb-3">
-                        <a href="#productView" data-bs-toggle="modal"">Brigadeiro</a>
+                        <a href="#productView" data-bs-toggle="modal">Brigadeiro</a>
                       </h4>
                       Bolo de chocolate rechado com brigadeiro 50% cacau. Pedido com 5 dias de antecedencia.
                       <div
@@ -79,7 +79,7 @@
                           </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -111,7 +111,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -142,7 +142,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -203,7 +203,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -234,7 +234,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -268,7 +268,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -300,7 +300,7 @@
                     </div>
 
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -332,7 +332,7 @@
                     </div>
                     <br>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -364,7 +364,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -396,7 +396,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -427,7 +427,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -458,7 +458,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -490,7 +490,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -521,7 +521,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -552,7 +552,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -583,7 +583,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -617,7 +617,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -648,7 +648,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -679,7 +679,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -710,7 +710,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -741,7 +741,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -772,7 +772,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -803,7 +803,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -835,7 +835,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
@@ -868,7 +868,7 @@
                       </div>
                     </div>
                     <div class="btns-cardapio">
-                      <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                      <a class="btn btn-outline-dark" href="../html/loginpersonalizado.html" role="button">Encomendar</a>
                     </div>
                     <div class="btn_fav">
                       <a class="nav-link d-sm-flex align-items-sm-center" href="./favoritovazio.html">
