@@ -48,11 +48,15 @@ if(!isset($_SESSION)){
                 <h1 class="mb-5">Configurações da Conta</h1>
                 <div class="bg-white shadow rounded-lg d-block d-sm-flex">
                     <div class="profile-tab-nav border-right">
+                        <div class="max-width">
+                            <div class="imageContainer">
+                                <img src="../images/user.png" alt="Selecione uma imagem" id="imgavatar">
+                                
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <input type="file" id="avatar" name="avatar" accept="image/*">
-                            <script src="perfilfeito.js"></script>
-                            <br>
-                            <br>
+                            <input type="file" id="fileavatar" name="avatar" accept="image/*">
+                            <script src="../js/perfilfeito.js"></script>
                             <h4 class="text-center"><?php echo $_SESSION['nome'];?></h4>
                         </div>
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
