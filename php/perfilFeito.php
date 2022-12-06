@@ -120,13 +120,13 @@ if(!isset($_SESSION['nome'])){
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Senha Antiga</label>
+                                        <label>Senha</label>
                                         <input type="text" class="form-control" placeholder="Digite sua senha antiga" value= <?php echo $_SESSION['senha'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Senha Nova</label>
+                                        <label>Nova senha</label>
                                         <input type="text" class="form-control" name="senha" id="senha" placeholder="Digite sua nova senha">
                                     </div>
                                 </div>

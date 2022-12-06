@@ -27,36 +27,15 @@
 </head>
 
 <body>
-  
-    <br><br>
-    <!--start menu-->
-    <?php
-    include '../includes/header.php';
-    ?>
-    
-     <br><br>
 
-    <?php
-    include '../includes/menu.php';
-    ?>
-
-<br><br>
-
+   <br>
+   <br>
     <div class="container-fluid">
         <?php
         include '../includes/formEncomendas.php';
         ?>
     </div>
 
-    <?php
-    include '../includes/footer.php';
-    ?>
-
-    <br><br>
-
-
-  </div>
-  </div>
 </body>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="../js/main2.js"></script>
