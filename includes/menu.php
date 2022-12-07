@@ -1,7 +1,3 @@
-<?php
-include '../php/conn_banco.php';
-?>
-
 <div class="header-menu">
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">

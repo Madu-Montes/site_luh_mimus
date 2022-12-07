@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  
     <!--start header-->
     <div class="header-topo">
       <nav class="navbar navbar-expand-lg navbar-light back">
@@ -162,7 +162,7 @@
                 <tbody class="border-0">
                   <tr>
                     <th class="ps-0 py-3 border-light" scope="row">
-                      <div class="d-flex align-items-center"><a class="reset-anchor d-block animsition-link" href="detail.html"><img src="../images/produtos/brig-pacoca.png" alt="..." width="70" /></a>
+                      <div class="d-flex align-items-center">
                         <div class="ms-3"><strong class="h6"><a class="reset-anchor animsition-link" href="detail.html">Bolo de Brigadeiro</a></strong></div>
                       </div>
                     </th>
@@ -185,22 +185,8 @@
                     <td class="p-3 align-middle border-light"><a class="reset-anchor" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
                   </tr>
                   <tr>
-                    <th class="ps-0 py-3 border-0" scope="row">
-                      <div class="d-flex align-items-center"><a class="reset-anchor d-block animsition-link" href="detail.html"><img src="../images/produtos/bicho-de-pe.png" alt="..." width="70" /></a>
-                        <div class="ms-3"><strong class="h6"><a class="reset-anchor animsition-link" href="detail.html">Bicho de pé</a></strong></div>
-                      </div>
-                    </th>
-                    <td class="p-3 align-middle border-0">
-                      <p class="mb-0 small">$250</p>
-                    </td>
-                    <td class="p-3 align-middle border-0">
-                      <div class="form-outline">
-                        <input type="number" id="typeNumber" class="form-control" placeholder="QUANTIDADE" />
-                      </div>
-                    </td>
-                    <td class="p-3 align-middle border-0">
-                      <p class="mb-0 small">$250</p>
-                    </td>
+                   
+                  
                     <td class="p-3 align-middle border-0"><a class="reset-anchor" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
                   </tr>
                 </tbody>
@@ -222,11 +208,11 @@
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex align-items-center justify-content-between"><strong class="text-uppercase small font-weight-bold">Subtotal</strong><span class="text-muted small">$100</span></li>
                   <li class="border-bottom my-2"></li>
-                  <li class="d-flex align-items-center justify-content-between mb-4"><strong class="text-uppercase small font-weight-bold">Total</strong><span>100</span></li>
+                  <li class="d-flex align-items-center justify-content-between mb-4"><strong class="text-uppercase small font-weight-bold">Total</strong><span>$100</span></li>
                   <li>
-                    <form action="#">
+                    <form action="./pagseguro/pay.php">
                       <div class="input-group mb-0">
-
+                        
                         <button class="btn btn-dark btn-sm w-100" type="submit"> <i class="fas fa-gift me-2"></i>Prosseguir</button>
                       </div>
                     </form>
@@ -239,7 +225,7 @@
       </section>
     </div>
     <?php 
-      include '../../includes/footer.php';
+      include '../includes/footer.php';
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo SCRIPT_PAGSEGURO; ?>"></script>
