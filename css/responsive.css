@@ -41,10 +41,11 @@
 }
 
 .banners .slide3 .carousel-item {
-  background-image: url(../images/3.png);
+  background-image: url(../images/slide3.1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 
 @media (min-width: 1400px) and (max-width: 1919px) {
@@ -449,7 +450,9 @@
   .logo {
     margin-left: 35%;
   }
-
+  .owl-stage-outer {
+    margin-left: 12%;
+  }
   .icones {
     margin-left: 35%;
   }
@@ -506,7 +509,9 @@
   .logo {
     margin-left: 36%;
   }
-
+  .owl-stage-outer {
+    margin-left: 12%;
+  }
   .icones {
     margin-left: 36%;
   }
@@ -566,6 +571,10 @@
     margin-left: 34%;
   }
 
+  .owl-item{
+    margin-left: 10% !important;
+  }
+
   .icones {
     margin-left: 36%;
   }
@@ -613,7 +622,7 @@
   }
 
   .banners .slide3 .carousel-item {
-    background-image: url(https://www.i2clipart.com/cliparts/0/2/a/0/12822502a0a5c7b0fc0931e2af651b972c0d9d.png);
+    background-image: url(../images/slide3-3.png);
 
   }
 
@@ -769,6 +778,11 @@
     margin-left: 34%;
   }
 
+  .owl-item{
+    margin-left: 12% !important;
+  }
+
+  
   .icones {
     margin-left: 36%;
   }
@@ -816,9 +830,10 @@
   }
 
   .banners .slide3 .carousel-item {
-    background-image: url(https://www.i2clipart.com/cliparts/0/2/a/0/12822502a0a5c7b0fc0931e2af651b972c0d9d.png);
+    background-image: url(../images/slide3-3.png);
 
   }
+
 
   /*aqui acaba*/
 
@@ -976,6 +991,9 @@
   .icones {
     margin-left: 32%;
   }
+  .owl-item{
+    margin-left: 15% !important;
+  }
 
   .d-flex button {
     display: none;
@@ -1020,9 +1038,10 @@
   }
 
   .banners .slide3 .carousel-item {
-    background-image: url(https://www.i2clipart.com/cliparts/0/2/a/0/12822502a0a5c7b0fc0931e2af651b972c0d9d.png);
+    background-image: url(../images/slide3-3.png);
 
   }
+
 
   /*aqui acaba*/
 
