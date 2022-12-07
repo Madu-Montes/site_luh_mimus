@@ -4,7 +4,8 @@
   overflow: hidden; /* importante para cortar o cumprimento do elemento */
 }
 #paraLado{
-  padding-left: 1.5rem!important;
+  padding-left: 3rem!important;
+  padding-right: 3rem!important;
 }
 #frame-spec{
   height: 1000px;
