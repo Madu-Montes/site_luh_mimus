@@ -6,9 +6,14 @@ body {
     background-color: white;
 }
 
-#calendar {
-    width: 100%;
+#calendar{
+    width: 80%;
     margin: 0 auto;
+}
+
+
+h1{
+    color: #F07882;
 }
 
 h2{
