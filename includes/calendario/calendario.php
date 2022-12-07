@@ -34,15 +34,30 @@ session_start();
 
 <style>
     #calendar {
-        max-width: 900px;
+        width:90%;
         margin: 0 auto;
         color: black;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.226);
+        padding: 10px;
+        border-radius: 5px;
     }
 
     h3{
         text-align: center;
     }
     
+    a button{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #ffb8c4;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 </style>
 
 <body>
@@ -133,7 +148,6 @@ session_start();
             </div>
         </div>
     </div>
-    <br><br><br>
 
     <?php
     include '../footer.php';
