@@ -19,7 +19,7 @@ include 'conn_banco.php';
     $avatar_UserCdstSite = $uploaddir . $avatar_final;
     unlink("../$avatar_UserCdstSite");
 
-    $sql->query("UPDATE user_cdst_site SET avatar_UserCdstSite='$avatar_UserCdstSite' WHERE cpf_UserCdstSite = '$cpf' ");
+    $sql->query("INSERT INTO user_cdst_site SET avatar_UserCdstSite='$avatar_UserCdstSite' WHERE cpf_UserCdstSite = '$cpf' ");
     move_uploaded_file($_FILES['avatar']['tmp_name'],'../' .  $uploaddir . $avatar_final);
     
 

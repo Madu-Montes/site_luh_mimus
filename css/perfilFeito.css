@@ -106,9 +106,43 @@ button{
 }
 
 
-input[type='file'] {
-	width: 127px;
-    height: 127px;
-    background: url(../images/usuario.png);
-    overflow: hidden;
+input[type='file']{
+
+	display: none;
+}
+
+.max-width{
+
+	max-width: 500px;
+	width: 100%;
+
+}
+
+.imageContainer{
+
+	max-width: 150px;
+	width: 100%;
+	border-radius: 50%;
+	margin-top: 10%;	
+	margin-left: 10%;
+	margin-right: 10%;
+	
+
+}
+
+#imgavatar{
+	margin-top: 10%;
+	margin-left: 15%;
+	margin-right: 10%;
+	max-width: 150px;
+	width: 100%;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background .3s;
+}
+
+#imgavatar:hover{
+
+	background-color: rgb(180, 180, 180);
+	
 }
