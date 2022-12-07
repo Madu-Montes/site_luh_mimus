@@ -1,7 +1,7 @@
 <h1 style="text-align: center; color: #ffb8c4; margin-bottom:90px;">Encomenda - Passo à Passo</h1>
 
-<form id="forms" method="POST" action="../php/encomendar.php">
-  <div id="paraLado" >
+<form id="forms" method="POST" action="#">
+  <div id="paraLado">
           <br><br>
         <label for="qusOne" class="formbold-form-label">
             1º Passo - Quantidade
@@ -13,7 +13,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="peso"
+                  name="qusOne"
                   id="qusOne"
                 />
                 1KG
@@ -26,7 +26,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="peso"
+                  name="qusOne"
                   id="qusOne"
                 />
                 2KG
@@ -39,7 +39,7 @@
                 <input
                   class="formbold-input-radio"
                   type="radio"
-                  name="peso"
+                  name="qusOne"
                   id="qusOne"
                 />
                 3KG
@@ -131,65 +131,13 @@
           rows="6"
           name="message"
           id="messageTema"
-          class="formbold-form-input" placeholder="Descreva o tema para decorar o bolo e/ou mande uma inspiração"
+          class="formbold-form-input" placeholder="Descreva o Tema Para Decorar o Bolo e/ou Mande uma unica imagem para Inspiração"
         ></textarea>
-        <br><br>
-        <label for="opcOne" class="formbold-form-label">
-            5º Passo - Adicionais
-          </label>
-  
-          <div class="formbold-radio-flex" style="display: block;">
-            <div class="formbold-radio-group">
-              <label class="formbold-radio-label">
-                <input
-                  class="formbold-input-radio"
-                  type="checkbox"
-                  name="add"
-                  id="opcOne"
-                />
-                Chantininho - Chantilly Leite Ninho
-                <span class="formbold-radio-checkmark"></span>
-              </label>
-            </div>
-  
-            <div class="formbold-radio-group">
-              <label class="formbold-radio-label">
-                <input
-                  class="formbold-input-radio"
-                  type="checkbox"
-                  name="add"
-                  id="opcTwo"
-                />
-                Bolo no acetato
-                <span class="formbold-radio-checkmark"></span>
-              </label>
-            </div>
-  
-            <div class="formbold-radio-group">
-              <label class="formbold-radio-label">
-                <input
-                  class="formbold-input-radio"
-                  type="checkbox"
-                  name="add"
-                  id="opcThree"
-                />
-                Ganache
-                <span class="formbold-radio-checkmark"></span>
-              </label>
-            </div>
-          </div>
-          <br>
-          <label for="messageReche" class="formbold-form-label">
-            6º Passo - Agendar a  Encomenda
-          </label>
-          <div class="scroll-escondido">
-          <iframe  src="../includes/calendario/calendario.php" id="frame-spec" scrolling="no">
-
-</iframe>
-</div>
+        <br>
+          
 <br>
 <div id="alinhamento-centro">
-          <button id="btn-form">Fazer Pedido</button>
+          <button id="btn-form" type="submit">Fazer Pedido</button>
 </div>
 </div>
 <br>
