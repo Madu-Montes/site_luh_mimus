@@ -1,6 +1,6 @@
 <h1 style="text-align: center; color: black;">Encomenda - Passo à Passo</h1>
 
-<form class="form-tot" method="POST" enctype="multipart/form-data" id="addevent" action="../php/encomendar.php">
+<form class="form-tot" method="POST" enctype="multipart/form-data" id="addevent" action="../php/salvarEncomenda.php">
     <div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
  
         <div class="row d-flex">

@@ -15,7 +15,7 @@ $resultado_events->execute();
 $eventos = [];
 
 while($row_events = $resultado_events->fetch(PDO::FETCH_ASSOC)){
-    $id = $row_events['id'];
+    $id = $row_events['id_eventos'];
     $title = $row_events['title'];
     $color = $row_events['color'];
     $start = $row_events['start'];
