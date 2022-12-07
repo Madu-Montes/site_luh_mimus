@@ -64,10 +64,6 @@
                             <input type="password" name="senha" placeholder="Digite a senha">
                         </div>
                         <br>
-                        <div class="row px-3">
-                            <label class="mb-1"><h6 class="mb-0 text-sm">Confirme a senha</h6></label>
-                            <input type="password" name="senha" placeholder="Digite a senha novamente">
-                        </div>
                         <br>
                         <div class="row mb-3 px-3">
                             <button type="submit" class="btn btn-blue text-center" style="background-color: #FCCAD5; color: black; display: block; margin-left: auto; margin-right: auto;">Cadastrar</button>

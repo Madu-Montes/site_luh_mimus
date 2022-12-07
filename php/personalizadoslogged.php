@@ -4,12 +4,13 @@ if(!isset($_SESSION)){
     session_start();
 }
 
+
+include 'conn_banco.php';
+
 include 'protect.php';
 
 
 ?>
-
-
 
 <!doctype html>
 <html lang="pt-br">
@@ -17,7 +18,8 @@ include 'protect.php';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salgados | Confeitaria Luh Mimu's</title>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <title>Personalizados | Confeitaria Luh Mimu's</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
@@ -33,19 +35,18 @@ include 'protect.php';
   <link rel="stylesheet" href="../css/stylecardapio.css">
   <link rel="stylesheet" href="../css/responsive.css">
 
-
 </head>
 
 <body>
   <div class="container-fluid">
     <!--start header-->
     
-    <?php  include '../includes/headerlogged.php';?>
 
+    <?php  include '../includes/headerlogged.php';?>
 
     <!--start menu-->
     <div class="header-menu">
-      <nav class="navbar navbar-expand-sm navbar-light">
+      <nav class="navbar navbar-expand-sm navbar-light ">
         <div class="container">
 
           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -95,42 +96,95 @@ include 'protect.php';
         </div>
       </nav>
       <div class="container" class="topo-galeria">
-        <i><img src="../images/bannersalgado.png" width="100%"></i>
+        <i><img src="../images/bannerperso.png" width="100%"></i>
         <!--fundo-->
       </div>
-      <!--modal-->
+
+      <!--MODALS-->
+      <div class="modal fade" id="productView" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content overflow-hidden border-0">
+            <div class="modal-body p-0">
+              <div class="row align-items-stretch">
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/pirulito.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/pirulito.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="p-4 my-md-4">
+                    <ul class="list-inline mb-2">
+                    </ul>
+                    <h2 class="h4">Pirulito de chocolate</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Pirulito de chocolate com adesivo personalizado. O preço acima
+                      é equivalente á uma unidade de Pirulito de chocolate.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
+                    <div class="row align-items-stretch mb-4 gx-0">
+                      <div class="col-sm-7">
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                          <div class="quantity">
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="productView1" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/coxinha.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/chocomaca.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/chocomaca.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Coxinha</h2>
-                    <p class="text-muted">RS55,00</p>
-                    <p class="text-sm mb-4">Coxinha de frango tradicional, no tamanho mini(festa). O preço acima é equivalente á 100 unidades de coxinha.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo,  5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Chocomaça</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Chocomaça personalizada. O preço acima
+                      é equivalente á uma unidade de Chocomaça.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -138,38 +192,46 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView2" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/bolinhocarne.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/cupcake.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/cupcake.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Bolinho de carne</h2>
-                    <p class="text-muted">RS55,00</p>
-                    <p class="text-sm mb-4">Bolinhos fritos de carne bovina, no tamanho mini(festa). O preço acima é equivalente á 100 unidades de bolinho de carne.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Cupcake recheado</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Cupcake recheado. O preço acima
+                      é equivalente á uma unidade de Cupcake recheado.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -177,38 +239,44 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView3" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/bolinhaqueijo.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/cupcakeplac.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/cupcakeplac.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Bolinho de queijo</h2>
-                    <p class="text-muted">RS55,00</p>
-                    <p class="text-sm mb-4">Bolinhos fritos de queijo, no tamanho mini(festa). O preço acima é equivalente á 100 unidades de bolinho de queijo.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Cupcake recheado com plaquinha</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Cupcake Recheado com plaquinha em vários sabores. O preço acima
+                      é equivalente á uma unidade de Cupcake Recheado com plaquinha.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -216,38 +284,44 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView4" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/risole.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/portaretrato.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/portaretrato.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Risole</h2>
-                    <p class="text-muted">RS55,00</p>
-                    <p class="text-sm mb-4">Risole tradicional de presunto e queijo, no tamanho mini(festa). O preço acima é equivalente á 100 unidades de risole.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Porta retrado</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Porta retrado personalizado. O preço acima
+                      é equivalente á uma unidade de Porta retrado.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -255,38 +329,46 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView5" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/esfihacarne.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/cone.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/cone.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Esfiha de carne</h2>
-                    <p class="text-muted">RS70,00</p>
-                    <p class="text-sm mb-4">Esfiha fechada de carne bovina no tamanho mini(festa). O preço acima é equivalente á 100 unidades de esfiha de carne.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Mini cone</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Mini cone em vários sabores. O preço acima
+                      é equivalente á uma unidade de Mini cone.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -294,38 +376,46 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView6" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/esfihafrango.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/barra.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/barra.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Esfiha de frango</h2>
-                    <p class="text-muted">RS70,00</p>
-                    <p class="text-sm mb-4">Esfiha fechada de frango no tamanho mini(festa). O preço acima é equivalente á 100 unidades de esfiha de frango.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Barra de chocolate</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Barra de chocolate em vários sabores. O preço acima
+                      é equivalente á uma unidade de Barra de chocolate.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -333,38 +423,46 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView7" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/kibe.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/colher.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/colher.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Kibe</h2>
-                    <p class="text-muted">RS80,00</p>
-                    <p class="text-sm mb-4">Kibe de carne moída bovina tradicional. O preço acima é equivalente á 100 unidades de kibe.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Colher de chocolate c/ doce</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Colher de chocolate c/ doce em vários sabores. O preço acima
+                      é equivalente á uma unidade de Colher de chocolate c/ doce.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -372,38 +470,46 @@ include 'protect.php';
           </div>
         </div>
       </div>
+
       <div class="modal fade" id="productView8" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
             <div class="modal-body p-0">
               <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/pastel.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center"
+                    href="../images/produtos/brownieperso.png" data-gallery="gallery1" data-glightbox="Red digital smartwatch">
+                    <img src="../images/produtos/brownieperso.png" alt="" width="450px"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-1.jpg" data-gallery="gallery1"
+                    data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none"
+                    href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a>
+                </div>
                 <div class="col-lg-6">
                   <div class="p-4 my-md-4">
                     <ul class="list-inline mb-2">
-                    
                     </ul>
-                    <h2 class="h4">Pastel</h2>
-                    <p class="text-muted">RS85,00</p>
-                    <p class="text-sm mb-4">Pastel tradicional recheado de carne ou queijo. O preço acima é equivalente á 100 unidades de pastel.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
+                    <h2 class="h4">Brownie trufado personalizado</h2>
+                    <p class="text-muted">RS3,80</p>
+                    <p class="text-sm mb-4">Brownie em vários sabores e adesivos personalizados. O preço acima
+                      é equivalente á uma unidade de Mini Tortinha.
+                    </p>
+                    <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de
+                      antecendência. </p>
                     <div class="row align-items-stretch mb-4 gx-0">
                       <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3">
+                          <span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
                           <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
+
+                            <input class="form-control border-0 shadow-0 p-0" type="number" value="100">
+
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
+                      <div class="col-sm-5"><a
+                          class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"
+                          href="loginpersonalizado.html">Encomendar</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i
+                        class="far fa-heart me-2"></i>Favoritar</a>
                   </div>
                 </div>
               </div>
@@ -411,45 +517,7 @@ include 'protect.php';
           </div>
         </div>
       </div>
-      <div class="modal fade" id="productView9" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content overflow-hidden border-0">
-            <a href="#" class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0"></a>
-            <div class="modal-body p-0">
-              <div class="row align-items-stretch">
-                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" href="#" data-gallery="gallery1" data-glightbox="Red digital smartwatch"> <img src="../images/produtos/bauru.png" alt="" width="450px"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
-                <div class="col-lg-6">
-                  <div class="p-4 my-md-4">
-                    <ul class="list-inline mb-2">
-                    
-                    </ul>
-                    <h2 class="h4">Bauru</h2>
-                    <p class="text-muted">RS85,00</p>
-                    <p class="text-sm mb-4">Sanduiche bauru tradicional recheado de queijo e presunto. O preço acima é equivalente á 100 unidades de bauru.
-                     </p>
-                     <p class=" text-sm mb-0">O pedido deve ser feito com, no mínimo, 5 dias de antecendência. Pedido minimo: 50 unidades. </p>
-                           
-                            <p class=" text-sm mb-0">Realize a encomenda do produto e faça uma descrição.</p>
-                            <br>
-                    <div class="row align-items-stretch mb-4 gx-0">
-                      <div class="col-sm-7">
-                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quant</span>
-                          <div class="quantity">
-                            
-                            <input class="form-control border-0 shadow-0 p-0" type="number" value="1">
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Encomendar</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Favoritar</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <!--end header-->
       <div class="cardapio">
         <!--início da sessão de bolos-->
@@ -458,7 +526,7 @@ include 'protect.php';
             <div class="row justify-content-center">
               <div class="col-lg-5">
                 <div class="title">
-                  <h1 class="mb-3">SALGADOS</h1>
+                  <h1 class="mb-3">PERSONALIZADOS</h1>
                 </div>
               </div>
             </div>
@@ -469,18 +537,19 @@ include 'protect.php';
                     <div class="owl-item active" style="width: 330px; ">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView1" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/coxinha.png" alt="" /></a>
+                          <a href="#productView" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/pirulito.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 55</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$6,50</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a  href="#productView1" data-bs-toggle="modal">Coxinha</a>
+                            <a href="#productView" data-bs-toggle="modal">Pirulito de chocolate</a>
                           </h4>
                           <p>
-                            Coxinha de frango tradicional.
+                            Pirulito de chocolate com adesivo em papel.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
                           </p>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
@@ -488,10 +557,11 @@ include 'protect.php';
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark " href="#">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
+
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart1" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart53" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -505,18 +575,19 @@ include 'protect.php';
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView2" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/bolinhocarne.png" alt="" /></a>
+                          <a href="#productView1" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/chocomaca.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 55</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$10</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView2" data-bs-toggle="modal">Bolinho de Carne</a>
+                            <a href="#productView1" data-bs-toggle="modal">Chocomaça</a>
                           </h4>
                           <p>
-                            Bolinho de carne bovina.
+                            Maça com chocolate emabalada em adesivo de papel.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
                           </p>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
@@ -524,10 +595,10 @@ include 'protect.php';
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="#" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart2" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart54" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -541,18 +612,21 @@ include 'protect.php';
                     <div class="owl-item cloned active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView3" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/bolinhaqueijo.png" alt="" /></a>
+                          <a href="#productView2" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/cupcake.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 55</span>
-                          <span class="tag mb-4 d-inline-block">o cento</span>
+                          <span class="price">R$5,95</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView3" data-bs-toggle="modal">Bolinho de Queijo</a>
+                            <a href="#productView2" data-bs-toggle="modal">Cupcake Recheado</a>
                           </h4>
                           <p>
-                            Bolinho de queijo tradicional.
+                            Cupcake tradicional recheado.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
+                            <br>
+                            <br>
                           </p>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
@@ -560,10 +634,10 @@ include 'protect.php';
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="#" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart3" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart55" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -579,16 +653,19 @@ include 'protect.php';
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView4" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/risole.png" alt="" /></a>
+                          <a href="#productView3" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/cupcakeplac.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 55</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$6,99</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView4" data-bs-toggle="modal">Risole</a>
+                            <a href="#productView3" data-bs-toggle="modal">Cupcake Recheado com Plaquinha</a>
                           </h4>
                           <p>
-                            Risole tradicional de presunto e queijo.
+                            Cupcake tradicional recheado com plaquinha personalizada.
+                            <br>
+                            Pedido mínimo 10 unidades.
                           </p>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
@@ -597,10 +674,10 @@ include 'protect.php';
                           </div>
 
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart4" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart56" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -614,29 +691,31 @@ include 'protect.php';
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView5" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/esfihacarne.png" alt="" /></a>
+                          <a href="#productView4" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/portaretrato.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 70</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$8,95</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView5" data-bs-toggle="modal">Esfiha de Carne</a>
+                            <a href="#productView4" data-bs-toggle="modal">Porta Retrato</a>
                           </h4>
                           <p>
-                            Esfiha de carne bovina.
+                            Porta retrato de chocolate personalizado com nome.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
                           </p>
+                          <br>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                             <div class="mt-lg-0 mt-3">
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart5" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart57" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -650,29 +729,32 @@ include 'protect.php';
                     <div class="owl-item cloned active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView6" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/esfihafrango.png" alt="" /></a>
+                          <a href="#productView5 " data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/cone.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 70</span>
-                          <span class="tag mb-4 d-inline-block">o cento</span>
+                          <span class="price">R$7,80</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView6" data-bs-toggle="modal">Esfiha de Frango</a>
+                            <a href="#productView5">Mini Cone</a>
                           </h4>
                           <p>
-                            Esfiha de frango tradicional.
+                            Mini cone na caixa personalizada.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
                           </p>
+                          <br>
+                          <br>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                             <div class="mt-lg-0 mt-3">
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart6" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart58" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -683,36 +765,35 @@ include 'protect.php';
                         </div>
                       </div>
                     </div>
-
-                    <!--início da sessão de bolos semi especiais-->
-
                     <h6>luhmimus</h6>
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView7" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/kibe.png" alt="" /></a>
+                          <a href="#productView6" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/barra.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 80</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$8,99</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView7" data-bs-toggle="modal">Kibe</a>
+                            <a href="#productView6" data-bs-toggle="modal">Barra de Chocolate</a>
                           </h4>
                           <p>
-                            Kibe tradicional.
+                            Barra de chocolate personalizada.
                             <br>
-                            Pedido mínimo 50 unidades.
+                            Pedido mínimo 10 unidades.
                           </p>
+                          <br>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                             <div class="mt-lg-0 mt-3">
                             </div>
                           </div>
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart7" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart59" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -726,18 +807,17 @@ include 'protect.php';
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView8" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/pastel.png" alt="" /></a>
+                          <a href="#productView7" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/colher.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 85</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$4,50</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView8" data-bs-toggle="modal">Pastel</a>
+                            <a href="#productView7" data-bs-toggle="modal">Colher de chocolate c/ doce</a>
                           </h4>
                           <p>
-                            Pastel de carne ou queijo.
-                            <br>
-                            Pedido mínimo 50 unidades.
+                            Colher de chocolate já com docinho.
                           </p>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
@@ -746,10 +826,10 @@ include 'protect.php';
                           </div>
 
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart8" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart60" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -760,35 +840,35 @@ include 'protect.php';
                         </div>
                       </div>
                     </div>
-
-                    
+                    <h6>luhmimus</h6>
                     <div class="owl-item active" style="width: 330px;">
                       <div class="single_course">
                         <div class="course_head">
-                          <a href="#productView9" data-bs-toggle="modal"><img class="img-fluid" src="../images/produtos/bauru.png" alt="" /></a>
+                          <a href="#productView8" data-bs-toggle="modal"> <img class="img-fluid"
+                              src="../images/produtos/brownieperso.png" alt="" /></a>
                         </div>
                         <div class="course_content">
-                          <span class="price">R$ 70</span>
-                          <span class="tag mb-4 d-inline-block">O cento</span>
+                          <span class="price">R$8,99</span>
+                          <span class="tag mb-4 d-inline-block">Unidade</span>
                           <h4 class="mb-3">
-                            <a href="#productView9" data-bs-toggle="modal">Bauru</a>
+                            <a href="#productView8">Brownie Trufado</a>
                           </h4>
                           <p>
-                            Sanduiche bauru.
+                            Brownie trufado com adesivos.
                             <br>
-                            Pedido mínimo 50 unidades..
+                            Pedido mínimo 10 unidades.
                           </p>
+                          <br>
                           <div
                             class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                             <div class="mt-lg-0 mt-3">
                             </div>
                           </div>
-
                           <div class="btns-cardapio">
-                            <a class="btn btn-outline-dark" href="./encomendar.html" role="button">Encomendar</a>
+                            <a class="btn btn-outline-dark" href="./loginpersonalizado.html" role="button">Encomendar</a>
                           </div>
                           <div class="btn_fav">
-                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart9" href="#">
+                            <a class="nav-link d-sm-flex align-items-sm-center add-cart cart61" href="#">
                               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-heart" viewBox="0 0 16 16">
                                 <path
@@ -807,6 +887,7 @@ include 'protect.php';
         </div>
       </div>
     </div>
+    <br>
     <!--start footer-->
     <footer>
       <div class="footer">
@@ -872,8 +953,6 @@ include 'protect.php';
 
   </div>
   <script src="../js/new.js"></script>
-  
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
