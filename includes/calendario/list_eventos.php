@@ -6,9 +6,9 @@
  * porém lembre-se de conceder os créditos ao desenvolvedor.
  */
 
-include 'conexao.php';
+include_once '../calendario/conexao.php';
 
-$query_events = "SELECT id, title, color, start, end FROM events";
+$query_events = "SELECT id_eventos, title, color, start, end FROM events";
 $resultado_events = $conn->prepare($query_events);
 $resultado_events->execute();
 

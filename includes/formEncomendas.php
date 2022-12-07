@@ -2,9 +2,9 @@
 
 <form class="form-tot" method="POST" enctype="multipart/form-data" id="addevent" action="../php/encomendar.php">
     <div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-      <div class="card card0 border-0">
+ 
         <div class="row d-flex">
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <div class="card1 pb-5">
               <label for="messageReche" class="formbold-form-label" style="text-align: center;">
                 Data para entregar a encomenda
@@ -16,10 +16,10 @@
 
               </iframe>
             </div>
-          </div>
+          </div> -->
 
 
-          <div class="col-lg-6">
+          <div class="col-8">
             <div class="card21 card border-0 px-4 py-5" id="forcarBaixo">
 
               <div class="row px-3">
