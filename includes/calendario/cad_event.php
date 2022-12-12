@@ -23,6 +23,7 @@ $insert_event->bindParam(':end', $data_end_conv);
 
 if ($insert_event->execute()) {
     $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">Pedido agendado com sucesso!</div>'];
+    
     $_SESSION['msg'] = '<div class="alert alert-success" role="alert">Pedido Agendado com sucesso!</div>';
 } else {
     $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">Erro: Pedido não foi agendado com sucesso!</div>'];

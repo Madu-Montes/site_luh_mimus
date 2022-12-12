@@ -10,7 +10,7 @@ include 'conn_banco.php';
     $email = $_POST['email'];
     $dtn = $_POST['dtn'];
     $senha = $_POST['senha'];
-    $avatar = $_FILES['avatar']['name'];
+    /* $avatar = $_FILES['avatar']['name'];
     $uploaddir = "avatar/";
     $separa =  explode(".", $avatar);
     $separa = array_reverse($separa);
@@ -20,7 +20,7 @@ include 'conn_banco.php';
     unlink("../$avatar_UserCdstSite");
 
     $sql->query("INSERT INTO user_cdst_site SET avatar_UserCdstSite='$avatar_UserCdstSite' WHERE cpf_UserCdstSite = '$cpf' ");
-    move_uploaded_file($_FILES['avatar']['tmp_name'],'../' .  $uploaddir . $avatar_final);
+    move_uploaded_file($_FILES['avatar']['tmp_name'],'../' .  $uploaddir . $avatar_final); */
     
 
     $sql->query("UPDATE user_cdst_site SET nome_UserCdstSite='$nome', email_UserCdstSite='$email',

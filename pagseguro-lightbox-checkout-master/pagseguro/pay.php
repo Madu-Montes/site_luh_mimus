@@ -1,14 +1,15 @@
+
+
+
 <?php 
     require_once('config.php');
     require_once('utils.php');
     
-    $amount = htmlspecialchars($_POST["amount"]);
+    $amount = 100;
     $amount = number_format($amount, 2);
     $amount = str_replace(",",".",$amount); //For BRL format
 
     $my_payment_id = 1;
-
-    $qtd = 3;
 
     $params = array(
         'email'                     => $PAGSEGURO_EMAIL,  
@@ -16,21 +17,11 @@
         'receiverEmail'             => $PAGSEGURO_EMAIL,
         'currency'                  => 'BRL',
         'itemId1'                   => $my_payment_id,
-        'itemDescription1'          => 'Test shop',
+        'itemDescription1'          => 'Bolo de Brigadeiro',
+        'reference'                 => $my_payment_id,
         'itemAmount1'               => $amount,  
-        'itemQuantity1'             => $qtd,
-        'senderName'                => 'Jose Comprador',
-        'senderEmail'               => 'comprador@uol.com.br',
-        'shippingType'              => 1,
-        'shippingAddressStreet'     =>  'Av. Brig. Faria Lima',
-        'shippingAddressNumber'     =>  '1384',
-        'shippingAddressComplement' => '5o andar',
-        'shippingAddressDistrict'   => 'Jardim Paulistano',
-        'shippingAddressPostalCode' => '01452002',
-        'shippingAddressCity'       =>'Sao Paulo',
-        '&shippingAddressState'     => 'SP'
-        
-            );
+        'itemQuantity1'             => 1
+    );
 
     //Asks for a code to start payment flow
     $header = array('Content-Type' => 'application/json; charset=UTF-8;');
@@ -43,8 +34,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head> 
 
-<h4>You'll receive payment information in your notification URL, after payment window, (See /pagseguro/notification.php)</h4>
-Response: <?= $response; ?>
 
 <script type="text/javascript" src="<?php echo $PAGSEGURO_JS_URL;?>"></script>
 <script type='text/javascript'>
@@ -55,7 +44,7 @@ Response: <?= $response; ?>
         code: '<?= $code?>'
     }, {
         success : function(transactionCode) {
-            alert('SUCCESS: ' + transactionCode);
+            window.location.href = "../../html/sucess.html";
         },
         abort : function(error) {
             alert('ERROR =( ' + error);
