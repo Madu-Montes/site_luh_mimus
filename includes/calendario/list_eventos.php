@@ -6,16 +6,16 @@
  * porém lembre-se de conceder os créditos ao desenvolvedor.
  */
 
-include_once '../calendario/conexao.php';
+include 'conexao.php';
 
-$query_events = "SELECT id_eventos, title, color, start, end FROM events";
+$query_events = "SELECT id, title, color, start, end FROM events";
 $resultado_events = $conn->prepare($query_events);
 $resultado_events->execute();
 
 $eventos = [];
 
 while($row_events = $resultado_events->fetch(PDO::FETCH_ASSOC)){
-    $id = $row_events['id_eventos'];
+    $id = $row_events['id'];
     $title = $row_events['title'];
     $color = $row_events['color'];
     $start = $row_events['start'];
