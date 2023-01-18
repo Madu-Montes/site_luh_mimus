@@ -1,11 +1,11 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         locale: 'pt-br',
-        plugins: ['interaction', 'dayGrid'],
+        plugins: ['interaction', 'dayGrid', 'interactionPlugin'],
         //defaultDate: '2019-04-12',
-        editable: true,
         eventLimit: true,
         events: 'list_eventos.php',
         extraParams: function () {
@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 cachebuster: new Date().valueOf()
             };
         },
-            selectable: true,
+        selectable: true,
         select: function (info) {
             //alert('Início do evento: ' + info.start.toLocaleString());
             $('#cadastrar #start').val(info.start.toLocaleString());
             $('#cadastrar #end').val(info.end.toLocaleString());
             $('#cadastrar').modal('show');
-        }
+        },
     });
 
     calendar.render();
@@ -70,8 +70,7 @@ $(document).ready(function () {
             success: function (retorna) {
                 if (retorna['sit']) {
                     $("#msg-cad").html(retorna['msg']);
-                    var botao = document.getElementById('CadEvent');
-                    botao.disabled = true
+                    window.document.getElementById('CadEvent').style.display = 'none'
                 } else {
                     $("#msg-cad").html(retorna['msg']);
                 }
@@ -79,6 +78,4 @@ $(document).ready(function () {
         })
     });
 });
-
-    
 
