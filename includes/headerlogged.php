@@ -28,6 +28,25 @@ if(!isset($_SESSION)){
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
   <script defer src="./js/app.js"></script>
+  <style>
+    @media (min-width: 340px) and (max-width: 379px) {
+
+/*Header para celular*/
+  .nav-link{
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+  }
+  .header-topo{
+    width: 100%;
+  }
+  #cabeca{
+    margin-top: 40px;
+    margin-left: 66px;
+  }
+/*fim*/
+}
+    </style>
 </head>
 
 <body>
@@ -36,18 +55,16 @@ if(!isset($_SESSION)){
     <div class="header-topo">
       <nav class="navbar navbar-expand-lg navbar-light back">
         <div class="container-fluid justify-content-between">
-          <ul class="navbar-nav flex-row logo">
+          <ul class="navbar-nav flex-row logo" id="logotipo">
             <a class="nav-link" href="../index.html">
               <img src="../images/logo.jfif" alt="" width="140px">
             </a>
           </ul>
-          
-          <ul class="navbar-nav flex-row icones">
-           
-          <p " style="margin-top:20px;" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp>Bem vindo(a) <?php echo $_SESSION['nome'];?><p>
-            <br>
-            <br>
+
+          <ul class="navbar-nav flex-row icones" id="cabeca" style="margin-top: 25px;">
+          <p style="margin-top: 5px;">Bem vindo(a) <br> <?php echo $_SESSION['nome'];?><p>
             <li class="nav-item me-3 me-lg-1">
+
             <li class="nav-item dropdown">
               
                 <a class="nav-link dropdown-toggle" href="../html/perfilFeito.html" id="dropdownId"
@@ -87,6 +104,6 @@ if(!isset($_SESSION)){
           </ul>
         </div>
       </nav>
-      <hr>
     </div>
+    <hr>
     </html>
