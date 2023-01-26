@@ -1,6 +1,6 @@
 <?php
 
-include'conn_banco.php';
+include 'conn_banco.php';
 
 include 'protect.php';
 
@@ -38,7 +38,7 @@ if(!isset($_SESSION['nome'])){
 </head>
 
 <body>
-<form action="../php/updateuser.php" method="POST">
+<form action="updateuser.php" method="POST">
     <div class="container-fluid">
         <section class="py-5 my-5">
             <div class="container">
@@ -105,7 +105,7 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Número de Telefone</label>
-                                        <input type="text" class="form-control" name="celular" id="celular" placeholder="(ddd) 00000-0000" value= <?php echo $_SESSION['celular'];?>>
+                                        <input type="text" class="form-control" name="celular" id="telefone" placeholder="(ddd) 00000-0000" value= <?php echo $_SESSION['celular'];?>>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -123,7 +123,7 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Senha</label>
-                                        <input type="text" class="form-control" placeholder="Digite sua senha antiga" value= <?php echo $_SESSION['senha'];?>>
+                                        <input type="text" class="form-control" placeholder="Digite sua senha antiga" value= <?php echo $_SESSION['senha'];?> readonly>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -133,16 +133,16 @@ if(!isset($_SESSION['nome'])){
                                     </div>
                                 </div>
                                 <script src="../js/mascaras.js"></script>
-
-
+                                
                             </div>
-                            <div>
-                                <br>
+                            <br>
                                 <!-- Button trigger modal -->
                                 <button type="submit" class="btn btn-primary salvar" data-bs-toggle="modal"
                                     data-bs-target="#modalId">
                                     Salvar
                                 </button>
+                            <div>
+                                
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="modalId" tabindex="-1" role="dialog"
