@@ -25,6 +25,8 @@
 </head>
 
 <body>
+  <script src="../js/pesquisar2.js"></script>
+  <script defer src="../js/app.js"></script>
   <div class="container-fluid">
     <!--start header-->
     <div class="header-topo">
@@ -63,7 +65,7 @@
     <!--start menu-->
     <div class="header-menu">
       <hr>
-      <nav class="navbar navbar-expand-sm navbar-light">
+      <nav class="navbar navbar-expand-sm navbar-light ">
         <div class="container">
 
           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -74,36 +76,37 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0 snip1143">
               <li class="nav-item">
-                <a class="nav-link active" href="../index.html" aria-current="page">Home<span
+                <a class="nav-link active" href="../index.html" aria-current="page" data-hover="Home">Home<span
                     class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./galeria.html" aria-current="page">Galeria<span
-                    class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="galeria.html" aria-current="page"
+                  data-hover="Galeria">Galeria<span class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./quemsomos.html" aria-current="page">Quem somos<span
-                    class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="quemsomos.html" aria-current="page" data-hover="Quem somos">Quem
+                  somos<span class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./contato.html" aria-current="page">Contato<span
-                    class="visually-hidden">(current)</span></a>
+                <a class="nav-link active" href="contato.html" aria-current="page"
+                  data-hover="Contato">Contato<span class="visually-hidden">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Produtos</a>
+                <a class="nav-link dropdown-toggle" href="produtos.html" id="dropdownId"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  data-hover="Produtos">Produtos</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="../php/bolos.php">Bolos</a>
-                  <a class="dropdown-item" href="./doces.html">Doces</a>
-                  <a class="dropdown-item" href="./salgados.html">Salgados</a>
-                  <a class="dropdown-item" href="./personalizados.html">Personalizados</a>
-                  <a class="dropdown-item" href="./kitfesta.html">Kit Festa</a>
+                  <a class="dropdown-item" href="bolos.html" data-hover="Contato">Bolos</a>
+                  <a class="dropdown-item" href="doces.html" data-hover="Contato">Doces</a>
+                  <a class="dropdown-item" href="salgados.html" data-hover="Contato">Salgados</a>
+                  <a class="dropdown-item" href="personalizados.html" data-hover="Contato">Personalizados</a>
+                  <a class="dropdown-item" href="kitfesta.html" data-hover="Contato">Kit Festa</a>
                 </div>
               </li>
             </ul>
             <form class="d-flex my-2 my-lg-0">
-              <input class="form-control me-sm-2" type="text" placeholder="O que você procura?">
-              <button class="btn btn-outline my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              <input class="form-control me-sm-2" type="search" value="" id="search" onchange="openPage()" placeholder="O que você procura?">
+              <button class="btn btn-outline my-2 my-sm-0" type="submit" onclick="openPage()"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
