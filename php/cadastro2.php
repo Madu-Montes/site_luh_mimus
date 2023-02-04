@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <body>
     <div class="container-fluid botaovolta">
        <a href="../index.html" class="font-weight-bold back"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
@@ -39,16 +39,16 @@
                         
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Nome</h6></label>
-                            <input class="mb-4" type="text" name="nome" placeholder="Digite seu nome completo" required maxlength="256">
+                            <input class="mb-4" type="text" name="nome" placeholder="Digite seu nome completo" required maxlength="256" required>
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Email</h6></label>
-                            <input class="mb-4" type="email" onblur="mascaraDeTelefone(this)"  onfocus="tiraHifen(this)" name="email" placeholder="Digite um endereço de email válido" required maxlength="256">
+                            <input class="mb-4" type="email" onblur="mascaraDeTelefone(this)"  required onfocus="tiraHifen(this)" name="email" placeholder="Digite um endereço de email válido" required maxlength="256">
 
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Celular</h6></label>
-                            <input class="mb-4" type="text" name="telefone" id="telefone" placeholder="(DDD)99999-99999" required requiredonfocus="javascript: retirarFormataca(this);" onblur="javascript: formatarCampo(this);"
+                            <input class="mb-4" type="text" name="celular" id="telefone" placeholder="(DDD)99999-9999" required requiredonfocus="javascript: retirarFormataca(this);" onblur="javascript: formatarCampo(this);"
                                 maxlength="14">
                         </div>
                         <div class="row px-3">
@@ -57,11 +57,29 @@
                         </div>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">CPF</h6></label>
-                            <input class="mb-4" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" requiredonfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="14">
+                            <input class="mb-4" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" requiredonfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="14" required>
                         </div>
+                        <p id="resposta"></p>
                         <div class="row px-3">
                             <label class="mb-1"><h6 class="mb-0 text-sm">Senha</h6></label>
-                            <input type="password" name="senha" placeholder="Digite a senha">
+                            <input type="password" name="senha" placeholder="Digite a senha" required>
+                        </div>
+                        <br>
+                        <div class="row px-3">
+                            <label class="mb-1"><h6 class="mb-0 text-sm">Endereço</h6></label>
+                            <input class="mb-4" type="text" name="Endereco" placeholder="Endereço" required maxlength="256">
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-1"><h6 class="mb-0 text-sm"></h6>Nº</label>
+                            <input class="mb-4" type="text" name="n_residencia" id="telefone" placeholder="Número da Residência" required>
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-1"><h6 class="mb-0 text-sm">CEP</h6></label>
+                            <input class="mb-4" type="text" name="cep" id="cep" placeholder="Digite seu CEP" requiredonfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="8" required>
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-1"><h6 class="mb-0 text-sm">Complemento</h6></label>
+                            <input class="mb-4" type="text" name="complemento" placeholder="Complemento,  Referências do local da entrega"  maxlength="256">
                         </div>
                         <br>
                         <br>

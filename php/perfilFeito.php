@@ -9,6 +9,16 @@ if(!isset($_SESSION['nome'])){
     session_start();
     
 }
+$cpf1 = $_SESSION['cpf'];
+
+$dados_usuarios = $sql->query("SELECT * FROM User_Cdst_Site WHERE cpf_UserCdstSite = '$cpf1'");
+
+$linha = mysqli_fetch_array($dados_usuarios);
+
+$endereco =  $linha['ender_UserCdstSite'];
+$nres = $linha['nres_UserCdstSite'];
+$cep = $linha['cep_UserCdstSite'];
+$complemento  = $linha['complemento_UserCdstSite'];
 
 
 ?>
@@ -38,7 +48,7 @@ if(!isset($_SESSION['nome'])){
 </head>
 
 <body>
-<form action="updateuser.php" method="POST">
+<form method="POST" action="updateuser.php">
     <div class="container-fluid">
         <section class="py-5 my-5">
             <div class="container">
@@ -111,7 +121,25 @@ if(!isset($_SESSION['nome'])){
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Endereço</label>
-                                        <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Insira seu endereço">
+                                        <input type="text" class="form-control" name="endereco" id="endereco" value="<?php echo $endereco;?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>CEP</label>
+                                        <input type="text" class="form-control" name="cep" id="cep" value="<?php echo $cep;?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Nº</label>
+                                        <input type="text" class="form-control" name="nres" id="nres" value="<?php echo $nres;?>">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Complemento</label>
+                                        <input type="text" class="form-control" name="complemento" id="complemento" value="<?php echo $complemento;?>">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
