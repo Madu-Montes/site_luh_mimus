@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <form method="POST">
+    <form action="../php/salvar1.php" method="POST">
         
         <div class="mb-3">
             <label for="nome" class="form-label">Nome Completo</label>
@@ -30,7 +30,7 @@
             <div class="formbold-radio-flex">
               <div class="formbold-radio-group">
                 <label class="formbold-radio-label" style="font-size: 15px;">
-                  <input class="formbold-input-radio" type="radio" name="peso" id="1" value="1">
+                  <input class="formbold-input-radio" type="radio" name="peso" id="1" value="1" checked>
                   1KG
                   <span class="formbold-radio-checkmark"></span>
                 </label>
@@ -60,26 +60,26 @@
                 </label>
               </div>
             </div>
-
+        </div>
             <div class="mb-3">
-                <label for="qusTwo" class="form-label">
+                <label class="form-label">
                     Massa
                 </label>
                 <br>
-                <select name="massa" id="massa" class="form-select"> 
-                    <option value="baunilha">Baunilha (massa branca)</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="morango">Morango</option>
-                </select>
-          </div>
+                <select class="form-control"  name="massa">
+                    <option>Baunilha(massa Branca)</option>
+                    <option>Chocolate</option>
+                    <option>Morango</option>
+                  </select>
+            </div>
 
 
         <label class="formbold-form-label-2" for="messageTema" style="font-size: 15px; color: black;">
               Descreva o tema:
             </label>
-            <textarea rows="6" name="tema" id="messageReche" class="formbold-form-input" placeholder="Ex: Quero o bolo igual ao das meninas super poderosas"></textarea>
-            <script src="../js/uloadoimg.js"></script>
+            <textarea name="tema" id="messageReche" class="formbold-form-input" placeholder="Ex: Quero o bolo igual ao das meninas super poderosas" rows="6"></textarea>
         </div>
+        <button class="btn btn-success">Enviar</button>
     </form>
 </body>
 
